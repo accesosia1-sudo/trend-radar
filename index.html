@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trend Radar — 20 Dedos</title>
+<style>
+:root {
+  color-scheme: light;
+  --bg: #FAFAF9;
+  --surface: #FFFFFF;
+  --surface-alt: #F4F3EF;
+  --text: #1A1A1A;
+  --text-muted: #5A5A5A;
+  --text-faint: #9A9A9A;
+  --border: #E5E3DD;
+  --border-strong: #C8C5BB;
+  --c-ebullicion: #B53A2B;
+  --c-gestacion:  #4E7C5E;
+  --c-calendario: #3B5A82;
+  --c-updates:    #7A5C2E;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  background: var(--bg); color: var(--text);
+  line-height: 1.55; font-size: 14px;
+  padding: 32px 24px 48px;
+}
+.container { max-width: 1180px; margin: 0 auto; }
+header {
+  display: flex; align-items: baseline; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px;
+  padding-bottom: 18px; margin-bottom: 28px;
+}
+.brand { display: flex; align-items: baseline; gap: 14px; }
+.brand h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.01em; }
+.brand .agency {
+  font-size: 11px; color: var(--text-faint);
+  text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500;
+}
+.meta { font-size: 12px; color: var(--text-faint); }
+.meta strong { color: var(--text-muted); font-weight: 600; }
+
+.tab-bar {
+  display: flex; gap: 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 32px;
+  overflow-x: auto; scrollbar-width: thin;
+}
+.tab-btn {
+  background: transparent; border: none;
+  padding: 12px 20px 14px;
+  font-size: 13.5px; font-weight: 500;
+  cursor: pointer; color: var(--text-faint);
+  font-family: inherit;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+.tab-btn:hover { color: var(--text-muted); }
+.tab-btn.active { font-weight: 600; }
+.tab-btn[data-tab="ebullicion"].active  { color: var(--c-ebullicion);  border-color: var(--c-ebullicion); }
+.tab-btn[data-tab="gestacion"].active   { color: var(--c-gestacion);   border-color: var(--c-gestacion); }
+.tab-btn[data-tab="calendario"].active  { color: var(--c-calendario);  border-color: var(--c-calendario); }
+.tab-btn[data-tab="updates"].active     { color: var(--c-updates);     border-color: var(--c-updates); }
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; animation: fadeIn 0.18s ease; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.panel-head { margin-bottom: 26px; }
+.panel-head h2 { font-size: 22px; font-weight: 700; letter-spacing: -0.015em; margin-bottom: 4px; }
+.panel-head p { font-size: 13px; color: var(--text-faint); }
+
+.country-split { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.country-header {
+  display: flex; align-items: baseline; gap: 10px;
+  margin-bottom: 16px; padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+.country-header h3 {
+  font-size: 12px; text-transform: uppercase; letter-spacing: 0.16em;
+  font-weight: 600; color: var(--text);
+}
+.country-header .count { margin-left: auto; font-size: 11px; color: var(--text-faint); font-weight: 500; }
+.card-stack { display: flex; flex-direction: column; gap: 10px; }
+
+.trend-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 4px; padding: 16px 18px;
+  transition: border-color 0.15s;
+}
+.trend-card:hover { border-color: var(--border-strong); }
+.trend-card .state {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em;
+  font-weight: 600; color: var(--text-muted);
+  margin-bottom: 8px;
+}
+.state .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+.state.hot       { color: var(--c-ebullicion); }
+.state.hot .dot  { background: var(--c-ebullicion); }
+.state.rising    { color: #B27A1F; }
+.state.rising .dot { background: #C7A050; }
+.state.emerging  { color: var(--c-gestacion); }
+.state.emerging .dot { background: var(--c-gestacion); }
+.state.peak      { color: #8B2A22; }
+.state.peak .dot { background: #8B2A22; }
+
+.trend-card h4 {
+  font-size: 15px; font-weight: 600; line-height: 1.35;
+  margin-bottom: 6px;
+}
+.trend-card .desc {
+  font-size: 13px; color: var(--text-muted);
+  line-height: 1.55; margin-bottom: 12px;
+}
+.card-footer {
+  margin-top: 12px; padding-top: 10px;
+  border-top: 1px solid var(--border);
+  display: flex; flex-direction: column; gap: 6px;
+}
+.card-footer .tags { font-size: 11.5px; color: var(--text-faint); }
+.card-footer .source {
+  display: inline-flex; align-items: center; justify-content: space-between;
+  font-size: 11px; color: var(--text-muted); text-decoration: none;
+  font-weight: 500;
+}
+.card-footer .source:hover { color: var(--text); }
+.card-footer .source .arrow { margin-left: 6px; transition: transform 0.15s; }
+.card-footer .source:hover .arrow { transform: translateX(2px); }
+.card-footer .source-label { font-weight: 400; color: var(--text-faint); }
+
+.cal-event {
+  display: grid; grid-template-columns: 56px 1fr;
+  gap: 18px; padding: 14px 16px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 4px; margin-bottom: 8px;
+  align-items: center;
+}
+.cal-event:hover { border-color: var(--border-strong); }
+.cal-event .date { text-align: center; border-right: 1px solid var(--border); padding-right: 14px; }
+.cal-event .date .day { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; line-height: 1; }
+.cal-event .date .month {
+  font-size: 10px; text-transform: uppercase; letter-spacing: 0.14em;
+  color: var(--text-faint); margin-top: 5px; font-weight: 600;
+}
+.cal-event .info .title { font-size: 13.5px; font-weight: 600; margin-bottom: 2px; }
+.cal-event .info .note { font-size: 12px; color: var(--text-muted); }
+.cal-event.priority { border-left: 3px solid var(--c-calendario); }
+
+.platform-list { display: flex; flex-direction: column; gap: 8px; }
+.platform-row {
+  display: grid; grid-template-columns: 86px 1fr auto;
+  gap: 16px; align-items: flex-start;
+  padding: 14px 16px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.platform-row:hover { border-color: var(--border-strong); }
+.platform-row .pf {
+  font-size: 11px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--text-muted); padding-top: 2px;
+}
+.platform-row .body strong { font-size: 13.5px; font-weight: 600; display: block; margin-bottom: 2px; }
+.platform-row .body p { font-size: 12.5px; color: var(--text-muted); line-height: 1.45; margin-bottom: 6px; }
+.platform-row .body .source { font-size: 11px; color: var(--text-faint); text-decoration: none; }
+.platform-row .body .source:hover { color: var(--text); }
+.platform-row .when { font-size: 11px; color: var(--text-faint); white-space: nowrap; padding-top: 2px; }
+
+.empty-state {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--text-faint);
+  font-size: 13px;
+  background: var(--surface-alt);
+  border: 1px dashed var(--border-strong);
+  border-radius: 4px;
+}
+
+.loading { padding: 60px 20px; text-align: center; color: var(--text-faint); font-size: 13px; }
+
+footer {
+  text-align: center; font-size: 11.5px; color: var(--text-faint);
+  padding: 28px 0 8px; margin-top: 48px;
+  border-top: 1px solid var(--border);
+}
+footer .legend { display: flex; gap: 22px; justify-content: center; flex-wrap: wrap; margin-bottom: 10px; }
+footer .legend .item { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; color: var(--text-muted); }
+footer .legend .dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+footer .build { font-size: 10.5px; color: var(--text-faint); margin-top: 4px; }
+
+@media (max-width: 768px) {
+  body { padding: 20px 16px 32px; }
+  .country-split { grid-template-columns: 1fr; gap: 36px; }
+  .platform-row { grid-template-columns: 70px 1fr; }
+  .platform-row .when { grid-column: 2; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="brand">
+    <h1>Trend Radar</h1>
+    <span class="agency">20 Dedos</span>
+  </div>
+  <div class="meta" id="meta-line">Cargando…</div>
+</header>
+
+<nav class="tab-bar" id="tab-bar">
+  <button class="tab-btn active" data-tab="ebullicion">En ebullición</button>
+  <button class="tab-btn" data-tab="gestacion">En gestación</button>
+  <button class="tab-btn" data-tab="calendario">Calendario</button>
+  <button class="tab-btn" data-tab="updates">Updates de plataformas</button>
+</nav>
+
+<div class="tab-panel active" data-panel="ebullicion"><div class="loading">Cargando trends…</div></div>
+<div class="tab-panel" data-panel="gestacion"><div class="loading">Cargando…</div></div>
+<div class="tab-panel" data-panel="calendario"><div class="loading">Cargando…</div></div>
+<div class="tab-panel" data-panel="updates"><div class="loading">Cargando…</div></div>
+
+<footer>
+  <div class="legend">
+    <span class="item"><span class="dot" style="background:var(--c-ebullicion)"></span>Hot — pico ahora</span>
+    <span class="item"><span class="dot" style="background:#C7A050"></span>Subiendo — buen momento</span>
+    <span class="item"><span class="dot" style="background:var(--c-gestacion)"></span>Emergente — anticiparse</span>
+    <span class="item"><span class="dot" style="background:#8B2A22"></span>En pico — riesgo de tarde</span>
+  </div>
+  <div class="build">Trend Radar — 20 Dedos · v1.0</div>
+</footer>
+
+</div>
+
+<script>
+// ============================================================
+// HELPERS
+// ============================================================
+function escapeHtml(s) {
+  return String(s ?? '').replace(/[&<>"']/g, c => ({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+  }[c]));
+}
+
+function formatRelative(iso) {
+  if (!iso) return '';
+  const dt = new Date(iso);
+  if (isNaN(dt)) return '';
+  return dt.toLocaleString('es-AR', {
+    weekday: 'short', day: 'numeric', month: 'short', year: 'numeric',
+    hour: '2-digit', minute: '2-digit'
+  });
+}
+
+// ============================================================
+// RENDERERS
+// ============================================================
+function renderTrendCard(item) {
+  const state = item.state || 'emerging';
+  const stateLabels = { hot: 'Hot', rising: 'Subiendo', emerging: 'Emergente', peak: 'En pico' };
+  const sourceUrl = item.source?.url || '#';
+  const sourceLabel = item.source?.label || 'Sin fuente';
+
+  return `
+    <div class="trend-card">
+      <span class="state ${state}"><span class="dot"></span>${stateLabels[state] || state}</span>
+      <h4>${escapeHtml(item.title)}</h4>
+      <p class="desc">${escapeHtml(item.desc)}</p>
+      <div class="card-footer">
+        <span class="tags">${escapeHtml(item.tags || '')}</span>
+        <a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener" class="source">
+          <span><span class="source-label">Fuente:</span> ${escapeHtml(sourceLabel)}</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  `;
+}
+
+function renderCalEvent(item) {
+  return `
+    <div class="cal-event ${item.priority ? 'priority' : ''}">
+      <div class="date">
+        <div class="day">${escapeHtml(item.day)}</div>
+        <div class="month">${escapeHtml(item.month)}</div>
+      </div>
+      <div class="info">
+        <div class="title">${escapeHtml(item.title)}</div>
+        <div class="note">${escapeHtml(item.note)}</div>
+      </div>
+    </div>
+  `;
+}
+
+function renderPlatformRow(item) {
+  const sourceUrl = item.source?.url || '#';
+  const sourceLabel = item.source?.label || '';
+  return `
+    <div class="platform-row">
+      <span class="pf">${escapeHtml(item.platform || 'Social')}</span>
+      <div class="body">
+        <strong>${escapeHtml(item.title)}</strong>
+        <p>${escapeHtml(item.desc)}</p>
+        ${sourceLabel ? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener" class="source">Fuente: ${escapeHtml(sourceLabel)} →</a>` : ''}
+      </div>
+      <span class="when">${escapeHtml(item.when || '')}</span>
+    </div>
+  `;
+}
+
+function renderCountryColumn(country, renderItem, emptyMsg = 'Sin contenido esta semana') {
+  const items = country?.items || [];
+  const itemsHtml = items.length
+    ? items.map(renderItem).join('')
+    : `<div class="empty-state">${emptyMsg}</div>`;
+  return `
+    <div class="country-col">
+      <div class="country-header">
+        <h3>${escapeHtml(country?.name || '')}</h3>
+        <span class="count">${items.length} ${items.length === 1 ? 'item' : 'items'}</span>
+      </div>
+      <div class="card-stack">${itemsHtml}</div>
+    </div>
+  `;
+}
+
+function renderPanel(panelKey, panel, itemRenderer) {
+  const ar = panel.countries?.ar || { name: 'Argentina', items: [] };
+  const mx = panel.countries?.mx || { name: 'México', items: [] };
+  const wrapClass = panelKey === 'updates' ? 'platform-list' : 'card-stack';
+
+  return `
+    <div class="panel-head">
+      <h2>${escapeHtml(panel.title)}</h2>
+      <p>${escapeHtml(panel.subtitle)}</p>
+    </div>
+    <div class="country-split">
+      ${renderCountryColumn(ar, itemRenderer)}
+      ${renderCountryColumn(mx, itemRenderer)}
+    </div>
+  `;
+}
+
+function renderUpdatesPanel(panel) {
+  // Updates es flat por ahora (no separado AR/MX) — los mostramos en ambas columnas
+  const items = panel.items || [];
+  const cols = ['Argentina', 'México'].map(name => `
+    <div class="country-col">
+      <div class="country-header">
+        <h3>${name}</h3>
+        <span class="count">${items.length} updates</span>
+      </div>
+      <div class="platform-list">
+        ${items.length ? items.map(renderPlatformRow).join('') : `<div class="empty-state">Sin updates esta semana</div>`}
+      </div>
+    </div>
+  `).join('');
+
+  return `
+    <div class="panel-head">
+      <h2>${escapeHtml(panel.title)}</h2>
+      <p>${escapeHtml(panel.subtitle)}</p>
+    </div>
+    <div class="country-split">${cols}</div>
+  `;
+}
+
+// ============================================================
+// MAIN RENDER
+// ============================================================
+async function loadAndRender() {
+  let data;
+  try {
+    const r = await fetch('./trends.json?_=' + Date.now());
+    if (!r.ok) throw new Error(r.status);
+    data = await r.json();
+  } catch (e) {
+    document.querySelector('[data-panel="ebullicion"]').innerHTML =
+      `<div class="empty-state">No se pudo cargar trends.json. ${e}</div>`;
+    return;
+  }
+
+  // Header meta
+  const updated = formatRelative(data.updatedAt);
+  document.getElementById('meta-line').innerHTML = `Última actualización <strong>${updated}</strong>`;
+
+  // Panels
+  const panels = data.panels || {};
+  const renderers = {
+    ebullicion: () => renderPanel('ebullicion', panels.ebullicion, renderTrendCard),
+    gestacion:  () => renderPanel('gestacion',  panels.gestacion,  renderTrendCard),
+    calendario: () => renderPanel('calendario', panels.calendario, renderCalEvent),
+    updates:    () => renderUpdatesPanel(panels.updates),
+  };
+
+  for (const [key, renderer] of Object.entries(renderers)) {
+    const el = document.querySelector(`[data-panel="${key}"]`);
+    if (el && panels[key]) el.innerHTML = renderer();
+    else if (el) el.innerHTML = `<div class="empty-state">Sin datos para esta sección.</div>`;
+  }
+}
+
+// ============================================================
+// TAB SWITCHING
+// ============================================================
+const tabs = document.querySelectorAll('.tab-btn');
+const panels = document.querySelectorAll('.tab-panel');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = tab.dataset.tab;
+    tabs.forEach(t => t.classList.toggle('active', t === tab));
+    panels.forEach(p => p.classList.toggle('active', p.dataset.panel === target));
+    try { localStorage.setItem('trend-radar-tab', target); } catch(e) {}
+  });
+});
+
+try {
+  const saved = localStorage.getItem('trend-radar-tab');
+  if (saved) {
+    const tabBtn = document.querySelector(`.tab-btn[data-tab="${saved}"]`);
+    if (tabBtn) tabBtn.click();
+  }
+} catch(e) {}
+
+// Kick off
+loadAndRender();
+</script>
+</body>
+</html>

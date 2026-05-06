@@ -1,6 +1,4 @@
-__pycache__/
-*.pyc
-.venv/
-venv/
-.env
-.DS_Store
+requests>=2.31.0
+feedparser>=6.0.10
+pytrends>=4.9.2
+google-api-python-client>=2.100.0
