@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-06T09:00:00+00:00",
+  "updatedAt": "2026-05-06T22:56:10.781593+00:00",
   "panels": {
     "ebullicion": {
       "title": "En ebullición esta semana",
@@ -7,33 +7,11 @@
       "countries": {
         "ar": {
           "name": "Argentina",
-          "items": [
-            {
-              "state": "rising",
-              "title": "Ejemplo: trend detectado en Reddit AR",
-              "desc": "El refresh.py lo va a llenar automáticamente. Esto es un placeholder hasta el primer run del workflow.",
-              "tags": "Reddit · r/argentina",
-              "source": {
-                "label": "Reddit r/argentina",
-                "url": "https://reddit.com/r/argentina"
-              }
-            }
-          ]
+          "items": []
         },
         "mx": {
           "name": "México",
-          "items": [
-            {
-              "state": "rising",
-              "title": "Ejemplo: trend detectado en Reddit MX",
-              "desc": "El refresh.py lo va a llenar automáticamente. Esto es un placeholder hasta el primer run del workflow.",
-              "tags": "Reddit · r/mexico",
-              "source": {
-                "label": "Reddit r/mexico",
-                "url": "https://reddit.com/r/mexico"
-              }
-            }
-          ]
+          "items": []
         }
       }
     },
@@ -41,8 +19,14 @@
       "title": "En gestación · Early signals",
       "subtitle": "Aún no explotaron en IG/TikTok pero hay movimiento en Reddit, X y nichos — anticiparse",
       "countries": {
-        "ar": { "name": "Argentina", "items": [] },
-        "mx": { "name": "México", "items": [] }
+        "ar": {
+          "name": "Argentina",
+          "items": []
+        },
+        "mx": {
+          "name": "México",
+          "items": []
+        }
       }
     },
     "calendario": {
@@ -52,19 +36,67 @@
         "ar": {
           "name": "Argentina",
           "items": [
-            { "day": 25, "month": "May", "title": "Día de la Patria", "note": "Locro, mate, identidad. Marcas patrióticas activan.", "priority": false },
-            { "day": 11, "month": "Jun", "title": "Inicio Mundial 2026", "note": "Argentina debuta. Pico de contenido nostálgico y activación.", "priority": true },
-            { "day": 17, "month": "Jun", "title": "Día del Padre", "note": "Coincide con Mundial — aprovechar el cruce.", "priority": false },
-            { "day": 9, "month": "Jul", "title": "Día de la Independencia", "note": "Posible final del Mundial. Mega-momento si Argentina llega.", "priority": false }
+            {
+              "day": 25,
+              "month": "May",
+              "title": "Día de la Patria",
+              "note": "Locro, mate, identidad. Marcas patrióticas activan.",
+              "priority": false,
+              "iso": "2026-05-25"
+            },
+            {
+              "day": 11,
+              "month": "Jun",
+              "title": "Inicio Mundial 2026",
+              "note": "Argentina debuta. Pico de contenido nostálgico y activación.",
+              "priority": true,
+              "iso": "2026-06-11"
+            },
+            {
+              "day": 17,
+              "month": "Jun",
+              "title": "Día del Padre",
+              "note": "Coincide con Mundial — aprovechar el cruce.",
+              "priority": false,
+              "iso": "2026-06-17"
+            },
+            {
+              "day": 9,
+              "month": "Jul",
+              "title": "Día de la Independencia",
+              "note": "Posible final del Mundial. Mega-momento si Argentina llega.",
+              "priority": false,
+              "iso": "2026-07-09"
+            }
           ]
         },
         "mx": {
           "name": "México",
           "items": [
-            { "day": 10, "month": "May", "title": "Día de las Madres MX", "note": "Activaciones tardías aún a tiempo.", "priority": false },
-            { "day": 15, "month": "May", "title": "Día del Maestro MX", "note": "Conversación grande en redes mexicanas.", "priority": false },
-            { "day": 11, "month": "Jun", "title": "Inicio Mundial 2026 — sede MX", "note": "Apertura en CDMX. Oportunidad gigante hotelería y travel.", "priority": true },
-            { "day": 16, "month": "Sep", "title": "Independencia de México", "note": "El gran momento patriótico. Prep desde julio.", "priority": false }
+            {
+              "day": 10,
+              "month": "May",
+              "title": "Día de las Madres MX",
+              "note": "Activaciones tardías aún a tiempo.",
+              "priority": false,
+              "iso": "2026-05-10"
+            },
+            {
+              "day": 15,
+              "month": "May",
+              "title": "Día del Maestro MX",
+              "note": "Conversación grande en redes mexicanas.",
+              "priority": false,
+              "iso": "2026-05-15"
+            },
+            {
+              "day": 11,
+              "month": "Jun",
+              "title": "Inicio Mundial 2026 — sede MX",
+              "note": "Apertura en CDMX. Oportunidad gigante hotelería y travel.",
+              "priority": true,
+              "iso": "2026-06-11"
+            }
           ]
         }
       }
@@ -72,15 +104,7 @@
     "updates": {
       "title": "Updates de plataformas",
       "subtitle": "Cambios recientes — la mayoría aplican global, marcamos cuando hay diferencia regional",
-      "items": [
-        {
-          "platform": "Social",
-          "title": "Esta sección se llena automáticamente desde RSS",
-          "desc": "Después del primer run del workflow vas a ver acá los últimos updates de Social Media Today, Marketing Brew y otros feeds curados.",
-          "when": "Pendiente",
-          "source": { "label": "(Placeholder)", "url": "#" }
-        }
-      ]
+      "items": []
     }
   }
 }
