@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-06T22:56:10.781593+00:00",
+  "updatedAt": "2026-05-06T23:33:25.585407+00:00",
   "panels": {
     "ebullicion": {
       "title": "En ebullición esta semana",
@@ -30,7 +30,7 @@
       }
     },
     "calendario": {
-      "title": "Calendario cultural · Próximos 90 días",
+      "title": "Calendario cultural · Próximos 120 días",
       "subtitle": "Fechas que mover al brief de contenido — planeá con tiempo",
       "countries": {
         "ar": {
@@ -104,7 +104,88 @@
     "updates": {
       "title": "Updates de plataformas",
       "subtitle": "Cambios recientes — la mayoría aplican global, marcamos cuando hay diferencia regional",
-      "items": []
+      "items": [
+        {
+          "platform": "Social",
+          "title": "Vox Media Welcomes a Bidding War",
+          "desc": "James Murdoch is the latest suitor to eye the empire. What does that mean for the rest of the portfolio?",
+          "when": "Hoy",
+          "source": {
+            "label": "Adweek Social",
+            "url": "https://www.adweek.com/media/vox-media-james-murchoch-bidding-war/"
+          }
+        },
+        {
+          "platform": "Social",
+          "title": "CNN Founder Ted Turner Dies at 87",
+          "desc": "Turner pioneered the 24-hour news network, fundamentally changing the news industry.",
+          "when": "Hoy",
+          "source": {
+            "label": "Adweek Social",
+            "url": "https://www.adweek.com/tvnewser/cnn-founder-ted-turner-dies-at-87/"
+          }
+        },
+        {
+          "platform": "Social",
+          "title": "New Disney CEO Reveals the AI Enhancements Coming to Disney+",
+          "desc": "In his first earnings call, CEO Josh D'Amaro calls Disney+ the 'digital centerpiece' of the company.",
+          "when": "Hoy",
+          "source": {
+            "label": "Adweek Social",
+            "url": "https://www.adweek.com/convergent-tv/disney-ceo-reveals-improvements-and-ai-coming-to-disney/"
+          }
+        },
+        {
+          "platform": "Social",
+          "title": "Advertisers Spent $1 Billion on Criteo in Q1, Up 8% Year-Over-Year",
+          "desc": "Still, Criteo's growth numbers remain plagued by two major client losses.",
+          "when": "Hoy",
+          "source": {
+            "label": "Adweek Social",
+            "url": "https://www.adweek.com/commerce/advertisers-spent-1-billion-on-criteo-in-q1-up-8-year-over-year/"
+          }
+        },
+        {
+          "platform": "Social",
+          "title": "Old Navy Appoints Michael Francis as Chief Customer Officer Amid Turnaround",
+          "desc": "Gap Inc. has brought on veteran brand executive Michael Francis as chief customer officer of Old Navy and head of marketing shared services for the group.",
+          "when": "Hoy",
+          "source": {
+            "label": "Adweek Social",
+            "url": "https://www.adweek.com/brand-marketing/old-navy-appoints-michael-francis-as-chief-customer-officer-amid-turnaround/"
+          }
+        },
+        {
+          "platform": "Social",
+          "title": "Ziff Davis Buys Four Brands From Recurrent Ventures, Launches a Lifestyle Group",
+          "desc": "The company acquired Dwell, Domino, Business of Home, and PopSci, extending a multiyear roll-up as competitors pull back from the open web.",
+          "when": "Hoy",
+          "source": {
+            "label": "Adweek Social",
+            "url": "https://www.adweek.com/media/ziff-davis-recurrent-ventures-dwell-domino-business-home-popsci/"
+          }
+        },
+        {
+          "platform": "Social",
+          "title": "The Real WPP Story Is in the Margin, Not the Revenue",
+          "desc": "When WPP posted its first-quarter numbers last week, one line did all the talking.",
+          "when": "Hoy",
+          "source": {
+            "label": "Adweek Social",
+            "url": "https://www.adweek.com/agencies/the-real-wpp-story-is-in-the-margin-not-the-revenue/"
+          }
+        },
+        {
+          "platform": "Social",
+          "title": "AB InBev Wins Cannes Lions Creative Marketer of the Year for a Historic Third Time",
+          "desc": "Cannes Lions has named AB InBev as its 2026 Creative Marketer of the Year.",
+          "when": "Hoy",
+          "source": {
+            "label": "Adweek Social",
+            "url": "https://www.adweek.com/creativity/ab-inbev-wins-cannes-lions-creative-marketer-of-the-year-for-a-historic-third-time/"
+          }
+        }
+      ]
     }
   }
 }
