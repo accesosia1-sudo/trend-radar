@@ -1,31 +1,935 @@
 {
-  "updatedAt": "2026-05-06T23:33:25.585407+00:00",
+  "updatedAt": "2026-05-07T15:59:06.367700+00:00",
   "panels": {
     "ebullicion": {
       "title": "En ebullición esta semana",
-      "subtitle": "Trends que ya están explotando — momento de subirse antes del pico",
+      "subtitle": "Posts y videos top de Instagram y TikTok — momento de subirse antes del pico",
       "countries": {
         "ar": {
           "name": "Argentina",
-          "items": []
+          "items": [
+            {
+              "state": "rising",
+              "title": "STANDARD इतना HIGH रखो,",
+              "desc": "STANDARD इतना HIGH रखो,\nकि ENTRY सबके बस की बात ना हो💎.\n.\n.\n#trending #scorpio #post",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCtZ3vDwsI/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "HAPPY MENTAL HEALTH AWARENESS DAY CUBS ALWAYS TAKE MENTAL HEALTH SERIOUS EVEN IF IT MEANS REMOVING P",
+              "desc": "HAPPY MENTAL HEALTH AWARENESS DAY CUBS ALWAYS TAKE MENTAL HEALTH SERIOUS EVEN IF IT MEANS REMOVING PEOPLE FROM YOUR LIFE OR STAYING OFF SOCIAL MEDIA ANYTHING THAT HELPS WITH YOUR MENTAL HEALTH I LOVE Y’ALL SO MUCH PLS TAKE MENTA HEALTH SERI",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCtFVKkfmx/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Eeroju MRF company strong results chupinchindi ante company profit last year tho compare chesthe aro",
+              "desc": "Eeroju MRF company strong results chupinchindi ante company profit last year tho compare chesthe around 37% perigindi, danivalla shareholders ki reward ga ₹229 per share dividend announce chesindi. \n\nAlage lo Bajaj Group ki sambandhinchina ",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCtZvtkVDH/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "👀🤎🌺...!¡",
+              "desc": "👀🤎🌺...!¡\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n#insta #like4like #viral #fypppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp #trending",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCtZU4k64F/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "#instagramreels #trending #trendingsong #ᴠɪʀᴀʟᴘᴏsᴛ #reelsinstagra ❣️",
+              "desc": "#instagramreels #trending #trendingsong #ᴠɪʀᴀʟᴘᴏsᴛ #reelsinstagra ❣️",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCtZXniSZH/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Make your mom feel extra special on this mother’s day.",
+              "desc": "Make your mom feel extra special on this mother’s day.\nBook any one service for yourself or your mom & get free gel polish for your mother(feet or hands)\n\n*Offer applicable on 9-10th May 2026*\n\nBook your appointment now: 📞9769799918 or DM u",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCvjB5DRWO/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "يا وردة💐",
+              "desc": "يا وردة💐\n#Crochet\n#flowers #handmade #gift #fyp",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCwB5gjB4n/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Perfumes de Cabelo Natura tododia ",
+              "desc": "Perfumes de Cabelo Natura tododia \nCereja e Avelã, Flor de Ameixa \n49,90 Cada \n\nSua essência é sua assinatura✨\n\n#fyp#cosmeticos#perfumes#autocuidado",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCwB2fDvwo/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "❤️...",
+              "desc": "❤️...\n\n#fyp #fitnessmodel #humayunstomb",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCwBtMk7qN/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Not just a plantation drive, but a step towards responsibility and hope.",
+              "desc": "Not just a plantation drive, but a step towards responsibility and hope.\nAs a team, we came together to give back to nature what it gives us every day—life, shade, and peace. 🌱\n\nEvery tree planted today is a promise of a greener tomorrow, a",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCwBvHDcaW/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Plastificamos telas de friselina para bolsas reutilizables, mejorando su resistencia, impermeabilida",
+              "desc": "Plastificamos telas de friselina para bolsas reutilizables, mejorando su resistencia, impermeabilidad y durabilidad.\n\nUna solución ideal para el desarrollo de productos personalizados con tu marca.\n\n📩 Consultanos para más información\n\n#coat",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxKaaEYsr/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Insólito esto que está pasando en Real Madrid, que además lleva 2 AÑOS SIN TÍTULOS.",
+              "desc": "Insólito esto que está pasando en Real Madrid, que además lleva 2 AÑOS SIN TÍTULOS.\n\n#futbol #realmadrid #españa #argentina #futboleuropeo",
+              "tags": "Instagram · #fyp · 1 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxX0AEU_5/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "“La felicidad verdadera no está en el tener, sino en el ser.”",
+              "desc": "“La felicidad verdadera no está en el tener, sino en el ser.”\n.\n.\n.\n.\n#mates #viral #argentina🇦🇷 #materos #argentina",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCwvrnCj3s/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Can someone tell it to go away? 😭 ",
+              "desc": "Can someone tell it to go away? 😭 \n\nLike this content? Follow us for more @Memezar ❤️\n\n147 passengers set sail for an expedition through Patagonia… but the trip turned into a global health scare after a rare Andes hantavirus outbreak left 3",
+              "tags": "Instagram · #fyp · 228 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxWKgl_St/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Piden asistencia urgente por los daños del temporal mientras el personal de Defensa Civil todavía bu",
+              "desc": "Piden asistencia urgente por los daños del temporal mientras el personal de Defensa Civil todavía busca el lugar exacto de la obstrucción que provocó que se inundara la vivienda.\n\nLa nota completa en Diarionecochea.com\nWhatsApp: 2262 356811",
+              "tags": "Instagram · #fyp · 1 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxVOuGkWQ/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "🌲✨ Jueves de antojo… de cabaña 😮‍💨🔥",
+              "desc": "🌲✨ Jueves de antojo… de cabaña 😮‍💨🔥\nEscápate a la tranquilidad que mereces en Otinapa Sierra Camps\n\n💚 Todo mayo aprovecha nuestro 10% de descuento para disfrutar de una experiencia rodeada de naturaleza, fogatas, aire puro y momentos inolvi",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxb16kS-G/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "🩷 #foto #feed #parati",
+              "desc": "🩷 #foto #feed #parati",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxfMokcq0/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "⚜️S.P.Q.R⚜️",
+              "desc": "⚜️S.P.Q.R⚜️\n. \n@igara.tattoo \n.\n.\n#roma #tattoo #microrealismtattoo #espartanotattoo #parati",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCwoDBjE87/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Nuestra Señora del Transito.",
+              "desc": "Nuestra Señora del Transito.\n\nLa Virgen del Tránsito en Granada, una representación de la \"Virgen Dormida\" antes de la Asunción, es una imagen devocional destacada en la iglesia de Santo Domingo. Esta talla del siglo XVIII es central durant",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxciIDYFA/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Ya apaguen el sol🫠☀️ #Viral #calor #meme #fyp #humor #Firulais #parati",
+              "desc": "Ya apaguen el sol🫠☀️ #Viral #calor #meme #fyp #humor #Firulais #parati",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxceCjs1d/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Art 🎨 design 2k26 🖌️",
+              "desc": "Art 🎨 design 2k26 🖌️\n.\n.\n.\n#instagram #instagood #marriageart #viral #fypage",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxcvKp5Y-/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "#angeldust #hazbinhotel #drawing #viral #fyp",
+              "desc": "#angeldust #hazbinhotel #drawing #viral #fyp",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxfNojm5Y/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "\"मेरे Attitude से जलने की आदत डाल लो, क्योंकि ये आदत अब कभी नहीं जाएगी।\"",
+              "desc": "\"मेरे Attitude से जलने की आदत डाल लो, क्योंकि ये आदत अब कभी नहीं जाएगी।\"\n#viral \n#post \n#likeforfollow \n#followforfollow",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxe1VEo2Z/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Jaat 🗿#viral #trending #jaat",
+              "desc": "Jaat 🗿#viral #trending #jaat",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxe2zj9LC/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "#BEAUTIFULPOST #vlog #post #viral",
+              "desc": "#BEAUTIFULPOST #vlog #post #viral",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxfBykxTf/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Clarification",
+              "desc": "Clarification\n\n#healthcare #news #hantavirus",
+              "tags": "TikTok · #healthcare · 588,000 views · @gamingdocmbbs",
+              "source": {
+                "label": "TikTok #healthcare",
+                "url": "https://www.tiktok.com/@gamingdocmbbs/video/7636428931649785110"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "Why is most of Argentina’s territory empty? #argentina #buenosaies #theandes",
+              "desc": "Why is most of Argentina’s territory empty? #argentina #buenosaies #theandes",
+              "tags": "TikTok · #argentina · 1,900,000 views · @miniatureworld204",
+              "source": {
+                "label": "TikTok #argentina",
+                "url": "https://www.tiktok.com/@miniatureworld204/video/7574091454885137694"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "these are not the reparations anyone asked for #hantavirus #travel #health",
+              "desc": "these are not the reparations anyone asked for #hantavirus #travel #health",
+              "tags": "TikTok · #hantavirus · 109,600 views · @jia_yaps",
+              "source": {
+                "label": "TikTok #hantavirus",
+                "url": "https://www.tiktok.com/@jia_yaps/video/7636587484566048031"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "Remade my most viral dinner! A famiky staple in my house #dinner #viraldinner #viralpasta #pasta #cr",
+              "desc": "Remade my most viral dinner! A famiky staple in my house #dinner #viraldinner #viralpasta #pasta #creamcheese #pasta #mozzarella #dinnerrecipe #easydinner #easyrecipe #recipe #cooking #familydinner #familymeal",
+              "tags": "TikTok · #dinner · 11,900,000 views · @mealsandmunchies",
+              "source": {
+                "label": "TikTok #dinner",
+                "url": "https://www.tiktok.com/@mealsandmunchies/video/7285534538682436907"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "Spotters have dad reflexes X 100💪😎#usa#viral #fyp #gymnast #foryou",
+              "desc": "Spotters have dad reflexes X 100💪😎#usa#viral #fyp #gymnast #foryou",
+              "tags": "TikTok · #usa · 40,900,000 views · @furryframe3",
+              "source": {
+                "label": "TikTok #usa",
+                "url": "https://www.tiktok.com/@furryframe3/video/7623326974911565087"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "FEATURED ON FOX NEWS 🚀 #whatdoyoudoforaliving #fox #f #foxnews #foryoupage #educational #inspiration",
+              "desc": "FEATURED ON FOX NEWS 🚀 #whatdoyoudoforaliving #fox #f #foxnews #foryoupage #educational #inspirational #motivational #viral",
+              "tags": "TikTok · #whatdoyoudoforaliving · 62,700,000 views · @aaron.vankampen",
+              "source": {
+                "label": "TikTok #whatdoyoudoforaliving",
+                "url": "https://www.tiktok.com/@aaron.vankampen/video/6977090903731129606"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "Girlhood is brushing a stranger’s hair while she cries 💇🏻‍♀️",
+              "desc": "Girlhood is brushing a stranger’s hair while she cries 💇🏻‍♀️\n#tiktoktrend #girlhood #tiktokviral #funny #fyp #viral",
+              "tags": "TikTok · #tiktoktrend · 14,900,000 views · @laviedecamilla",
+              "source": {
+                "label": "TikTok #tiktoktrend",
+                "url": "https://www.tiktok.com/@laviedecamilla/video/7516442242756791574"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "TikTok came thruuuu for reall!! 😮‍💨😮‍💨#fy #fyp #greenscreen #viral #viraltiktok #money #tips #tipsan",
+              "desc": "TikTok came thruuuu for reall!! 😮‍💨😮‍💨#fy #fyp #greenscreen #viral #viraltiktok #money #tips #tipsandtricks #dontletthisflop #dontflop #dontdo",
+              "tags": "TikTok · #fy · 29,400,000 views · @lolurrrra",
+              "source": {
+                "label": "TikTok #fy",
+                "url": "https://www.tiktok.com/@lolurrrra/video/7407146104816487726"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "Lying challenge #lyingchallenge #trending #fyp #halloween @Spina15",
+              "desc": "Lying challenge #lyingchallenge #trending #fyp #halloween @Spina15",
+              "tags": "TikTok · #lyingchallenge · 19,600,000 views · @davisbros67",
+              "source": {
+                "label": "TikTok #lyingchallenge",
+                "url": "https://www.tiktok.com/@davisbros67/video/7567465959695355166"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "#fyp #foryoupage #blowthisup",
+              "desc": "#fyp #foryoupage #blowthisup",
+              "tags": "TikTok · #fyp · 32,900,000 views · @piperrockelle",
+              "source": {
+                "label": "TikTok #fyp",
+                "url": "https://www.tiktok.com/@piperrockelle/video/7528539175499435278"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "I’m rlly glad she gained some more confidence she’s doing great!! 💕 #pinkpantheress #fyp #userwhydoy",
+              "desc": "I’m rlly glad she gained some more confidence she’s doing great!! 💕 #pinkpantheress #fyp #userwhydoyoucarelol #foryoupage #xybca @😘🙈☺️",
+              "tags": "TikTok · #pinkpantheress · 30,000,000 views · @userwhydoyoucarelol",
+              "source": {
+                "label": "TikTok #pinkpantheress",
+                "url": "https://www.tiktok.com/@userwhydoyoucarelol/video/7595999609634213150"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "Plot twist💀 #viral #fyp #voices @SmoothGio",
+              "desc": "Plot twist💀 #viral #fyp #voices @SmoothGio",
+              "tags": "TikTok · #viral · 19,100,000 views · @yaboyywill",
+              "source": {
+                "label": "TikTok #viral",
+                "url": "https://www.tiktok.com/@yaboyywill/video/7605015993542331662"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "#fyp mustard",
+              "desc": "#fyp mustard",
+              "tags": "TikTok · #fyp · 20,800,000 views · @___________13________",
+              "source": {
+                "label": "TikTok #fyp",
+                "url": "https://www.tiktok.com/@___________13________/video/7350087354918505770"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "🤣 #paratii #fyp",
+              "desc": "🤣 #paratii #fyp",
+              "tags": "TikTok · #paratii · 2,200,000 views · @luchibriceno",
+              "source": {
+                "label": "TikTok #paratii",
+                "url": "https://www.tiktok.com/@luchibriceno/video/7579009649437953291"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "Lo intentamos hacer serias pero somos estas🫦😅 @Celesss ",
+              "desc": "Lo intentamos hacer serias pero somos estas🫦😅 @Celesss \n#parati #tiktok",
+              "tags": "TikTok · #fyp · 1,500,000 views · @valuhenaoo1",
+              "source": {
+                "label": "TikTok #fyp",
+                "url": "https://www.tiktok.com/@valuhenaoo1/video/7612045781842791701"
+              }
+            }
+          ]
         },
         "mx": {
           "name": "México",
-          "items": []
+          "items": [
+            {
+              "state": "rising",
+              "title": "Art 🎨 design 2k26 🖌️",
+              "desc": "Art 🎨 design 2k26 🖌️\n.\n.\n.\n#instagram #instagood #marriageart #viral #fypage",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxcvKp5Y-/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "#angeldust #hazbinhotel #drawing #viral #fyp",
+              "desc": "#angeldust #hazbinhotel #drawing #viral #fyp",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxfNojm5Y/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "\"मेरे Attitude से जलने की आदत डाल लो, क्योंकि ये आदत अब कभी नहीं जाएगी।\"",
+              "desc": "\"मेरे Attitude से जलने की आदत डाल लो, क्योंकि ये आदत अब कभी नहीं जाएगी।\"\n#viral \n#post \n#likeforfollow \n#followforfollow",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxe1VEo2Z/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Jaat 🗿#viral #trending #jaat",
+              "desc": "Jaat 🗿#viral #trending #jaat",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxe2zj9LC/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "#BEAUTIFULPOST #vlog #post #viral",
+              "desc": "#BEAUTIFULPOST #vlog #post #viral",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxfBykxTf/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "STANDARD इतना HIGH रखो,",
+              "desc": "STANDARD इतना HIGH रखो,\nकि ENTRY सबके बस की बात ना हो💎.\n.\n.\n#trending #scorpio #post",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCtZ3vDwsI/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "HAPPY MENTAL HEALTH AWARENESS DAY CUBS ALWAYS TAKE MENTAL HEALTH SERIOUS EVEN IF IT MEANS REMOVING P",
+              "desc": "HAPPY MENTAL HEALTH AWARENESS DAY CUBS ALWAYS TAKE MENTAL HEALTH SERIOUS EVEN IF IT MEANS REMOVING PEOPLE FROM YOUR LIFE OR STAYING OFF SOCIAL MEDIA ANYTHING THAT HELPS WITH YOUR MENTAL HEALTH I LOVE Y’ALL SO MUCH PLS TAKE MENTA HEALTH SERI",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCtFVKkfmx/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Eeroju MRF company strong results chupinchindi ante company profit last year tho compare chesthe aro",
+              "desc": "Eeroju MRF company strong results chupinchindi ante company profit last year tho compare chesthe around 37% perigindi, danivalla shareholders ki reward ga ₹229 per share dividend announce chesindi. \n\nAlage lo Bajaj Group ki sambandhinchina ",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCtZvtkVDH/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "👀🤎🌺...!¡",
+              "desc": "👀🤎🌺...!¡\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n#insta #like4like #viral #fypppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp #trending",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCtZU4k64F/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "#instagramreels #trending #trendingsong #ᴠɪʀᴀʟᴘᴏsᴛ #reelsinstagra ❣️",
+              "desc": "#instagramreels #trending #trendingsong #ᴠɪʀᴀʟᴘᴏsᴛ #reelsinstagra ❣️",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCtZXniSZH/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "🌲✨ Jueves de antojo… de cabaña 😮‍💨🔥",
+              "desc": "🌲✨ Jueves de antojo… de cabaña 😮‍💨🔥\nEscápate a la tranquilidad que mereces en Otinapa Sierra Camps\n\n💚 Todo mayo aprovecha nuestro 10% de descuento para disfrutar de una experiencia rodeada de naturaleza, fogatas, aire puro y momentos inolvi",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxb16kS-G/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "🩷 #foto #feed #parati",
+              "desc": "🩷 #foto #feed #parati",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxfMokcq0/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "⚜️S.P.Q.R⚜️",
+              "desc": "⚜️S.P.Q.R⚜️\n. \n@igara.tattoo \n.\n.\n#roma #tattoo #microrealismtattoo #espartanotattoo #parati",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCwoDBjE87/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Nuestra Señora del Transito.",
+              "desc": "Nuestra Señora del Transito.\n\nLa Virgen del Tránsito en Granada, una representación de la \"Virgen Dormida\" antes de la Asunción, es una imagen devocional destacada en la iglesia de Santo Domingo. Esta talla del siglo XVIII es central durant",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxciIDYFA/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Ya apaguen el sol🫠☀️ #Viral #calor #meme #fyp #humor #Firulais #parati",
+              "desc": "Ya apaguen el sol🫠☀️ #Viral #calor #meme #fyp #humor #Firulais #parati",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxceCjs1d/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Make your mom feel extra special on this mother’s day.",
+              "desc": "Make your mom feel extra special on this mother’s day.\nBook any one service for yourself or your mom & get free gel polish for your mother(feet or hands)\n\n*Offer applicable on 9-10th May 2026*\n\nBook your appointment now: 📞9769799918 or DM u",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCvjB5DRWO/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "يا وردة💐",
+              "desc": "يا وردة💐\n#Crochet\n#flowers #handmade #gift #fyp",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCwB5gjB4n/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Perfumes de Cabelo Natura tododia ",
+              "desc": "Perfumes de Cabelo Natura tododia \nCereja e Avelã, Flor de Ameixa \n49,90 Cada \n\nSua essência é sua assinatura✨\n\n#fyp#cosmeticos#perfumes#autocuidado",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCwB2fDvwo/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "❤️...",
+              "desc": "❤️...\n\n#fyp #fitnessmodel #humayunstomb",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCwBtMk7qN/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Not just a plantation drive, but a step towards responsibility and hope.",
+              "desc": "Not just a plantation drive, but a step towards responsibility and hope.\nAs a team, we came together to give back to nature what it gives us every day—life, shade, and peace. 🌱\n\nEvery tree planted today is a promise of a greener tomorrow, a",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCwBvHDcaW/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "🃏¡Duelistas, prepárense para la BATALLA ÉPICA! ",
+              "desc": "🃏¡Duelistas, prepárense para la BATALLA ÉPICA! \nEste próximo Agosto llega la Convención: Batalla de Cartas, evento imperdible para todos los amantes de los duelos y las estrategias legendarias. \n¡No te pierdas nuestro TORNEO DE YU-GI-OH, co",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxn8rCfWa/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "¿Listo para el Mundial… pero tu sonrisa no? 😳",
+              "desc": "¿Listo para el Mundial… pero tu sonrisa no? 😳\nAprovecha 20% OFF en blanqueamiento y sonríe como se debe en cada foto ⚽✨\nResultados visibles desde la primera sesión.\nAgenda hoy 👇\n\n#DentalDigital #BlanqueamientoDental #Mundial2026 #SonrisaPer",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxn8NDhoq/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "🚜 Haz crecer tu proyecto con el respaldo correcto.",
+              "desc": "🚜 Haz crecer tu proyecto con el respaldo correcto.\nEn Roca Rent Laguna te ayudamos a optimizar tiempos, mejorar resultados y mantener tu obra en movimiento con maquinaria de alto rendimiento.\n\nPorque avanzar más rápido también es avanzar me",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxn_7jpc9/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "😂💄 POV: Tu almohada viendo que te vas a acostar maquillada…",
+              "desc": "😂💄 POV: Tu almohada viendo que te vas a acostar maquillada…\n“¿Otra vez? 😳”\n\nTu piel mientras duermes necesita respirar, repararse y regenerarse…pero el maquillaje obstruye los poros y favorece:\n\n⚠️ Brotes de acné\n 😖 Irritación\n 💧 Deshidrata",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxnjYDFxg/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "𝐆𝐫𝐚𝐧 𝐎𝐮𝐭𝐥𝐞𝐭 𝐝𝐞 𝐯𝐚𝐜𝐚𝐜𝐢𝐨𝐧𝐞𝐬 𝐩𝐫𝐞𝐬𝐞𝐧𝐜𝐢𝐚𝐥 𝐞𝐧 𝐓𝐨𝐫𝐫𝐞𝐨𝐧 🌴🌊",
+              "desc": "𝐆𝐫𝐚𝐧 𝐎𝐮𝐭𝐥𝐞𝐭 𝐝𝐞 𝐯𝐚𝐜𝐚𝐜𝐢𝐨𝐧𝐞𝐬 𝐩𝐫𝐞𝐬𝐞𝐧𝐜𝐢𝐚𝐥 𝐞𝐧 𝐓𝐨𝐫𝐫𝐞𝐨𝐧 🌴🌊\nTe esperamos este Sábado 16 y Domingo 17 de Mayo del 2026 de 10 AM hasta las 8 PM, en Hotel Crowne Plaza Torreón 📍\nCarr. Torreón - Matamoros #4050, Centro, Exhacienda Antigua los Ángeles, C",
+              "tags": "Instagram · #fyp · 0 likes",
+              "source": {
+                "label": "Instagram #fyp",
+                "url": "https://www.instagram.com/p/DYCxnWQjxW6/"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "Remade my most viral dinner! A famiky staple in my house #dinner #viraldinner #viralpasta #pasta #cr",
+              "desc": "Remade my most viral dinner! A famiky staple in my house #dinner #viraldinner #viralpasta #pasta #creamcheese #pasta #mozzarella #dinnerrecipe #easydinner #easyrecipe #recipe #cooking #familydinner #familymeal",
+              "tags": "TikTok · #dinner · 11,900,000 views · @mealsandmunchies",
+              "source": {
+                "label": "TikTok #dinner",
+                "url": "https://www.tiktok.com/@mealsandmunchies/video/7285534538682436907"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "Spotters have dad reflexes X 100💪😎#usa#viral #fyp #gymnast #foryou",
+              "desc": "Spotters have dad reflexes X 100💪😎#usa#viral #fyp #gymnast #foryou",
+              "tags": "TikTok · #usa · 40,900,000 views · @furryframe3",
+              "source": {
+                "label": "TikTok #usa",
+                "url": "https://www.tiktok.com/@furryframe3/video/7623326974911565087"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "FEATURED ON FOX NEWS 🚀 #whatdoyoudoforaliving #fox #f #foxnews #foryoupage #educational #inspiration",
+              "desc": "FEATURED ON FOX NEWS 🚀 #whatdoyoudoforaliving #fox #f #foxnews #foryoupage #educational #inspirational #motivational #viral",
+              "tags": "TikTok · #whatdoyoudoforaliving · 62,700,000 views · @aaron.vankampen",
+              "source": {
+                "label": "TikTok #whatdoyoudoforaliving",
+                "url": "https://www.tiktok.com/@aaron.vankampen/video/6977090903731129606"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "TikTok came thruuuu for reall!! 😮‍💨😮‍💨#fy #fyp #greenscreen #viral #viraltiktok #money #tips #tipsan",
+              "desc": "TikTok came thruuuu for reall!! 😮‍💨😮‍💨#fy #fyp #greenscreen #viral #viraltiktok #money #tips #tipsandtricks #dontletthisflop #dontflop #dontdo",
+              "tags": "TikTok · #fy · 29,400,000 views · @lolurrrra",
+              "source": {
+                "label": "TikTok #fy",
+                "url": "https://www.tiktok.com/@lolurrrra/video/7407146104816487726"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "Japan’s most viral food is overrated… right? ",
+              "desc": "Japan’s most viral food is overrated… right? \n#japan #fyp #japanlife #japanesefood #foodjapan",
+              "tags": "TikTok · #japan · 3,000,000 views · @japaneat",
+              "source": {
+                "label": "TikTok #japan",
+                "url": "https://www.tiktok.com/@japaneat/video/7397027446870068523"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "Don’t walk at night by yourself in Mexico #fyp #juanmartha #mexico",
+              "desc": "Don’t walk at night by yourself in Mexico #fyp #juanmartha #mexico",
+              "tags": "TikTok · #fyp · 5,500,000 views · @e1_mejor_kevin",
+              "source": {
+                "label": "TikTok #fyp",
+                "url": "https://www.tiktok.com/@e1_mejor_kevin/video/7608806645346454814"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Escucha nuestra música #sammyandlesen #mexico🇲🇽",
+              "desc": "Escucha nuestra música #sammyandlesen #mexico🇲🇽",
+              "tags": "TikTok · #sammyandlesen · 223,000 views · @djlesen",
+              "source": {
+                "label": "TikTok #sammyandlesen",
+                "url": "https://www.tiktok.com/@djlesen/video/7590827545939954965"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "#creatorsearchinsights #greenscreen Justicia para Paola 🙌🏼 #ultimahora🚨 #paratipage #fypシ゚viral #not",
+              "desc": "#creatorsearchinsights #greenscreen Justicia para Paola 🙌🏼 #ultimahora🚨 #paratipage #fypシ゚viral #noticia #noticiasen1minuto #paratii #justicia #justiciaparapaola #paolabanuelos #justicia #mexicali #mexicalibajacalifornia #mexicanosenusa #fy",
+              "tags": "TikTok · #creatorsearchinsights · 3,900,000 views · @fbc72fw",
+              "source": {
+                "label": "TikTok #creatorsearchinsights",
+                "url": "https://www.tiktok.com/@fbc72fw/video/7595895657597095198"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "this trend is all over my fyp so it’s my turn now #foryoupage #viral #trending #fyp #dance",
+              "desc": "this trend is all over my fyp so it’s my turn now #foryoupage #viral #trending #fyp #dance",
+              "tags": "TikTok · #foryoupage · 44,200,000 views · @kimberlykimpena",
+              "source": {
+                "label": "TikTok #foryoupage",
+                "url": "https://www.tiktok.com/@kimberlykimpena/video/7547155919843642654"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "#fyp #foryoupage #blowthisup",
+              "desc": "#fyp #foryoupage #blowthisup",
+              "tags": "TikTok · #fyp · 32,900,000 views · @piperrockelle",
+              "source": {
+                "label": "TikTok #fyp",
+                "url": "https://www.tiktok.com/@piperrockelle/video/7528539175499435278"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "I’m rlly glad she gained some more confidence she’s doing great!! 💕 #pinkpantheress #fyp #userwhydoy",
+              "desc": "I’m rlly glad she gained some more confidence she’s doing great!! 💕 #pinkpantheress #fyp #userwhydoyoucarelol #foryoupage #xybca @😘🙈☺️",
+              "tags": "TikTok · #pinkpantheress · 30,000,000 views · @userwhydoyoucarelol",
+              "source": {
+                "label": "TikTok #pinkpantheress",
+                "url": "https://www.tiktok.com/@userwhydoyoucarelol/video/7595999609634213150"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "#ColorCustomizer  Comment styles you wanna see me do...❤️ #hair #hairstyle #gel #gelstyle #slick #sl",
+              "desc": "#ColorCustomizer  Comment styles you wanna see me do...❤️ #hair #hairstyle #gel #gelstyle #slick #slickhair #tutorial #edges #fyp #foryou 💚💚💚💚💚💚",
+              "tags": "TikTok · #colorcustomizer · 29,000,000 views · @brittanymarieo5",
+              "source": {
+                "label": "TikTok #colorcustomizer",
+                "url": "https://www.tiktok.com/@brittanymarieo5/video/6920704086283242757"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "where have you been - @Rihanna (violin cover) #fyp #violin #cover #viral #musician",
+              "desc": "where have you been - @Rihanna (violin cover) #fyp #violin #cover #viral #musician",
+              "tags": "TikTok · #fyp · 33,800,000 views · @andrewzviolin",
+              "source": {
+                "label": "TikTok #fyp",
+                "url": "https://www.tiktok.com/@andrewzviolin/video/7567107451737181470"
+              }
+            }
+          ]
         }
       }
     },
     "gestacion": {
       "title": "En gestación · Early signals",
-      "subtitle": "Aún no explotaron en IG/TikTok pero hay movimiento en Reddit, X y nichos — anticiparse",
+      "subtitle": "Contenido emergente con menos plays/likes pero ganando tracción — anticiparse",
       "countries": {
         "ar": {
           "name": "Argentina",
-          "items": []
+          "items": [
+            {
+              "state": "emerging",
+              "title": "Argentine authorities say a Dutch couple, who later died, may have caught the virus during a birdwat",
+              "desc": "Argentine authorities say a Dutch couple, who later died, may have caught the virus during a birdwatching trip near Ushuaia argentina, where they visited a landfill and were potentially exposed to infected rodents before boarding the ship.\n",
+              "tags": "TikTok · #fyp · 4,687 views · @metrouk",
+              "source": {
+                "label": "TikTok #fyp",
+                "url": "https://www.tiktok.com/@metrouk/video/7637174477767396630"
+              }
+            },
+            {
+              "state": "emerging",
+              "title": "#greenscreen Argentina where the Hantavirus originates is coming to America to play in the FIFA Worl",
+              "desc": "#greenscreen Argentina where the Hantavirus originates is coming to America to play in the FIFA World Cup nothing is a coincidence.\n#hantavirus #argentina #worldcup #america",
+              "tags": "TikTok · #greenscreen · 13,300 views · @themikeyandme",
+              "source": {
+                "label": "TikTok #greenscreen",
+                "url": "https://www.tiktok.com/@themikeyandme/video/7636861543824510238"
+              }
+            },
+            {
+              "state": "emerging",
+              "title": "no más miran #paratii #fypシ゚ #foryoupage #fyyyyyyyyyyyyyyyy #fypage",
+              "desc": "no más miran #paratii #fypシ゚ #foryoupage #fyyyyyyyyyyyyyyyy #fypage",
+              "tags": "TikTok · #paratii · 34,000 views · @majo._garibay",
+              "source": {
+                "label": "TikTok #paratii",
+                "url": "https://www.tiktok.com/@majo._garibay/video/7636260018144169236"
+              }
+            },
+            {
+              "state": "emerging",
+              "title": "#fypシ゚ #paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii #borrador #tiktok #trend",
+              "desc": "#fypシ゚ #paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii #borrador #tiktok #trend",
+              "tags": "TikTok · #fypシ゚ · 41,500 views · @giint0nicc",
+              "source": {
+                "label": "TikTok #fypシ゚",
+                "url": "https://www.tiktok.com/@giint0nicc/video/7635774780221721877"
+              }
+            },
+            {
+              "state": "emerging",
+              "title": "#paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii #masviral #hermosacancion💕",
+              "desc": "#paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii #masviral #hermosacancion💕",
+              "tags": "TikTok · #paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii · 84,900 views · @luciana33_47",
+              "source": {
+                "label": "TikTok #paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii",
+                "url": "https://www.tiktok.com/@luciana33_47/video/7627517676868455698"
+              }
+            }
+          ]
         },
         "mx": {
           "name": "México",
-          "items": []
+          "items": [
+            {
+              "state": "emerging",
+              "title": "⚠️| Regidora de Morena confronta a Ayuso en Aguascalientes",
+              "desc": "⚠️| Regidora de Morena confronta a Ayuso en Aguascalientes\n\nLa regidora de Morena, Martha Márquez, subió al escenario del Teatro Morelos 🚨 e interrumpió la entrega de llaves a Isabel Díaz Ayuso en Aguascalientes.\n\nCon una pancarta contra el",
+              "tags": "TikTok · #fyp · 22,300 views · @comunme",
+              "source": {
+                "label": "TikTok #fyp",
+                "url": "https://www.tiktok.com/@comunme/video/7636886263781428501"
+              }
+            },
+            {
+              "state": "emerging",
+              "title": "MEXICO! 🍹🌊☀️ #cancun #girlstrip #mexico #tequilla",
+              "desc": "MEXICO! 🍹🌊☀️ #cancun #girlstrip #mexico #tequilla",
+              "tags": "TikTok · #cancun · 10,600 views · @annalisa_1717",
+              "source": {
+                "label": "TikTok #cancun",
+                "url": "https://www.tiktok.com/@annalisa_1717/video/7618789048441736478"
+              }
+            },
+            {
+              "state": "emerging",
+              "title": "#paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii #parati #bailes",
+              "desc": "#paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii #parati #bailes",
+              "tags": "TikTok · #paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii · 3,093 views · @leidysita_1",
+              "source": {
+                "label": "TikTok #paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii",
+                "url": "https://www.tiktok.com/@leidysita_1/video/7637170762054667541"
+              }
+            },
+            {
+              "state": "emerging",
+              "title": "💘💘💘#videoviral #parati #fypシ゚ #lindaa💗🎀",
+              "desc": "💘💘💘#videoviral #parati #fypシ゚ #lindaa💗🎀",
+              "tags": "TikTok · #videoviral · 289 views · @nash.laa_x",
+              "source": {
+                "label": "TikTok #videoviral",
+                "url": "https://www.tiktok.com/@nash.laa_x/video/7637160413297184020"
+              }
+            },
+            {
+              "state": "emerging",
+              "title": "Superameeee🤣",
+              "desc": "Superameeee🤣\n\n#paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii#fyppppppppppppppppppppppp#viralditiktok#parati#fypシ゚viralシ",
+              "tags": "TikTok · #paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii · 10,600 views · @soy_oliii",
+              "source": {
+                "label": "TikTok #paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii",
+                "url": "https://www.tiktok.com/@soy_oliii/video/7637164621345934613"
+              }
+            },
+            {
+              "state": "emerging",
+              "title": "Nuevo baile 😂 #viral #elderek #parati",
+              "desc": "Nuevo baile 😂 #viral #elderek #parati",
+              "tags": "TikTok · #viral · 8,992 views · @elderek",
+              "source": {
+                "label": "TikTok #viral",
+                "url": "https://www.tiktok.com/@elderek/video/7637152145212476694"
+              }
+            },
+            {
+              "state": "emerging",
+              "title": "#conmuchoamor❤️❤️ #parati",
+              "desc": "#conmuchoamor❤️❤️ #parati",
+              "tags": "TikTok · #conmuchoamor❤️❤️ · 1,236 views · @soydonamari",
+              "source": {
+                "label": "TikTok #conmuchoamor❤️❤️",
+                "url": "https://www.tiktok.com/@soydonamari/video/7637173680501443870"
+              }
+            }
+          ]
         }
       }
     },
@@ -107,6 +1011,46 @@
       "items": [
         {
           "platform": "Social",
+          "title": "OpenAI Aggressively Expands Ads Pilot to More Countries",
+          "desc": "Just two days after OpenAI launched its self-service ads platform in the U.S., the ChatGPT maker said it will expand its ads pilot to the UK, Japan, South Korea, Brazil, and Mexico markets in the coming weeks.",
+          "when": "Hoy",
+          "source": {
+            "label": "Adweek Social",
+            "url": "https://www.adweek.com/media/openai-aggressively-expands-ads-pilot-to-more-countries/"
+          }
+        },
+        {
+          "platform": "Social",
+          "title": "Permutive Recruits Former IPG Mediabrands CEO to Board in Buy-Side Push",
+          "desc": "Eileen Kiernan will help the sell-side tech provider ramp up business with advertisers  and agencies",
+          "when": "Hoy",
+          "source": {
+            "label": "Adweek Social",
+            "url": "https://www.adweek.com/performance-marketing/permutive-recruits-former-ipg-mediabrands-ceo-to-board-in-buy-side-push/"
+          }
+        },
+        {
+          "platform": "Social",
+          "title": "Amazon Bets AI Can Rewrite the Upfront Playbook in a Fragmented TV Market",
+          "desc": "Alan Moss previews Amazon's upfront pitch, including live sports sponsorships, agentic shopping, and 'reinventing' its partnerships.",
+          "when": "Hoy",
+          "source": {
+            "label": "Adweek Social",
+            "url": "https://www.adweek.com/convergent-tv/amazon-tv-upfront-ai-and-data/"
+          }
+        },
+        {
+          "platform": "Social",
+          "title": "Timothée Chalamet Builds His Dream Soccer Team in Adidas&#8217; World Cup Short",
+          "desc": "The 5-minute spot kicks off the shoe brand's Tier-1 sponsorship of the tournament",
+          "when": "Hoy",
+          "source": {
+            "label": "Adweek Social",
+            "url": "https://www.adweek.com/brand-marketing/timothee-chalamet-builds-his-dream-soccer-team-in-adidas-world-cup-short/"
+          }
+        },
+        {
+          "platform": "Social",
           "title": "Vox Media Welcomes a Bidding War",
           "desc": "James Murdoch is the latest suitor to eye the empire. What does that mean for the rest of the portfolio?",
           "when": "Hoy",
@@ -119,7 +1063,7 @@
           "platform": "Social",
           "title": "CNN Founder Ted Turner Dies at 87",
           "desc": "Turner pioneered the 24-hour news network, fundamentally changing the news industry.",
-          "when": "Hoy",
+          "when": "Hace 1d",
           "source": {
             "label": "Adweek Social",
             "url": "https://www.adweek.com/tvnewser/cnn-founder-ted-turner-dies-at-87/"
@@ -129,7 +1073,7 @@
           "platform": "Social",
           "title": "New Disney CEO Reveals the AI Enhancements Coming to Disney+",
           "desc": "In his first earnings call, CEO Josh D'Amaro calls Disney+ the 'digital centerpiece' of the company.",
-          "when": "Hoy",
+          "when": "Hace 1d",
           "source": {
             "label": "Adweek Social",
             "url": "https://www.adweek.com/convergent-tv/disney-ceo-reveals-improvements-and-ai-coming-to-disney/"
@@ -139,50 +1083,10 @@
           "platform": "Social",
           "title": "Advertisers Spent $1 Billion on Criteo in Q1, Up 8% Year-Over-Year",
           "desc": "Still, Criteo's growth numbers remain plagued by two major client losses.",
-          "when": "Hoy",
+          "when": "Hace 1d",
           "source": {
             "label": "Adweek Social",
             "url": "https://www.adweek.com/commerce/advertisers-spent-1-billion-on-criteo-in-q1-up-8-year-over-year/"
-          }
-        },
-        {
-          "platform": "Social",
-          "title": "Old Navy Appoints Michael Francis as Chief Customer Officer Amid Turnaround",
-          "desc": "Gap Inc. has brought on veteran brand executive Michael Francis as chief customer officer of Old Navy and head of marketing shared services for the group.",
-          "when": "Hoy",
-          "source": {
-            "label": "Adweek Social",
-            "url": "https://www.adweek.com/brand-marketing/old-navy-appoints-michael-francis-as-chief-customer-officer-amid-turnaround/"
-          }
-        },
-        {
-          "platform": "Social",
-          "title": "Ziff Davis Buys Four Brands From Recurrent Ventures, Launches a Lifestyle Group",
-          "desc": "The company acquired Dwell, Domino, Business of Home, and PopSci, extending a multiyear roll-up as competitors pull back from the open web.",
-          "when": "Hoy",
-          "source": {
-            "label": "Adweek Social",
-            "url": "https://www.adweek.com/media/ziff-davis-recurrent-ventures-dwell-domino-business-home-popsci/"
-          }
-        },
-        {
-          "platform": "Social",
-          "title": "The Real WPP Story Is in the Margin, Not the Revenue",
-          "desc": "When WPP posted its first-quarter numbers last week, one line did all the talking.",
-          "when": "Hoy",
-          "source": {
-            "label": "Adweek Social",
-            "url": "https://www.adweek.com/agencies/the-real-wpp-story-is-in-the-margin-not-the-revenue/"
-          }
-        },
-        {
-          "platform": "Social",
-          "title": "AB InBev Wins Cannes Lions Creative Marketer of the Year for a Historic Third Time",
-          "desc": "Cannes Lions has named AB InBev as its 2026 Creative Marketer of the Year.",
-          "when": "Hoy",
-          "source": {
-            "label": "Adweek Social",
-            "url": "https://www.adweek.com/creativity/ab-inbev-wins-cannes-lions-creative-marketer-of-the-year-for-a-historic-third-time/"
           }
         }
       ]
