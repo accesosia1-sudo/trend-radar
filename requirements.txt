@@ -1,4 +1,4 @@
 requests>=2.31.0
 feedparser>=6.0.10
-pytrends>=4.9.2
+apify-client>=1.7.0
 google-api-python-client>=2.100.0
