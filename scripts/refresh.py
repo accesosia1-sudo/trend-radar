@@ -1,100 +1,176 @@
 #!/usr/bin/env python3
 """
-Trend Radar — Fetcher principal (v1.1).
+Trend Radar — Fetcher principal (v2.0).
 Corre cada lunes 9 AM UTC desde GitHub Actions.
-Junta data de Reddit, RSS, YouTube, Google Trends y arma trends.json.
- 
-Cada fuente está aislada en su propia función con try/except —
-si una falla, las demás siguen funcionando.
- 
-Cambios v1.1: Reddit ahora usa old.reddit.com con UA de navegador,
-Google Trends usa RSS oficial en vez de pytrends, RSS cutoff extendido
-a 30 días.
+Junta data de Apify (Instagram + TikTok), RSS y arma trends.json.
+
+Cambios v2.0: Apify integrado para Instagram y TikTok (las dos
+plataformas que importan), Reddit + Google Trends descartados
+porque no funcionan estables sin OAuth.
+
+Cada fuente está aislada en try/except — si una falla, las demás
+siguen.
 """
- 
+
 import json
 import os
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
- 
+
 # ============================================================
 # CONFIG
 # ============================================================
- 
+
 OUTPUT_PATH = Path(__file__).resolve().parent.parent / "trends.json"
 NOW = datetime.now(timezone.utc)
- 
-# User-Agent que simula un navegador real — evita que Reddit/Google bloqueen
+
 BROWSER_UA = (
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 )
- 
- 
+
+# Hashtags a trackear por país. SON AMPLIOS A PROPÓSITO — capturan
+# lo que está rompiendo culturalmente, no temas específicos.
+# Editá las listas si querés enfocar a un cliente o vertical particular.
+IG_HASHTAGS_AR = ["fyp", "viral", "parati", "trending", "argentina"]
+IG_HASHTAGS_MX = ["fyp", "viral", "parati", "trending", "mexico"]
+TT_HASHTAGS_AR = ["fyp", "parati", "viral", "argentina"]
+TT_HASHTAGS_MX = ["fyp", "parati", "viral", "mexico"]
+
+
 # ============================================================
-# FUENTE 1: REDDIT (vía old.reddit.com)
+# FUENTE 1: INSTAGRAM (vía Apify)
 # ============================================================
- 
-def fetch_reddit(subreddit: str, country_code: str, limit: int = 8) -> list[dict]:
+
+def fetch_apify_instagram(hashtags: list[str], country_code: str) -> list[dict]:
     """
-    Trae top posts de un subreddit. Usa old.reddit.com con UA de navegador
-    porque la API normal de Reddit bloquea a los bots desde GitHub Actions.
+    Scrape posts top de Instagram por hashtag usando Apify.
+    Actor usado: apify/instagram-hashtag-scraper (~USD 0.50 / 1000 posts).
+    Limitamos a 5 posts por hashtag para mantener costo bajo.
     """
-    import requests
- 
-    url = f"https://old.reddit.com/r/{subreddit}/top.json?t=week&limit={limit}"
-    headers = {"User-Agent": BROWSER_UA}
- 
-    try:
-        r = requests.get(url, headers=headers, timeout=15)
-        r.raise_for_status()
-        posts = r.json().get("data", {}).get("children", [])
-    except Exception as e:
-        print(f"[reddit/{subreddit}] FALLO: {e}", file=sys.stderr)
+    apify_token = os.environ.get("APIFY_API_TOKEN")
+    if not apify_token:
+        print("[apify-ig] Sin APIFY_API_TOKEN, salteo módulo", file=sys.stderr)
         return []
- 
+
+    try:
+        from apify_client import ApifyClient
+        client = ApifyClient(token=apify_token)
+        run = client.actor("apify/instagram-hashtag-scraper").call(run_input={
+            "hashtags": hashtags,
+            "resultsLimit": 5,
+        })
+        items_raw = list(client.dataset(run["defaultDatasetId"]).iterate_items())
+    except Exception as e:
+        print(f"[apify-ig/{country_code}] FALLO: {e}", file=sys.stderr)
+        return []
+
     items = []
-    for p in posts:
-        d = p["data"]
-        score = d.get("score", 0)
-        state = "rising" if score > 1000 else "emerging"
- 
+    for it in items_raw:
+        caption = (it.get("caption") or "").strip()
+        likes = it.get("likesCount", 0)
+        comments = it.get("commentsCount", 0)
+
+        # Heuristica de estado: muchos likes = hot, sino rising
+        state = "hot" if likes > 10000 else "rising"
+
+        # Title: primera línea del caption o fallback
+        title_line = caption.split("\n")[0][:100] if caption else "Post viral en Instagram"
+
+        # Hashtag usado para este post (intentamos extraer del caption o usamos primero del input)
+        hashtag = it.get("hashtag") or (hashtags[0] if hashtags else "")
+
         items.append({
             "state": state,
-            "title": d["title"][:120],
-            "desc": (d.get("selftext") or d.get("link_flair_text") or "")[:240] or
-                    f"Conversación con {d.get('num_comments', 0)} comentarios y {score} ups.",
-            "tags": f"Reddit · r/{subreddit}",
+            "title": title_line,
+            "desc": (caption[:240] if caption else
+                     f"Post de Instagram con {likes} likes y {comments} comentarios."),
+            "tags": f"Instagram · #{hashtag} · {likes:,} likes",
             "source": {
-                "label": f"Reddit r/{subreddit}",
-                "url": f"https://reddit.com{d['permalink']}"
+                "label": f"Instagram #{hashtag}",
+                "url": it.get("url") or f"https://instagram.com/explore/tags/{hashtag}/"
             }
         })
     return items
- 
- 
+
+
 # ============================================================
-# FUENTE 2: RSS (Social Media Today, Marketing Brew, Adweek)
+# FUENTE 2: TIKTOK (vía Apify)
 # ============================================================
- 
+
+def fetch_apify_tiktok(hashtags: list[str], country_code: str) -> list[dict]:
+    """
+    Scrape videos top de TikTok por hashtag usando Apify.
+    Actor: clockworks/tiktok-scraper.
+    Limitamos a 5 videos por hashtag.
+    """
+    apify_token = os.environ.get("APIFY_API_TOKEN")
+    if not apify_token:
+        return []
+
+    try:
+        from apify_client import ApifyClient
+        client = ApifyClient(token=apify_token)
+        run = client.actor("clockworks/tiktok-scraper").call(run_input={
+            "hashtags": hashtags,
+            "resultsPerPage": 5,
+            "shouldDownloadVideos": False,
+            "shouldDownloadCovers": False,
+            "shouldDownloadSubtitles": False,
+        })
+        items_raw = list(client.dataset(run["defaultDatasetId"]).iterate_items())
+    except Exception as e:
+        print(f"[apify-tt/{country_code}] FALLO: {e}", file=sys.stderr)
+        return []
+
+    items = []
+    for it in items_raw:
+        text = (it.get("text") or "").strip()
+        plays = it.get("playCount", 0)
+        likes = it.get("diggCount", 0)
+        author = (it.get("authorMeta") or {}).get("name", "")
+
+        # Heuristica de estado
+        if plays > 1_000_000:    state = "hot"
+        elif plays > 100_000:    state = "rising"
+        else:                    state = "emerging"
+
+        title_line = text.split("\n")[0][:100] if text else "Video trending en TikTok"
+        hashtag_used = (it.get("hashtags") or [{}])[0].get("name", "") if it.get("hashtags") else ""
+        if not hashtag_used and hashtags:
+            hashtag_used = hashtags[0]
+
+        items.append({
+            "state": state,
+            "title": title_line,
+            "desc": (text[:240] if text else
+                     f"Video con {plays:,} reproducciones y {likes:,} likes."),
+            "tags": f"TikTok · #{hashtag_used} · {plays:,} views" + (f" · @{author}" if author else ""),
+            "source": {
+                "label": f"TikTok #{hashtag_used}",
+                "url": it.get("webVideoUrl") or f"https://tiktok.com/tag/{hashtag_used}"
+            }
+        })
+    return items
+
+
+# ============================================================
+# FUENTE 3: RSS (Updates de plataformas)
+# ============================================================
+
 RSS_FEEDS = [
     ("Social Media Today", "https://www.socialmediatoday.com/rss.xml"),
     ("Marketing Brew",     "https://www.marketingbrew.com/feed"),
     ("Search Engine Land", "https://searchengineland.com/feed"),
     ("Adweek Social",      "https://www.adweek.com/category/social-media/feed/"),
 ]
- 
+
 def fetch_rss_updates() -> list[dict]:
-    """
-    Trae updates de plataformas desde RSS feeds curados.
-    Filtro extendido a 30 días para no perdernos lo importante.
-    """
     import feedparser
- 
     items = []
     cutoff = NOW - timedelta(days=30)
- 
+
     for source_name, url in RSS_FEEDS:
         try:
             feed = feedparser.parse(url, agent=BROWSER_UA)
@@ -108,12 +184,12 @@ def fetch_rss_updates() -> list[dict]:
                     when = f"Hace {days_ago}d" if days_ago > 0 else "Hoy"
                 else:
                     when = "Reciente"
- 
+
                 title = entry.get("title", "")[:120]
                 summary = entry.get("summary", "")[:240]
                 import re
                 summary = re.sub(r"<[^>]+>", "", summary).strip()
- 
+
                 items.append({
                     "platform": detect_platform(title + " " + summary),
                     "title": title,
@@ -123,11 +199,10 @@ def fetch_rss_updates() -> list[dict]:
                 })
         except Exception as e:
             print(f"[rss/{source_name}] FALLO: {e}", file=sys.stderr)
- 
-    # Ordenar por más recientes primero (los que tengan "Hoy" / "Hace 1d" arriba)
+
     return items[:12]
- 
- 
+
+
 def detect_platform(text: str) -> str:
     t = text.lower()
     if "instagram" in t or "reels" in t or " ig " in t: return "Instagram"
@@ -137,148 +212,30 @@ def detect_platform(text: str) -> str:
     if "twitter" in t or " x " in t.lower() or "x.com" in t: return "X"
     if "facebook" in t or " fb " in t: return "Facebook"
     return "Social"
- 
- 
-# ============================================================
-# FUENTE 3: YOUTUBE TRENDING (oficial, requiere API KEY)
-# ============================================================
- 
-def fetch_youtube_trending(country_code: str, limit: int = 8) -> list[dict]:
-    api_key = os.environ.get("YOUTUBE_API_KEY")
-    if not api_key:
-        print("[youtube] Sin YOUTUBE_API_KEY, salteo módulo", file=sys.stderr)
-        return []
- 
-    try:
-        from googleapiclient.discovery import build
-        yt = build("youtube", "v3", developerKey=api_key)
-        resp = yt.videos().list(
-            part="snippet,statistics",
-            chart="mostPopular",
-            regionCode=country_code,
-            maxResults=limit
-        ).execute()
-    except Exception as e:
-        print(f"[youtube/{country_code}] FALLO: {e}", file=sys.stderr)
-        return []
- 
-    items = []
-    for v in resp.get("items", []):
-        snip = v["snippet"]
-        stats = v.get("statistics", {})
-        views = int(stats.get("viewCount", 0))
- 
-        if views > 1_000_000:   state = "hot"
-        elif views > 100_000:    state = "rising"
-        else:                    state = "emerging"
- 
-        items.append({
-            "state": state,
-            "title": snip["title"][:120],
-            "desc": (snip.get("description") or "")[:240],
-            "tags": f"YouTube · {snip.get('channelTitle', '')}",
-            "source": {
-                "label": "YouTube Trending " + country_code,
-                "url": f"https://youtube.com/watch?v={v['id']}"
-            }
-        })
-    return items
- 
- 
-# ============================================================
-# FUENTE 4: GOOGLE TRENDS (vía RSS oficial)
-# ============================================================
- 
-def fetch_google_trends(country_code: str, limit: int = 8) -> list[dict]:
-    """
-    Usa el RSS oficial de Google Trends en lugar de pytrends.
-    Más estable y oficial.
-    """
-    import feedparser
- 
-    geo = country_code.upper()
-    url = f"https://trends.google.com/trends/trendingsearches/daily/rss?geo={geo}"
- 
-    try:
-        feed = feedparser.parse(url, agent=BROWSER_UA)
-        if not feed.entries:
-            print(f"[google_trends/{country_code}] Sin entries en RSS", file=sys.stderr)
-            return []
-    except Exception as e:
-        print(f"[google_trends/{country_code}] FALLO: {e}", file=sys.stderr)
-        return []
- 
-    items = []
-    for entry in feed.entries[:limit]:
-        title = entry.get("title", "")[:120]
-        # Google Trends RSS incluye news items en la descripción a veces
-        desc = entry.get("ht_news_item_title", "") or entry.get("summary", "")
-        import re
-        desc = re.sub(r"<[^>]+>", "", desc).strip()[:240]
-        if not desc:
-            desc = f"Búsqueda trending en Google {country_code}."
- 
-        # Approx traffic puede venir como ht_approx_traffic
-        traffic = entry.get("ht_approx_traffic", "")
- 
-        items.append({
-            "state": "rising",
-            "title": title,
-            "desc": desc + (f" — {traffic} búsquedas" if traffic else ""),
-            "tags": "Google Trends · Búsqueda",
-            "source": {
-                "label": f"Google Trends {country_code}",
-                "url": entry.get("link") or f"https://trends.google.com/trends/explore?geo={country_code}&q={title.replace(' ', '%20')}"
-            }
-        })
-    return items
- 
- 
-# ============================================================
-# FUENTE 5: TIKTOK CREATIVE CENTER (STUB)
-# ============================================================
- 
-def fetch_tiktok_creative_center(country_code: str) -> list[dict]:
-    """
-    STUB. Requiere Apify u otro scraper. Implementar en v2.
-    """
-    apify_token = os.environ.get("APIFY_API_TOKEN")
-    if not apify_token:
-        return []
-    return []
- 
- 
-# ============================================================
-# FUENTE 6: PINTEREST TRENDS (STUB)
-# ============================================================
- 
-def fetch_pinterest_trends(country_code: str) -> list[dict]:
-    """STUB. Pinterest no tiene API pública para trends."""
-    return []
- 
- 
+
+
 # ============================================================
 # CALENDARIO CULTURAL (HARDCODED — editar aquí)
 # ============================================================
- 
+
 CALENDAR_AR = [
     {"day": 25, "month": "May", "title": "Día de la Patria",       "note": "Locro, mate, identidad. Marcas patrióticas activan.", "priority": False, "iso": "2026-05-25"},
     {"day": 11, "month": "Jun", "title": "Inicio Mundial 2026",    "note": "Argentina debuta. Pico de contenido nostálgico y activación.", "priority": True,  "iso": "2026-06-11"},
     {"day": 17, "month": "Jun", "title": "Día del Padre",          "note": "Coincide con Mundial — aprovechar el cruce.", "priority": False, "iso": "2026-06-17"},
     {"day": 9,  "month": "Jul", "title": "Día de la Independencia","note": "Posible final del Mundial. Mega-momento si Argentina llega.", "priority": False, "iso": "2026-07-09"},
 ]
- 
+
 CALENDAR_MX = [
     {"day": 10, "month": "May", "title": "Día de las Madres MX",        "note": "Activaciones tardías aún a tiempo.", "priority": False, "iso": "2026-05-10"},
     {"day": 15, "month": "May", "title": "Día del Maestro MX",          "note": "Conversación grande en redes mexicanas.", "priority": False, "iso": "2026-05-15"},
     {"day": 11, "month": "Jun", "title": "Inicio Mundial 2026 — sede MX","note": "Apertura en CDMX. Oportunidad gigante hotelería y travel.", "priority": True,  "iso": "2026-06-11"},
     {"day": 16, "month": "Sep", "title": "Independencia de México",     "note": "El gran momento patriótico. Prep desde julio.", "priority": False, "iso": "2026-09-16"},
 ]
- 
+
 def build_calendar() -> dict:
     today = NOW.date()
     cutoff = today + timedelta(days=120)
- 
+
     def filter_upcoming(events):
         out = []
         for e in events:
@@ -289,17 +246,17 @@ def build_calendar() -> dict:
             except Exception:
                 pass
         return out
- 
+
     return {
         "ar": {"name": "Argentina", "items": filter_upcoming(CALENDAR_AR)},
         "mx": {"name": "México",    "items": filter_upcoming(CALENDAR_MX)},
     }
- 
- 
+
+
 # ============================================================
 # CLASIFICADOR
 # ============================================================
- 
+
 def classify(items: list[dict]) -> tuple[list[dict], list[dict]]:
     eb, ge = [], []
     for it in items:
@@ -308,41 +265,37 @@ def classify(items: list[dict]) -> tuple[list[dict], list[dict]]:
         else:
             ge.append(it)
     return eb, ge
- 
- 
+
+
 # ============================================================
 # MAIN
 # ============================================================
- 
+
 def main():
-    print(f"[{NOW.isoformat()}] Refresh arrancó")
- 
+    print(f"[{NOW.isoformat()}] Refresh arrancó (v2.0 con Apify)")
+
+    # AR — Instagram + TikTok vía Apify
     ar_all = []
-    ar_all += fetch_reddit("argentina", "AR")
-    ar_all += fetch_youtube_trending("AR")
-    ar_all += fetch_google_trends("AR")
-    ar_all += fetch_tiktok_creative_center("AR")
-    ar_all += fetch_pinterest_trends("AR")
- 
+    ar_all += fetch_apify_instagram(IG_HASHTAGS_AR, "AR")
+    ar_all += fetch_apify_tiktok(TT_HASHTAGS_AR, "AR")
+
+    # MX
     mx_all = []
-    mx_all += fetch_reddit("mexico", "MX")
-    mx_all += fetch_youtube_trending("MX")
-    mx_all += fetch_google_trends("MX")
-    mx_all += fetch_tiktok_creative_center("MX")
-    mx_all += fetch_pinterest_trends("MX")
- 
+    mx_all += fetch_apify_instagram(IG_HASHTAGS_MX, "MX")
+    mx_all += fetch_apify_tiktok(TT_HASHTAGS_MX, "MX")
+
     ar_eb, ar_ge = classify(ar_all)
     mx_eb, mx_ge = classify(mx_all)
- 
+
     updates = fetch_rss_updates()
     calendar = build_calendar()
- 
+
     output = {
         "updatedAt": NOW.isoformat(),
         "panels": {
             "ebullicion": {
                 "title": "En ebullición esta semana",
-                "subtitle": "Trends que ya están explotando — momento de subirse antes del pico",
+                "subtitle": "Posts y videos top de Instagram y TikTok — momento de subirse antes del pico",
                 "countries": {
                     "ar": {"name": "Argentina", "items": ar_eb},
                     "mx": {"name": "México",    "items": mx_eb},
@@ -350,7 +303,7 @@ def main():
             },
             "gestacion": {
                 "title": "En gestación · Early signals",
-                "subtitle": "Aún no explotaron en IG/TikTok pero hay movimiento en Reddit, X y nichos — anticiparse",
+                "subtitle": "Contenido emergente con menos plays/likes pero ganando tracción — anticiparse",
                 "countries": {
                     "ar": {"name": "Argentina", "items": ar_ge},
                     "mx": {"name": "México",    "items": mx_ge},
@@ -368,16 +321,16 @@ def main():
             }
         }
     }
- 
+
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
- 
+
     print(f"[{NOW.isoformat()}] OK — escrito {OUTPUT_PATH}")
     print(f"  AR ebullición: {len(ar_eb)} | AR gestación: {len(ar_ge)}")
     print(f"  MX ebullición: {len(mx_eb)} | MX gestación: {len(mx_ge)}")
     print(f"  Updates: {len(updates)}")
- 
- 
+
+
 if __name__ == "__main__":
     main()
