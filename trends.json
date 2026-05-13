@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-13T17:28:35.684785+00:00",
+  "updatedAt": "2026-05-13T17:33:33.750836+00:00",
   "panels": {
     "ebullicion": {
       "title": "En ebullicion esta semana",
@@ -7,7 +7,78 @@
       "countries": {
         "ar": {
           "name": "Curado por el equipo",
-          "items": []
+          "items": [
+            {
+              "state": "hot",
+              "title": "Link compartido en #ideas-trends-reels-tiktoks",
+              "desc": "Compartido por Melina sin comentario adicional.",
+              "tags": "Instagram - Compartido por Melina - Hoy",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/reel/DX9xLWhOOdT/?igsh=MWp2MWx3ZW51Z2wwdQ=="
+              }
+            },
+            {
+              "state": "hot",
+              "title": "Más ideas de trend dé generaciones:",
+              "desc": "Más ideas de trend dé generaciones:",
+              "tags": "Instagram - Compartido por Martu - Hace 5d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/p/DYDKoSZCSuy/?img_index=1&amp;igsh=NDdtNWM5dm1sZnBs"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "capaz haya que escribirle a el",
+              "desc": "capaz haya que escribirle a el",
+              "tags": "Instagram - Compartido por Pili Gomez - Hace 5d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/patriciocrom/"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "Ya llegaron a Olga los perros estos que habíamos hablado de mandarles canje en marzo (pd los amo)",
+              "desc": "Ya llegaron a Olga los perros estos que habíamos hablado de mandarles canje en marzo (pd los amo)",
+              "tags": "TikTok - Compartido por Sol - Hace 5d",
+              "source": {
+                "label": "TikTok (via Slack)",
+                "url": "https://vt.tiktok.com/ZS9tR5mrx/"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "Link compartido en #ideas-trends-reels-tiktoks",
+              "desc": "Compartido por Vani sin comentario adicional.",
+              "tags": "Instagram - Compartido por Vani - Hace 5d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/p/DYCrmZxkRG5/?igsh=a2F2cW00bXZ3MDR5"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "vuelve Valentina",
+              "desc": "vuelve Valentina",
+              "tags": "Instagram - Compartido por Vani - Hace 5d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/p/DX9ORmeunM0/?igsh=ajlzM25mc2cxZnk4"
+              }
+            },
+            {
+              "state": "hot",
+              "title": "Hoy me cruce un par de posts con diccionarios de palabras que usan los adolescentes de hoy, el mejor",
+              "desc": "Hoy me cruce un par de posts con diccionarios de palabras que usan los adolescentes de hoy, el mejor es este por obvias razones :",
+              "tags": "Instagram - Compartido por Jessi - Hace 5d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/p/DYDGOWGDap-/?hl=es&amp;img_index=1"
+              }
+            }
+          ]
         },
         "mx": {
           "name": "Tambien revisar",
@@ -21,7 +92,318 @@
       "countries": {
         "ar": {
           "name": "Curado por el equipo",
-          "items": []
+          "items": [
+            {
+              "state": "rising",
+              "title": "vi estooo",
+              "desc": "vi estooo",
+              "tags": "Instagram - Compartido por Pili Gomez - Hace 8d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/p/DX6aSWCjIdH/?igsh=MXU1dzFoeHNjd2pm"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Link compartido en #ideas-trends-reels-tiktoks",
+              "desc": "Compartido por Vani sin comentario adicional.",
+              "tags": "Instagram - Compartido por Vani - Hace 8d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/p/DX6n2RJDEea/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Ejemplo de contenido de influencer, que usa su estilo y juega con el personaje",
+              "desc": "Ejemplo de contenido de influencer, que usa su estilo y juega con el personaje",
+              "tags": "Instagram - Compartido por Marisol - Hace 8d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/reel/DX245J0tFG1/?igsh=MTR3YXI1YnRrNHFvbg=="
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Estoy viendo mucho esto. Va para 20DEDOS?",
+              "desc": "Estoy viendo mucho esto. Va para 20DEDOS?",
+              "tags": "Instagram - Compartido por Luu - Hace 9d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/p/DX1MynwDLBz/?igsh=MWV6Y2dlbDAwZzBmcw=="
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Link compartido en #ideas-trends-reels-tiktoks",
+              "desc": "Compartido por Luu sin comentario adicional.",
+              "tags": "Instagram - Compartido por Luu - Hace 12d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/p/DXpseIBDP7p/?igsh=dzNrcWI1NjRwNGhi"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "mis prefes: Feliz findee jaja",
+              "desc": "mis prefes: Feliz findee jaja",
+              "tags": "TikTok - Compartido por Guada - Hace 12d",
+              "source": {
+                "label": "TikTok (via Slack)",
+                "url": "https://www.tiktok.com/@lulumelontv/video/7614364582382963981"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "La nueva tendencia de TT",
+              "desc": "La nueva tendencia de TT",
+              "tags": "TikTok - Compartido por Vani - Hace 12d",
+              "source": {
+                "label": "TikTok (via Slack)",
+                "url": "https://www.tiktok.com/@pibblefluencer/video/7618456245791509773?_r=1&amp;_t=ZS-95ykOfaXlPp"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Link compartido en #ideas-trends-reels-tiktoks",
+              "desc": "Compartido por Pili Gomez sin comentario adicional.",
+              "tags": "Instagram - Compartido por Pili Gomez - Hace 14d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/reel/DXrxss1EUUy/?igsh=YmtzZXozaTk2ZmF1"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Publicidad de Turismo Mendoza del mundial:",
+              "desc": "Publicidad de Turismo Mendoza del mundial:",
+              "tags": "Instagram - Compartido por Marisol - Hace 15d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/p/DXpApPJAE8A/?igsh=ZnR2dHowbmh4YzNx"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Holii! Es de ayer, me olvidé de compartirlo: Es de una materia de mi facu jajaj re loco que ahora us",
+              "desc": "Holii! Es de ayer, me olvidé de compartirlo: Es de una materia de mi facu jajaj re loco que ahora usen de ejemplo algo que se hizo en mi agencia Felicitaciones al equipo",
+              "tags": "Instagram - Compartido por Marisol - Hace 15d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/p/DXo96tGjnKg/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Link compartido en #ideas-trends-reels-tiktoks",
+              "desc": "Compartido por Melina sin comentario adicional.",
+              "tags": "Instagram - Compartido por Melina - Hace 15d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/reel/DXp8zGOEcNj/?igsh=MXVmZnh1N2FvcDk4Nw=="
+              }
+            },
+            {
+              "state": "rising",
+              "title": "ubican esta refe tipo teaser reality? para el tik tok de 20DEDOS? me lo imagino gestionando influenc",
+              "desc": "ubican esta refe tipo teaser reality? para el tik tok de 20DEDOS? me lo imagino gestionando influencers o haciendo un trend en real time (exagerando todo, no?)",
+              "tags": "Instagram - Compartido por Toto - Hace 16d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/reel/DXc9elqgWSF/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "minuto 28, se ve que si le llegó el mensaje de mi amiga pero ahora se hace la difícil",
+              "desc": "minuto 28, se ve que si le llegó el mensaje de mi amiga pero ahora se hace la difícil",
+              "tags": "YouTube - Compartido por Melina - Hace 16d",
+              "source": {
+                "label": "YouTube (via Slack)",
+                "url": "https://youtu.be/tQawtxu3hb8?si=vjoQm256tAwZpGpM"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Link compartido en #ideas-trends-reels-tiktoks",
+              "desc": "Compartido por Sol sin comentario adicional.",
+              "tags": "TikTok - Compartido por Sol - Hace 18d",
+              "source": {
+                "label": "TikTok (via Slack)",
+                "url": "https://vt.tiktok.com/ZS96rfoS5/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Link compartido en #ideas-trends-reels-tiktoks",
+              "desc": "Compartido por Sol sin comentario adicional.",
+              "tags": "Instagram - Compartido por Sol - Hace 18d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/p/DXSmlvJDjob/?igsh=MXJrZmp5eXVocXNzaw=="
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Link compartido en #ideas-trends-reels-tiktoks",
+              "desc": "Compartido por Luu sin comentario adicional.",
+              "tags": "Instagram - Compartido por Luu - Hace 18d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/p/DXe4KkLm8i9/?igsh=bTBxZ3doMTFqZnA1"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Buenas! Me cruce y me pareció que esta bueno porque el gancho es una explicación super básica de por",
+              "desc": "Buenas! Me cruce y me pareció que esta bueno porque el gancho es una explicación super básica de porqué vemos la espuma blanca cuando en realidad no tiene color. Viendo los comentarios parece que varias personas se engancharon por lo mismo",
+              "tags": "TikTok - Compartido por Jessi - Hace 20d",
+              "source": {
+                "label": "TikTok (via Slack)",
+                "url": "https://vt.tiktok.com/ZS98W2WrT/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Link compartido en #ideas-trends-reels-tiktoks",
+              "desc": "Compartido por Ger sin comentario adicional.",
+              "tags": "Instagram - Compartido por Ger - Hace 21d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/reel/DXKDnfCkQ8K/?igsh=bmNpNm9laHg5dHpo"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "cancion trendy seria genial hacerlo con kuki y sofi en cafe martinez",
+              "desc": "cancion trendy seria genial hacerlo con kuki y sofi en cafe martinez",
+              "tags": "TikTok - Compartido por Pili Gomez - Hace 25d",
+              "source": {
+                "label": "TikTok (via Slack)",
+                "url": "https://www.tiktok.com/music/Dracula-JENNIE-Remix-7603221525400455169"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "También vi a esta chica es increíble como subió los seguidores en unos meses, también conecta mucho ",
+              "desc": "También vi a esta chica es increíble como subió los seguidores en unos meses, también conecta mucho desde lo emocional, sube el progreso de su venta de café en la calle",
+              "tags": "Instagram - Compartido por Marisol - Hace 25d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/soffiiiiaa_/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "yo estoy obse con ella dale muñeca bati cantina",
+              "desc": "yo estoy obse con ella dale muñeca bati cantina",
+              "tags": "TikTok - Compartido por Pili Gomez - Hace 25d",
+              "source": {
+                "label": "TikTok (via Slack)",
+                "url": "https://www.tiktok.com/@fiamanicol?lang=es-419"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Holiiii, cómo andan? Miren - totalmente tomada por Claude- hice un link donde se unificaron absoluta",
+              "desc": "Holiiii, cómo andan? Miren - totalmente tomada por Claude- hice un link donde se unificaron absolutamente TODOS los links que pasamos por acá hasta hoy. Sería como nuestro propio banco de refes. Entran y tienen todo separado por influencers, humor, campañas. Si les gusta, me comp",
+              "tags": "Web - Compartido por Joli - Hace 25d",
+              "source": {
+                "label": "Web (via Slack)",
+                "url": "https://claude.ai/public/artifacts/cbba02fe-7fe4-46d4-94ae-8ce29b6fccd3"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "para alguna historia cute",
+              "desc": "para alguna historia cute",
+              "tags": "Instagram - Compartido por Melina - Hace 25d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/p/DXPWVqIjb7I/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
+              }
+            },
+            {
+              "state": "rising",
+              "title": "con palito a mostaza",
+              "desc": "con palito a mostaza",
+              "tags": "Instagram - Compartido por Vani - Hace 25d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/p/DXPEHssiGAK/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Link compartido en #ideas-trends-reels-tiktoks",
+              "desc": "Compartido por Guada sin comentario adicional.",
+              "tags": "TikTok - Compartido por Guada - Hace 26d",
+              "source": {
+                "label": "TikTok (via Slack)",
+                "url": "https://vt.tiktok.com/ZSH7n2M4y/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Link compartido en #ideas-trends-reels-tiktoks",
+              "desc": "Compartido por Melina sin comentario adicional.",
+              "tags": "TikTok - Compartido por Melina - Hace 26d",
+              "source": {
+                "label": "TikTok (via Slack)",
+                "url": "https://vt.tiktok.com/ZSH7kRjX4/"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Link compartido en #ideas-trends-reels-tiktoks",
+              "desc": "Compartido por Melina sin comentario adicional.",
+              "tags": "Instagram - Compartido por Melina - Hace 27d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/p/DWl9xl5jUlr/?igsh=eHA4bmNycHpyamNq"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "esto lo veo mucho últimanente",
+              "desc": "esto lo veo mucho últimanente",
+              "tags": "Instagram - Compartido por Joli - Hace 27d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/reel/DXEyVNtCGez/?igsh=MjM3eXlkdGw2bzZu"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "otra más de justin",
+              "desc": "otra más de justin",
+              "tags": "Instagram - Compartido por Melina - Hace 28d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/p/DXKBgwHDiSG/?igsh=MWlpemJhcThlYzl3NA=="
+              }
+            },
+            {
+              "state": "rising",
+              "title": "perdon, nikiiii! yo estoy subida a este romanssss JAJAJJ",
+              "desc": "perdon, nikiiii! yo estoy subida a este romanssss JAJAJJ",
+              "tags": "X - Compartido por Pili Gomez - Hace 28d",
+              "source": {
+                "label": "X (via Slack)",
+                "url": "https://x.com/paseclave__/status/2044206436951986177"
+              }
+            },
+            {
+              "state": "rising",
+              "title": "Link compartido en #ideas-trends-reels-tiktoks",
+              "desc": "Compartido por Melina sin comentario adicional.",
+              "tags": "Instagram - Compartido por Melina - Hace 28d",
+              "source": {
+                "label": "Instagram (via Slack)",
+                "url": "https://www.instagram.com/p/DXHuCCwlG4N/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
+              }
+            }
+          ]
         },
         "mx": {
           "name": "",
