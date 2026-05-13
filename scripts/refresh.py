@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Trend Radar - Fetcher v3.0 (Slack-driven).
+Trend Radar - Fetcher v3.1 (Slack + titulos reales).
 """
 
 import json
@@ -46,6 +46,78 @@ def detect_platform(url):
     if "twitter.com" in url or "x.com" in url: return "X"
     if "linkedin.com" in url: return "LinkedIn"
     return "Web"
+
+
+def fetch_oembed_title(url):
+    import requests
+    try:
+        if "tiktok.com" in url:
+            r = requests.get(
+                "https://www.tiktok.com/oembed",
+                params={"url": url},
+                timeout=8,
+                headers={"User-Agent": BROWSER_UA},
+            )
+        elif "youtube.com" in url or "youtu.be" in url:
+            r = requests.get(
+                "https://www.youtube.com/oembed",
+                params={"url": url, "format": "json"},
+                timeout=8,
+            )
+        else:
+            return None
+        if r.status_code != 200:
+            return None
+        d = r.json()
+        title = (d.get("title") or "").strip()
+        author = (d.get("author_name") or "").strip()
+        if not title:
+            return None
+        if author and author.lower() not in title.lower():
+            return ("{} — @{}".format(title, author))[:130]
+        return title[:130]
+    except Exception:
+        return None
+
+
+def fetch_og_title(url):
+    import requests
+    try:
+        r = requests.get(
+            url,
+            headers={"User-Agent": BROWSER_UA},
+            timeout=8,
+            allow_redirects=True,
+        )
+        if r.status_code != 200:
+            return None
+        m = re.search(
+            r'<meta\s+property=["\']og:title["\']\s+content=["\']([^"\']+)["\']',
+            r.text, re.IGNORECASE,
+        )
+        if not m:
+            m = re.search(
+                r'<meta\s+content=["\']([^"\']+)["\']\s+property=["\']og:title["\']',
+                r.text, re.IGNORECASE,
+            )
+        if m:
+            title = m.group(1).strip()
+            return title[:130] if title else None
+    except Exception:
+        pass
+    return None
+
+
+def get_link_title(url, fallback_text, author):
+    title = fetch_oembed_title(url)
+    if title:
+        return title
+    title = fetch_og_title(url)
+    if title:
+        return title
+    if fallback_text:
+        return fallback_text[:100]
+    return "Link compartido por {}".format(author)
 
 
 def fetch_slack_links(channel_id, days_back=30):
@@ -124,14 +196,17 @@ def fetch_slack_links(channel_id, days_back=30):
 
         for url in urls[:2]:
             platform = detect_platform(url)
-            title = context[:100] if context else "Link compartido en #ideas-trends-reels-tiktoks"
-            desc = context[:280] if context else "Compartido por " + author + " sin comentario adicional."
+            real_title = get_link_title(url, context, author)
+            if context and context.strip():
+                desc = "{} compartio: {}".format(author, context[:240])
+            else:
+                desc = "Compartido por {} sin comentario adicional.".format(author)
 
             item = {
                 "state": "hot" if ts >= recent_cutoff else "rising",
-                "title": title,
+                "title": real_title,
                 "desc": desc,
-                "tags": platform + " - Compartido por " + author + " - " + when,
+                "tags": "{} - Compartido por {} - {}".format(platform, author, when),
                 "source": {
                     "label": platform + " (via Slack)",
                     "url": url,
@@ -152,6 +227,17 @@ RSS_FEEDS = [
     ("Search Engine Land", "https://searchengineland.com/feed"),
     ("Adweek Social",      "https://www.adweek.com/category/social-media/feed/"),
 ]
+
+
+def detect_rss_platform(text):
+    t = text.lower()
+    if "instagram" in t or "reels" in t: return "Instagram"
+    if "tiktok" in t: return "TikTok"
+    if "youtube" in t or "shorts" in t: return "YouTube"
+    if "linkedin" in t: return "LinkedIn"
+    if "twitter" in t or "x.com" in t: return "X"
+    if "facebook" in t: return "Facebook"
+    return "Social"
 
 
 def fetch_rss_updates():
@@ -184,17 +270,6 @@ def fetch_rss_updates():
         except Exception as e:
             print("[rss/{}] FALLO: {}".format(source_name, e), file=sys.stderr)
     return items[:12]
-
-
-def detect_rss_platform(text):
-    t = text.lower()
-    if "instagram" in t or "reels" in t: return "Instagram"
-    if "tiktok" in t: return "TikTok"
-    if "youtube" in t or "shorts" in t: return "YouTube"
-    if "linkedin" in t: return "LinkedIn"
-    if "twitter" in t or "x.com" in t: return "X"
-    if "facebook" in t: return "Facebook"
-    return "Social"
 
 
 CALENDAR_AR = [
@@ -232,7 +307,7 @@ def build_calendar():
 
 
 def main():
-    print("[{}] Trend Radar v3.0 (Slack-driven)".format(NOW.isoformat()))
+    print("[{}] Trend Radar v3.1 (Slack + titulos reales)".format(NOW.isoformat()))
     recent, older = fetch_slack_links(SLACK_CHANNEL_ID, days_back=30)
     print("  Slack recientes (<7d): {}".format(len(recent)))
     print("  Slack mas viejos (7-30d): {}".format(len(older)))
@@ -246,18 +321,12 @@ def main():
             "ebullicion": {
                 "title": "En ebullicion esta semana",
                 "subtitle": "Links curados por el equipo en #ideas-trends-reels-tiktoks (ultimos 7 dias)",
-                "countries": {
-                    "ar": {"name": "Curado por el equipo", "items": recent},
-                    "mx": {"name": "Tambien revisar", "items": []},
-                },
+                "items": recent,
             },
             "gestacion": {
                 "title": "En gestacion - Compartido hace 1-4 semanas",
                 "subtitle": "Trends que el equipo flageo entre 7 y 30 dias atras",
-                "countries": {
-                    "ar": {"name": "Curado por el equipo", "items": older},
-                    "mx": {"name": "", "items": []},
-                },
+                "items": older,
             },
             "calendario": {
                 "title": "Calendario cultural - Proximos 120 dias",
