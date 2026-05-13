@@ -1,10 +1,8 @@
 name: Refresh trends
 
 on:
-  # Cada lunes 9:00 UTC (= 6 AM Argentina, 3 AM México)
   schedule:
     - cron: '0 9 * * 1'
-  # Permite correr manualmente desde la pestaña Actions
   workflow_dispatch:
 
 permissions:
@@ -31,6 +29,7 @@ jobs:
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
         run: python scripts/refresh.py
 
       - name: Commit & push if changed
@@ -44,4 +43,3 @@ jobs:
           else
             echo "No changes to trends.json"
           fi
-              
