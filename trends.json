@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-13T18:19:44.955578+00:00",
+  "updatedAt": "2026-05-13T18:43:42.227172+00:00",
   "panels": {
     "ebullicion": {
       "title": "En ebullicion esta semana",
@@ -263,7 +263,7 @@
         },
         {
           "state": "rising",
-          "title": "♬ Dracula-JENNIE-Remix - Tame Impala & JENNIE",
+          "title": "♬ Dracula-JENNIE-Remix - JENNIE & Tame Impala",
           "desc": "Pili Gomez compartio: cancion trendy seria genial hacerlo con kuki y sofi en cafe martinez",
           "tags": "TikTok - Compartido por Pili Gomez - Hace 25d",
           "source": {
@@ -305,7 +305,7 @@
           "state": "rising",
           "title": "para alguna historia cute",
           "desc": "Melina compartio: para alguna historia cute",
-          "tags": "Instagram - Compartido por Melina - Hace 25d",
+          "tags": "Instagram - Compartido por Melina - Hace 26d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DXPWVqIjb7I/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
@@ -459,16 +459,16 @@
     },
     "updates": {
       "title": "Updates de plataformas",
-      "subtitle": "Cambios recientes desde RSS feeds",
+      "subtitle": "Curados por el equipo en #equiporedes + complemento RSS",
       "items": [
         {
-          "platform": "Social",
-          "title": "MS NOW Reveals New Show Names Ahead of Debuts",
-          "desc": "The new weekday programs debut Monday, June 15.",
-          "when": "Hoy",
+          "platform": "Instagram",
+          "title": "** *El panorama:* • TikTok se saturó: +72% contenido de video, pero todas las métricas cayeron • Más",
+          "desc": "** *El panorama:* • TikTok se saturó: +72% contenido de video, pero todas las métricas cayeron • Más contenido = menos alcance por publicación • Cada pieza tiene que justificar su existencia *Para B2C (Nutentar, GP, CM, Equipo Pampa):* • Las emociones ganan, lo informativo aburre",
+          "when": "Hace 1d",
           "source": {
-            "label": "Adweek Social",
-            "url": "https://www.adweek.com/tvnewser/ms-now-reveals-new-show-names-ahead-of-debuts/"
+            "label": "Nicole · Slack",
+            "url": "https://metricool.com/wp-content/uploads/tiktok-study-2026-ES.pdf?ct=YTo1OntzOjY6InNvdXJjZSI7YToyOntpOjA7czo1OiJlbWFpbCI7aToxO2k6NDk0ODt9czo1OiJlbWFpbCI7aTo0OTQ4O3M6NDoic3RhdCI7czoyMjoiNmEwMzJhNzNkNDM2ODM2ODExMzE4MSI7czo0OiJsZWFkIjtzOjc6IjI1NTcxNjQiO3M6NzoiY2hhbm5lbCI7YToxOntzOjU6ImVtYWlsIjtpOjQ5NDg7fX0%3D"
           }
         },
         {
@@ -503,7 +503,7 @@
         },
         {
           "platform": "Social",
-          "title": "With Breeze Airways Partnership, Archer Roose Turns to Travel to Build Its Brand",
+          "title": "With Breeze Airlines Partnership, Archer Roose Turns to Travel to Build Its Brand",
           "desc": "Distribution deal with Breeze Airways marks a push into travel as a key marketing channel for the Elizabeth Banks-owned canned wine brand",
           "when": "Hoy",
           "source": {
@@ -529,16 +529,6 @@
           "source": {
             "label": "Adweek Social",
             "url": "https://www.adweek.com/convergent-tv/youtube-google-creators-upfront-2026-sean-downey/"
-          }
-        },
-        {
-          "platform": "Social",
-          "title": "Why Some Brands Chose Stagecoach Over Coachella This Year",
-          "desc": "Brands like T-Mobile and American Eagle tapped into the buzzy country music festival to reach a growing niche",
-          "when": "Hace 1d",
-          "source": {
-            "label": "Adweek Social",
-            "url": "https://www.adweek.com/creativity/why-some-brands-chose-stagecoach-over-coachella-this-year/"
           }
         }
       ]
