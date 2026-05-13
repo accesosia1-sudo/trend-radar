@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """
-Trend Radar - Fetcher principal (v2.3).
-Corre cada lunes 9 AM UTC desde GitHub Actions.
-Junta data de Apify (Instagram + TikTok), RSS y arma trends.json.
+Trend Radar - Fetcher v3.0 (Slack-driven).
 """
 
 import json
@@ -20,148 +18,132 @@ BROWSER_UA = (
     "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 )
 
-IG_HASHTAGS_AR = ["argentina", "buenosaires", "caba", "rosario", "cordobaargentina", "palermo"]
-IG_HASHTAGS_MX = ["mexico", "cdmx", "monterrey", "guadalajara", "mexicocity", "puebla"]
-TT_HASHTAGS_AR = ["argentina", "buenosaires", "rosario", "cordoba"]
-TT_HASHTAGS_MX = ["mexico", "cdmx", "monterrey", "guadalajara"]
-
-_SPANISH_CHARS = set(["n","a","e","i","o","u","u","N","A","E","I","O","U","U","?","!"])
-
-_SPANISH_WORDS = {
-    "que","para","con","una","uno","los","las","del","como","muy",
-    "esta","este","ese","eso","mas","pero","porque","todo","hay",
-    "soy","eres","es","son","ser","voy","vas","ir","yo","tu","te",
-    "le","lo","se","nos","mi","su","sin","por","en","al","de","la",
-    "el","no","si","argentina","argentino","mexico","mexicano",
-    "che","boludo","pibes","mate","asado","wey","chido","padre",
-    "neta","jajaja","feliz","hoy","vida","amor","gracias","hola",
-}
-
-_ENGLISH_WORDS = {
-    "the","and","for","you","with","this","that","have","from",
-    "your","they","what","their","would","could","about","these",
-    "those","really","because","people","happy","love","today",
-    "thanks","good","better","first","after","before","just",
-}
+SLACK_CHANNEL_ID = "C09MLB0D0PN"
 
 
-def is_spanish(text):
-    if not text:
-        return True
-    text_clean = text.strip()
-    if len(text_clean) < 10:
-        return True
-    if any(c in _SPANISH_CHARS for c in text_clean):
-        return True
-    words = re.findall(r"[a-z]+", text_clean.lower())
-    if not words:
-        return False
-    es_count = sum(1 for w in words if w in _SPANISH_WORDS)
-    en_count = sum(1 for w in words if w in _ENGLISH_WORDS)
-    if es_count >= 2:
-        return True
-    if en_count >= 3 and en_count > es_count:
-        return False
-    return True
+def extract_urls(text):
+    urls = []
+    for m in re.finditer(r'<(https?://[^|>]+)(?:\|[^>]*)?>', text):
+        urls.append(m.group(1))
+    if not urls:
+        urls = re.findall(r'https?://[^\s<>|]+', text)
+    return urls
 
 
-def fetch_apify_instagram(hashtags, country_code):
-    apify_token = os.environ.get("APIFY_API_TOKEN")
-    if not apify_token:
-        print("[apify-ig] Sin APIFY_API_TOKEN", file=sys.stderr)
-        return []
+def clean_text(text):
+    text = re.sub(r'<https?://[^>]+>', '', text)
+    text = re.sub(r'<@U\w+(?:\|[^>]+)?>', '', text)
+    text = re.sub(r'<#C\w+(?:\|[^>]+)?>', '', text)
+    text = re.sub(r':[a-z0-9_+-]+:', '', text)
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text
+
+
+def detect_platform(url):
+    if "instagram.com" in url: return "Instagram"
+    if "tiktok.com" in url: return "TikTok"
+    if "youtube.com" in url or "youtu.be" in url: return "YouTube"
+    if "twitter.com" in url or "x.com" in url: return "X"
+    if "linkedin.com" in url: return "LinkedIn"
+    return "Web"
+
+
+def fetch_slack_links(channel_id, days_back=30):
+    import requests
+    token = os.environ.get("SLACK_BOT_TOKEN")
+    if not token:
+        print("[slack] Sin SLACK_BOT_TOKEN", file=sys.stderr)
+        return [], []
+
+    oldest = (NOW - timedelta(days=days_back)).timestamp()
+    recent_cutoff = (NOW - timedelta(days=7)).timestamp()
+
     try:
-        from apify_client import ApifyClient
-        client = ApifyClient(token=apify_token)
-        run = client.actor("apify/instagram-hashtag-scraper").call(run_input={
-            "hashtags": hashtags,
-            "resultsLimit": 8,
-        })
-        items_raw = list(client.dataset(run["defaultDatasetId"]).iterate_items())
+        r = requests.get(
+            "https://slack.com/api/conversations.history",
+            headers={"Authorization": "Bearer " + token},
+            params={"channel": channel_id, "oldest": str(oldest), "limit": 200},
+            timeout=20,
+        )
+        data = r.json()
+        if not data.get("ok"):
+            print("[slack] API error: " + str(data.get("error")), file=sys.stderr)
+            return [], []
+        messages = data.get("messages", [])
     except Exception as e:
-        print("[apify-ig/{}] FALLO: {}".format(country_code, e), file=sys.stderr)
-        return []
-    items = []
-    skipped = 0
-    for it in items_raw:
-        caption = (it.get("caption") or "").strip()
-        if not is_spanish(caption):
-            skipped += 1
-            continue
-        likes = it.get("likesCount", 0)
-        comments = it.get("commentsCount", 0)
-        state = "hot" if likes > 10000 else "rising"
-        title_line = caption.split("\n")[0][:100] if caption else "Post viral en Instagram"
-        hashtag = it.get("hashtag") or (hashtags[0] if hashtags else "")
-        items.append({
-            "state": state,
-            "title": title_line,
-            "desc": caption[:240] if caption else "Post de Instagram con {} likes y {} comentarios.".format(likes, comments),
-            "tags": "Instagram - #{} - {:,} likes".format(hashtag, likes),
-            "source": {
-                "label": "Instagram #{}".format(hashtag),
-                "url": it.get("url") or "https://instagram.com/explore/tags/{}/".format(hashtag),
-            },
-        })
-    if skipped:
-        print("[apify-ig/{}] Filtrados por idioma: {}".format(country_code, skipped), file=sys.stderr)
-    return items
+        print("[slack] FALLO: " + str(e), file=sys.stderr)
+        return [], []
 
+    user_cache = {}
 
-def fetch_apify_tiktok(hashtags, country_code):
-    apify_token = os.environ.get("APIFY_API_TOKEN")
-    if not apify_token:
-        return []
-    try:
-        from apify_client import ApifyClient
-        client = ApifyClient(token=apify_token)
-        run = client.actor("clockworks/tiktok-scraper").call(run_input={
-            "hashtags": hashtags,
-            "resultsPerPage": 5,
-            "shouldDownloadVideos": False,
-            "shouldDownloadCovers": False,
-            "shouldDownloadSubtitles": False,
-            "proxyCountryCode": country_code,
-        })
-        items_raw = list(client.dataset(run["defaultDatasetId"]).iterate_items())
-    except Exception as e:
-        print("[apify-tt/{}] FALLO: {}".format(country_code, e), file=sys.stderr)
-        return []
-    items = []
-    skipped = 0
-    for it in items_raw:
-        text = (it.get("text") or "").strip()
-        if not is_spanish(text):
-            skipped += 1
+    def get_user_name(uid):
+        if not uid:
+            return "Equipo"
+        if uid in user_cache:
+            return user_cache[uid]
+        try:
+            r = requests.get(
+                "https://slack.com/api/users.info",
+                headers={"Authorization": "Bearer " + token},
+                params={"user": uid},
+                timeout=10,
+            )
+            d = r.json()
+            if d.get("ok"):
+                u = d["user"]
+                name = (u.get("profile", {}).get("display_name") or
+                        u.get("real_name") or
+                        u.get("name") or "Equipo")
+                user_cache[uid] = name
+                return name
+        except Exception:
+            pass
+        user_cache[uid] = "Equipo"
+        return "Equipo"
+
+    recent, older = [], []
+
+    for msg in messages:
+        if msg.get("subtype") in ("bot_message", "channel_join", "channel_leave"):
             continue
-        plays = it.get("playCount", 0)
-        likes = it.get("diggCount", 0)
-        author = (it.get("authorMeta") or {}).get("name", "")
-        if plays > 1000000:
-            state = "hot"
-        elif plays > 100000:
-            state = "rising"
-        else:
-            state = "emerging"
-        title_line = text.split("\n")[0][:100] if text else "Video trending en TikTok"
-        hashtag_used = ""
-        if it.get("hashtags"):
-            hashtag_used = (it["hashtags"][0] or {}).get("name", "")
-        if not hashtag_used and hashtags:
-            hashtag_used = hashtags[0]
-        items.append({
-            "state": state,
-            "title": title_line,
-            "desc": text[:240] if text else "Video con {:,} reproducciones y {:,} likes.".format(plays, likes),
-            "tags": "TikTok - #{} - {:,} views".format(hashtag_used, plays) + (" - @{}".format(author) if author else ""),
-            "source": {
-                "label": "TikTok #{}".format(hashtag_used),
-                "url": it.get("webVideoUrl") or "https://tiktok.com/tag/{}".format(hashtag_used),
-            },
-        })
-    if skipped:
-        print("[apify-tt/{}] Filtrados por idioma: {}".format(country_code, skipped), file=sys.stderr)
-    return items
+        text = msg.get("text", "") or ""
+        urls = extract_urls(text)
+        if not urls:
+            continue
+
+        ts = float(msg.get("ts", 0))
+        if ts == 0:
+            continue
+        msg_dt = datetime.fromtimestamp(ts, tz=timezone.utc)
+        days_ago = (NOW - msg_dt).days
+        when = "Hoy" if days_ago == 0 else "Hace {}d".format(days_ago)
+
+        user_id = msg.get("user", "")
+        author = get_user_name(user_id)
+        context = clean_text(text)
+
+        for url in urls[:2]:
+            platform = detect_platform(url)
+            title = context[:100] if context else "Link compartido en #ideas-trends-reels-tiktoks"
+            desc = context[:280] if context else "Compartido por " + author + " sin comentario adicional."
+
+            item = {
+                "state": "hot" if ts >= recent_cutoff else "rising",
+                "title": title,
+                "desc": desc,
+                "tags": platform + " - Compartido por " + author + " - " + when,
+                "source": {
+                    "label": platform + " (via Slack)",
+                    "url": url,
+                },
+            }
+
+            if ts >= recent_cutoff:
+                recent.append(item)
+            else:
+                older.append(item)
+
+    return recent, older
 
 
 RSS_FEEDS = [
@@ -170,23 +152,6 @@ RSS_FEEDS = [
     ("Search Engine Land", "https://searchengineland.com/feed"),
     ("Adweek Social",      "https://www.adweek.com/category/social-media/feed/"),
 ]
-
-
-def detect_platform(text):
-    t = text.lower()
-    if "instagram" in t or "reels" in t:
-        return "Instagram"
-    if "tiktok" in t:
-        return "TikTok"
-    if "youtube" in t or "shorts" in t:
-        return "YouTube"
-    if "linkedin" in t:
-        return "LinkedIn"
-    if "twitter" in t or "x.com" in t:
-        return "X"
-    if "facebook" in t:
-        return "Facebook"
-    return "Social"
 
 
 def fetch_rss_updates():
@@ -210,7 +175,7 @@ def fetch_rss_updates():
                 summary = entry.get("summary", "")[:240]
                 summary = re.sub(r"<[^>]+>", "", summary).strip()
                 items.append({
-                    "platform": detect_platform(title + " " + summary),
+                    "platform": detect_rss_platform(title + " " + summary),
                     "title": title,
                     "desc": summary,
                     "when": when,
@@ -221,9 +186,20 @@ def fetch_rss_updates():
     return items[:12]
 
 
+def detect_rss_platform(text):
+    t = text.lower()
+    if "instagram" in t or "reels" in t: return "Instagram"
+    if "tiktok" in t: return "TikTok"
+    if "youtube" in t or "shorts" in t: return "YouTube"
+    if "linkedin" in t: return "LinkedIn"
+    if "twitter" in t or "x.com" in t: return "X"
+    if "facebook" in t: return "Facebook"
+    return "Social"
+
+
 CALENDAR_AR = [
-    {"day": 25, "month": "May", "title": "Dia de la Patria", "note": "Locro, mate, identidad. Marcas patrioticas activan.", "priority": False, "iso": "2026-05-25"},
-    {"day": 11, "month": "Jun", "title": "Inicio Mundial 2026", "note": "Argentina debuta. Pico de contenido nostalgico.", "priority": True, "iso": "2026-06-11"},
+    {"day": 25, "month": "May", "title": "Dia de la Patria", "note": "Locro, mate, identidad.", "priority": False, "iso": "2026-05-25"},
+    {"day": 11, "month": "Jun", "title": "Inicio Mundial 2026", "note": "Argentina debuta.", "priority": True, "iso": "2026-06-11"},
     {"day": 17, "month": "Jun", "title": "Dia del Padre", "note": "Coincide con Mundial.", "priority": False, "iso": "2026-06-17"},
     {"day": 9,  "month": "Jul", "title": "Dia de la Independencia", "note": "Posible final del Mundial.", "priority": False, "iso": "2026-07-09"},
 ]
@@ -255,45 +231,32 @@ def build_calendar():
     }
 
 
-def classify(items):
-    eb, ge = [], []
-    for it in items:
-        if it.get("state") in ("hot", "rising", "peak"):
-            eb.append(it)
-        else:
-            ge.append(it)
-    return eb, ge
-
-
 def main():
-    print("[{}] Refresh arranco (v2.3)".format(NOW.isoformat()))
-    ar_all = []
-    ar_all += fetch_apify_instagram(IG_HASHTAGS_AR, "AR")
-    ar_all += fetch_apify_tiktok(TT_HASHTAGS_AR, "AR")
-    mx_all = []
-    mx_all += fetch_apify_instagram(IG_HASHTAGS_MX, "MX")
-    mx_all += fetch_apify_tiktok(TT_HASHTAGS_MX, "MX")
-    ar_eb, ar_ge = classify(ar_all)
-    mx_eb, mx_ge = classify(mx_all)
+    print("[{}] Trend Radar v3.0 (Slack-driven)".format(NOW.isoformat()))
+    recent, older = fetch_slack_links(SLACK_CHANNEL_ID, days_back=30)
+    print("  Slack recientes (<7d): {}".format(len(recent)))
+    print("  Slack mas viejos (7-30d): {}".format(len(older)))
+
     updates = fetch_rss_updates()
     calendar = build_calendar()
+
     output = {
         "updatedAt": NOW.isoformat(),
         "panels": {
             "ebullicion": {
                 "title": "En ebullicion esta semana",
-                "subtitle": "Posts y videos top de Instagram y TikTok en espanol",
+                "subtitle": "Links curados por el equipo en #ideas-trends-reels-tiktoks (ultimos 7 dias)",
                 "countries": {
-                    "ar": {"name": "Argentina", "items": ar_eb},
-                    "mx": {"name": "Mexico",    "items": mx_eb},
+                    "ar": {"name": "Curado por el equipo", "items": recent},
+                    "mx": {"name": "Tambien revisar", "items": []},
                 },
             },
             "gestacion": {
-                "title": "En gestacion - Early signals",
-                "subtitle": "Contenido emergente con menos engagement pero ganando traccion",
+                "title": "En gestacion - Compartido hace 1-4 semanas",
+                "subtitle": "Trends que el equipo flageo entre 7 y 30 dias atras",
                 "countries": {
-                    "ar": {"name": "Argentina", "items": ar_ge},
-                    "mx": {"name": "Mexico",    "items": mx_ge},
+                    "ar": {"name": "Curado por el equipo", "items": older},
+                    "mx": {"name": "", "items": []},
                 },
             },
             "calendario": {
@@ -303,18 +266,17 @@ def main():
             },
             "updates": {
                 "title": "Updates de plataformas",
-                "subtitle": "Cambios recientes",
+                "subtitle": "Cambios recientes desde RSS feeds",
                 "items": updates,
             },
         },
     }
+
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
+
     print("[{}] OK - escrito {}".format(NOW.isoformat(), OUTPUT_PATH))
-    print("  AR ebullicion: {} | AR gestacion: {}".format(len(ar_eb), len(ar_ge)))
-    print("  MX ebullicion: {} | MX gestacion: {}".format(len(mx_eb), len(mx_ge)))
-    print("  Updates: {}".format(len(updates)))
 
 
 if __name__ == "__main__":
