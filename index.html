@@ -75,6 +75,12 @@ header {
 .panel-head h2 { font-size: 22px; font-weight: 700; letter-spacing: -0.015em; margin-bottom: 4px; }
 .panel-head p { font-size: 13px; color: var(--text-faint); }
 
+.flat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 12px;
+}
+
 .country-split { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
 .country-header {
   display: flex; align-items: baseline; gap: 10px;
@@ -196,6 +202,7 @@ footer .build { font-size: 10.5px; color: var(--text-faint); margin-top: 4px; }
 @media (max-width: 768px) {
   body { padding: 20px 16px 32px; }
   .country-split { grid-template-columns: 1fr; gap: 36px; }
+  .flat-grid { grid-template-columns: 1fr; }
   .platform-row { grid-template-columns: 70px 1fr; }
   .platform-row .when { grid-column: 2; }
 }
@@ -231,15 +238,12 @@ footer .build { font-size: 10.5px; color: var(--text-faint); margin-top: 4px; }
     <span class="item"><span class="dot" style="background:var(--c-gestacion)"></span>Emergente — anticiparse</span>
     <span class="item"><span class="dot" style="background:#8B2A22"></span>En pico — riesgo de tarde</span>
   </div>
-  <div class="build">Trend Radar — 20 Dedos · v1.0</div>
+  <div class="build">Trend Radar — 20 Dedos · v1.1</div>
 </footer>
 
 </div>
 
 <script>
-// ============================================================
-// HELPERS
-// ============================================================
 function escapeHtml(s) {
   return String(s ?? '').replace(/[&<>"']/g, c => ({
     '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
@@ -256,15 +260,11 @@ function formatRelative(iso) {
   });
 }
 
-// ============================================================
-// RENDERERS
-// ============================================================
 function renderTrendCard(item) {
   const state = item.state || 'emerging';
   const stateLabels = { hot: 'Hot', rising: 'Subiendo', emerging: 'Emergente', peak: 'En pico' };
   const sourceUrl = item.source?.url || '#';
   const sourceLabel = item.source?.label || 'Sin fuente';
-
   return `
     <div class="trend-card">
       <span class="state ${state}"><span class="dot"></span>${stateLabels[state] || state}</span>
@@ -329,10 +329,25 @@ function renderCountryColumn(country, renderItem, emptyMsg = 'Sin contenido esta
 }
 
 function renderPanel(panelKey, panel, itemRenderer) {
+  // Ebullicion y gestacion: grilla unificada sin division por pais
+  if (panelKey === 'ebullicion' || panelKey === 'gestacion') {
+    const items = [];
+    if (panel.countries?.ar?.items) items.push(...panel.countries.ar.items);
+    if (panel.countries?.mx?.items) items.push(...panel.countries.mx.items);
+    if (panel.items) items.push(...panel.items);
+    return `
+      <div class="panel-head">
+        <h2>${escapeHtml(panel.title)}</h2>
+        <p>${escapeHtml(panel.subtitle)}</p>
+      </div>
+      <div class="flat-grid">
+        ${items.length ? items.map(itemRenderer).join('') : '<div class="empty-state">Sin contenido esta semana</div>'}
+      </div>
+    `;
+  }
+  // Calendario: mantiene division AR / MX
   const ar = panel.countries?.ar || { name: 'Argentina', items: [] };
   const mx = panel.countries?.mx || { name: 'México', items: [] };
-  const wrapClass = panelKey === 'updates' ? 'platform-list' : 'card-stack';
-
   return `
     <div class="panel-head">
       <h2>${escapeHtml(panel.title)}</h2>
@@ -346,32 +361,18 @@ function renderPanel(panelKey, panel, itemRenderer) {
 }
 
 function renderUpdatesPanel(panel) {
-  // Updates es flat por ahora (no separado AR/MX) — los mostramos en ambas columnas
   const items = panel.items || [];
-  const cols = ['Argentina', 'México'].map(name => `
-    <div class="country-col">
-      <div class="country-header">
-        <h3>${name}</h3>
-        <span class="count">${items.length} updates</span>
-      </div>
-      <div class="platform-list">
-        ${items.length ? items.map(renderPlatformRow).join('') : `<div class="empty-state">Sin updates esta semana</div>`}
-      </div>
-    </div>
-  `).join('');
-
   return `
     <div class="panel-head">
       <h2>${escapeHtml(panel.title)}</h2>
       <p>${escapeHtml(panel.subtitle)}</p>
     </div>
-    <div class="country-split">${cols}</div>
+    <div class="platform-list">
+      ${items.length ? items.map(renderPlatformRow).join('') : `<div class="empty-state">Sin updates esta semana</div>`}
+    </div>
   `;
 }
 
-// ============================================================
-// MAIN RENDER
-// ============================================================
 async function loadAndRender() {
   let data;
   try {
@@ -384,11 +385,9 @@ async function loadAndRender() {
     return;
   }
 
-  // Header meta
   const updated = formatRelative(data.updatedAt);
   document.getElementById('meta-line').innerHTML = `Última actualización <strong>${updated}</strong>`;
 
-  // Panels
   const panels = data.panels || {};
   const renderers = {
     ebullicion: () => renderPanel('ebullicion', panels.ebullicion, renderTrendCard),
@@ -404,9 +403,6 @@ async function loadAndRender() {
   }
 }
 
-// ============================================================
-// TAB SWITCHING
-// ============================================================
 const tabs = document.querySelectorAll('.tab-btn');
 const panels = document.querySelectorAll('.tab-panel');
 
@@ -427,7 +423,6 @@ try {
   }
 } catch(e) {}
 
-// Kick off
 loadAndRender();
 </script>
 </body>
