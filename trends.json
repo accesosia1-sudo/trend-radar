@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-13T18:43:42.227172+00:00",
+  "updatedAt": "2026-05-15T18:53:32.636770+00:00",
   "panels": {
     "ebullicion": {
       "title": "En ebullicion esta semana",
@@ -7,72 +7,102 @@
       "items": [
         {
           "state": "hot",
-          "title": "Link compartido por Melina",
-          "desc": "Compartido por Melina sin comentario adicional.",
-          "tags": "Instagram - Compartido por Melina - Hoy",
+          "title": "Link compartido por Vani",
+          "desc": "Compartido por Vani sin comentario adicional.",
+          "tags": "Instagram - Compartido por Vani - Hoy",
           "source": {
             "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/reel/DX9xLWhOOdT/?igsh=MWp2MWx3ZW51Z2wwdQ=="
+            "url": "https://www.instagram.com/p/DYTEmi8jW3E/?igsh=MXZubHhtMWFrbnZycw=="
           }
         },
         {
           "state": "hot",
-          "title": "Más ideas de trend dé generaciones:",
-          "desc": "Martu compartio: Más ideas de trend dé generaciones:",
-          "tags": "Instagram - Compartido por Martu - Hace 5d",
+          "title": "Ay Dios mio, que genios que son!!!!!!\n\nMcDonald&amp;#39;s Malaysia sacó este post con motivo del estreno de la película de Michael",
+          "desc": "Compartido por Guada sin comentario adicional.",
+          "tags": "LinkedIn - Compartido por Guada - Hace 1d",
           "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/DYDKoSZCSuy/?img_index=1&amp;igsh=NDdtNWM5dm1sZnBs"
+            "label": "LinkedIn (via Slack)",
+            "url": "https://www.linkedin.com/posts/isabelperezalcantara-marketing_ay-dios-mio-que-genios-que-son-mcdonalds-share-7459420130758873088-i3TI/?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACIRNUQBsVCvzpDFn8cP6yEn4c9h13aKxLs"
           }
         },
         {
           "state": "hot",
-          "title": "capaz haya que escribirle a el",
-          "desc": "Pili Gomez compartio: capaz haya que escribirle a el",
-          "tags": "Instagram - Compartido por Pili Gomez - Hace 5d",
+          "title": "Link compartido por Mar. S",
+          "desc": "Compartido por Mar. S sin comentario adicional.",
+          "tags": "Instagram - Compartido por Mar. S - Hace 1d",
           "source": {
             "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/patriciocrom/"
+            "url": "https://www.instagram.com/p/DX-cae9lh2a/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
           }
         },
         {
           "state": "hot",
-          "title": "Lo sacaron a pasear al pelado. @ta bueno che — @La Gambeta",
-          "desc": "Sol compartio: Ya llegaron a Olga los perros estos que habíamos hablado de mandarles canje en marzo (pd los amo)",
-          "tags": "TikTok - Compartido por Sol - Hace 5d",
+          "title": "Link compartido por Mar. S",
+          "desc": "Compartido por Mar. S sin comentario adicional.",
+          "tags": "Instagram - Compartido por Mar. S - Hace 1d",
           "source": {
-            "label": "TikTok (via Slack)",
-            "url": "https://vt.tiktok.com/ZS9tR5mrx/"
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/DXju9evjosf/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
+          }
+        },
+        {
+          "state": "hot",
+          "title": "Link compartido por Pili Gomez",
+          "desc": "Compartido por Pili Gomez sin comentario adicional.",
+          "tags": "Instagram - Compartido por Pili Gomez - Hace 1d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/reel/DYUstDWRQAf/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
           }
         },
         {
           "state": "hot",
           "title": "Link compartido por Vani",
           "desc": "Compartido por Vani sin comentario adicional.",
-          "tags": "Instagram - Compartido por Vani - Hace 5d",
+          "tags": "Instagram - Compartido por Vani - Hace 1d",
           "source": {
             "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/DYCrmZxkRG5/?igsh=a2F2cW00bXZ3MDR5"
+            "url": "https://www.instagram.com/reel/DYSZD1jR4ui/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
           }
         },
         {
           "state": "hot",
-          "title": "vuelve Valentina",
-          "desc": "Vani compartio: vuelve Valentina",
-          "tags": "Instagram - Compartido por Vani - Hace 5d",
+          "title": "Link compartido por Mar. S",
+          "desc": "Compartido por Mar. S sin comentario adicional.",
+          "tags": "Instagram - Compartido por Mar. S - Hace 1d",
           "source": {
             "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/DX9ORmeunM0/?igsh=ajlzM25mc2cxZnk4"
+            "url": "https://www.instagram.com/p/DYSyANFFD_L/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
           }
         },
         {
           "state": "hot",
-          "title": "Hoy me cruce un par de posts con diccionarios de palabras que usan los adolescentes de hoy, el mejor",
-          "desc": "Jessi compartio: Hoy me cruce un par de posts con diccionarios de palabras que usan los adolescentes de hoy, el mejor es este por obvias razones :",
-          "tags": "Instagram - Compartido por Jessi - Hace 5d",
+          "title": "carruseles con captions individuales",
+          "desc": "Pili Gomez compartio: carruseles con captions individuales",
+          "tags": "Instagram - Compartido por Pili Gomez - Hace 1d",
           "source": {
             "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/DYDGOWGDap-/?hl=es&amp;img_index=1"
+            "url": "https://www.instagram.com/p/DYSfygZDKBw/?img_index=1&amp;igsh=c2pmc3RpNWZheWVv"
+          }
+        },
+        {
+          "state": "hot",
+          "title": "Link compartido por Guada",
+          "desc": "Compartido por Guada sin comentario adicional.",
+          "tags": "Instagram - Compartido por Guada - Hace 1d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/reels/DYA0hHnNi3u/"
+          }
+        },
+        {
+          "state": "hot",
+          "title": "Link compartido por Melina",
+          "desc": "Compartido por Melina sin comentario adicional.",
+          "tags": "Instagram - Compartido por Melina - Hace 2d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/reel/DX9xLWhOOdT/?igsh=MWp2MWx3ZW51Z2wwdQ=="
           }
         }
       ]
@@ -83,9 +113,69 @@
       "items": [
         {
           "state": "rising",
+          "title": "Más ideas de trend dé generaciones:",
+          "desc": "Martu compartio: Más ideas de trend dé generaciones:",
+          "tags": "Instagram - Compartido por Martu - Hace 7d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/DYDKoSZCSuy/?img_index=1&amp;igsh=NDdtNWM5dm1sZnBs"
+          }
+        },
+        {
+          "state": "rising",
+          "title": "capaz haya que escribirle a el",
+          "desc": "Pili Gomez compartio: capaz haya que escribirle a el",
+          "tags": "Instagram - Compartido por Pili Gomez - Hace 7d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/patriciocrom/"
+          }
+        },
+        {
+          "state": "rising",
+          "title": "Lo sacaron a pasear al pelado. @ta bueno che — @La Gambeta",
+          "desc": "Sol compartio: Ya llegaron a Olga los perros estos que habíamos hablado de mandarles canje en marzo (pd los amo)",
+          "tags": "TikTok - Compartido por Sol - Hace 7d",
+          "source": {
+            "label": "TikTok (via Slack)",
+            "url": "https://vt.tiktok.com/ZS9tR5mrx/"
+          }
+        },
+        {
+          "state": "rising",
+          "title": "Link compartido por Vani",
+          "desc": "Compartido por Vani sin comentario adicional.",
+          "tags": "Instagram - Compartido por Vani - Hace 7d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/DYCrmZxkRG5/?igsh=a2F2cW00bXZ3MDR5"
+          }
+        },
+        {
+          "state": "rising",
+          "title": "vuelve Valentina",
+          "desc": "Vani compartio: vuelve Valentina",
+          "tags": "Instagram - Compartido por Vani - Hace 7d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/DX9ORmeunM0/?igsh=ajlzM25mc2cxZnk4"
+          }
+        },
+        {
+          "state": "rising",
+          "title": "Hoy me cruce un par de posts con diccionarios de palabras que usan los adolescentes de hoy, el mejor",
+          "desc": "Jessi compartio: Hoy me cruce un par de posts con diccionarios de palabras que usan los adolescentes de hoy, el mejor es este por obvias razones :",
+          "tags": "Instagram - Compartido por Jessi - Hace 7d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/DYDGOWGDap-/?hl=es&amp;img_index=1"
+          }
+        },
+        {
+          "state": "rising",
           "title": "vi estooo",
           "desc": "Pili Gomez compartio: vi estooo",
-          "tags": "Instagram - Compartido por Pili Gomez - Hace 8d",
+          "tags": "Instagram - Compartido por Pili Gomez - Hace 10d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DX6aSWCjIdH/?igsh=MXU1dzFoeHNjd2pm"
@@ -95,7 +185,7 @@
           "state": "rising",
           "title": "Link compartido por Vani",
           "desc": "Compartido por Vani sin comentario adicional.",
-          "tags": "Instagram - Compartido por Vani - Hace 9d",
+          "tags": "Instagram - Compartido por Vani - Hace 11d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DX6n2RJDEea/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
@@ -105,7 +195,7 @@
           "state": "rising",
           "title": "Ejemplo de contenido de influencer, que usa su estilo y juega con el personaje",
           "desc": "Marisol compartio: Ejemplo de contenido de influencer, que usa su estilo y juega con el personaje",
-          "tags": "Instagram - Compartido por Marisol - Hace 9d",
+          "tags": "Instagram - Compartido por Marisol - Hace 11d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/reel/DX245J0tFG1/?igsh=MTR3YXI1YnRrNHFvbg=="
@@ -115,7 +205,7 @@
           "state": "rising",
           "title": "Estoy viendo mucho esto. Va para 20DEDOS?",
           "desc": "Luu compartio: Estoy viendo mucho esto. Va para 20DEDOS?",
-          "tags": "Instagram - Compartido por Luu - Hace 9d",
+          "tags": "Instagram - Compartido por Luu - Hace 11d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DX1MynwDLBz/?igsh=MWV6Y2dlbDAwZzBmcw=="
@@ -125,7 +215,7 @@
           "state": "rising",
           "title": "Link compartido por Luu",
           "desc": "Compartido por Luu sin comentario adicional.",
-          "tags": "Instagram - Compartido por Luu - Hace 12d",
+          "tags": "Instagram - Compartido por Luu - Hace 14d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DXpseIBDP7p/?igsh=dzNrcWI1NjRwNGhi"
@@ -135,7 +225,7 @@
           "state": "rising",
           "title": "Strawberry Dance🍓 #aibaby #babydance #aidance #viraldance #babytiktok — @Lulu Melon",
           "desc": "Guada compartio: mis prefes: Feliz findee jaja",
-          "tags": "TikTok - Compartido por Guada - Hace 12d",
+          "tags": "TikTok - Compartido por Guada - Hace 14d",
           "source": {
             "label": "TikTok (via Slack)",
             "url": "https://www.tiktok.com/@lulumelontv/video/7614364582382963981"
@@ -145,7 +235,7 @@
           "state": "rising",
           "title": "PIBBLES READY FOR SUMMER!!! #pibble #washmybelly #frenchbulldog #summer26 — @pibblefluencer",
           "desc": "Vani compartio: La nueva tendencia de TT",
-          "tags": "TikTok - Compartido por Vani - Hace 12d",
+          "tags": "TikTok - Compartido por Vani - Hace 14d",
           "source": {
             "label": "TikTok (via Slack)",
             "url": "https://www.tiktok.com/@pibblefluencer/video/7618456245791509773?_r=1&amp;_t=ZS-95ykOfaXlPp"
@@ -155,7 +245,7 @@
           "state": "rising",
           "title": "Link compartido por Pili Gomez",
           "desc": "Compartido por Pili Gomez sin comentario adicional.",
-          "tags": "Instagram - Compartido por Pili Gomez - Hace 14d",
+          "tags": "Instagram - Compartido por Pili Gomez - Hace 16d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/reel/DXrxss1EUUy/?igsh=YmtzZXozaTk2ZmF1"
@@ -165,7 +255,7 @@
           "state": "rising",
           "title": "Publicidad de Turismo Mendoza del mundial:",
           "desc": "Marisol compartio: Publicidad de Turismo Mendoza del mundial:",
-          "tags": "Instagram - Compartido por Marisol - Hace 15d",
+          "tags": "Instagram - Compartido por Marisol - Hace 17d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DXpApPJAE8A/?igsh=ZnR2dHowbmh4YzNx"
@@ -175,7 +265,7 @@
           "state": "rising",
           "title": "Holii! Es de ayer, me olvidé de compartirlo: Es de una materia de mi facu jajaj re loco que ahora us",
           "desc": "Marisol compartio: Holii! Es de ayer, me olvidé de compartirlo: Es de una materia de mi facu jajaj re loco que ahora usen de ejemplo algo que se hizo en mi agencia Felicitaciones al equipo",
-          "tags": "Instagram - Compartido por Marisol - Hace 15d",
+          "tags": "Instagram - Compartido por Marisol - Hace 17d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DXo96tGjnKg/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
@@ -185,7 +275,7 @@
           "state": "rising",
           "title": "Link compartido por Melina",
           "desc": "Compartido por Melina sin comentario adicional.",
-          "tags": "Instagram - Compartido por Melina - Hace 15d",
+          "tags": "Instagram - Compartido por Melina - Hace 17d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/reel/DXp8zGOEcNj/?igsh=MXVmZnh1N2FvcDk4Nw=="
@@ -195,7 +285,7 @@
           "state": "rising",
           "title": "ubican esta refe tipo teaser reality? para el tik tok de 20DEDOS? me lo imagino gestionando influenc",
           "desc": "Toto compartio: ubican esta refe tipo teaser reality? para el tik tok de 20DEDOS? me lo imagino gestionando influencers o haciendo un trend en real time (exagerando todo, no?)",
-          "tags": "Instagram - Compartido por Toto - Hace 16d",
+          "tags": "Instagram - Compartido por Toto - Hace 18d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/reel/DXc9elqgWSF/"
@@ -205,7 +295,7 @@
           "state": "rising",
           "title": "ROMPI MI COCINA Y ME QUEDE SIN AGUA *vlog* — @Sofi Agnone",
           "desc": "Melina compartio: minuto 28, se ve que si le llegó el mensaje de mi amiga pero ahora se hace la difícil",
-          "tags": "YouTube - Compartido por Melina - Hace 16d",
+          "tags": "YouTube - Compartido por Melina - Hace 18d",
           "source": {
             "label": "YouTube (via Slack)",
             "url": "https://youtu.be/tQawtxu3hb8?si=vjoQm256tAwZpGpM"
@@ -215,7 +305,7 @@
           "state": "rising",
           "title": "batido proteico 👌 #vitaminc  #fernetbranca  #pepsi — @Jazz",
           "desc": "Compartido por Sol sin comentario adicional.",
-          "tags": "TikTok - Compartido por Sol - Hace 18d",
+          "tags": "TikTok - Compartido por Sol - Hace 20d",
           "source": {
             "label": "TikTok (via Slack)",
             "url": "https://vt.tiktok.com/ZS96rfoS5/"
@@ -225,7 +315,7 @@
           "state": "rising",
           "title": "Link compartido por Sol",
           "desc": "Compartido por Sol sin comentario adicional.",
-          "tags": "Instagram - Compartido por Sol - Hace 18d",
+          "tags": "Instagram - Compartido por Sol - Hace 20d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DXSmlvJDjob/?igsh=MXJrZmp5eXVocXNzaw=="
@@ -235,7 +325,7 @@
           "state": "rising",
           "title": "Link compartido por Luu",
           "desc": "Compartido por Luu sin comentario adicional.",
-          "tags": "Instagram - Compartido por Luu - Hace 18d",
+          "tags": "Instagram - Compartido por Luu - Hace 20d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DXe4KkLm8i9/?igsh=bTBxZ3doMTFqZnA1"
@@ -245,7 +335,7 @@
           "state": "rising",
           "title": "Buenas! Me cruce y me pareció que esta bueno porque el gancho es una explicación super básica de por",
           "desc": "Jessi compartio: Buenas! Me cruce y me pareció que esta bueno porque el gancho es una explicación super básica de porqué vemos la espuma blanca cuando en realidad no tiene color. Viendo los comentarios parece que varias personas se engancharon por lo mismo",
-          "tags": "TikTok - Compartido por Jessi - Hace 20d",
+          "tags": "TikTok - Compartido por Jessi - Hace 22d",
           "source": {
             "label": "TikTok (via Slack)",
             "url": "https://vt.tiktok.com/ZS98W2WrT/"
@@ -255,7 +345,7 @@
           "state": "rising",
           "title": "Link compartido por Ger",
           "desc": "Compartido por Ger sin comentario adicional.",
-          "tags": "Instagram - Compartido por Ger - Hace 21d",
+          "tags": "Instagram - Compartido por Ger - Hace 23d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/reel/DXKDnfCkQ8K/?igsh=bmNpNm9laHg5dHpo"
@@ -265,7 +355,7 @@
           "state": "rising",
           "title": "♬ Dracula-JENNIE-Remix - JENNIE & Tame Impala",
           "desc": "Pili Gomez compartio: cancion trendy seria genial hacerlo con kuki y sofi en cafe martinez",
-          "tags": "TikTok - Compartido por Pili Gomez - Hace 25d",
+          "tags": "TikTok - Compartido por Pili Gomez - Hace 27d",
           "source": {
             "label": "TikTok (via Slack)",
             "url": "https://www.tiktok.com/music/Dracula-JENNIE-Remix-7603221525400455169"
@@ -275,7 +365,7 @@
           "state": "rising",
           "title": "También vi a esta chica es increíble como subió los seguidores en unos meses, también conecta mucho ",
           "desc": "Marisol compartio: También vi a esta chica es increíble como subió los seguidores en unos meses, también conecta mucho desde lo emocional, sube el progreso de su venta de café en la calle",
-          "tags": "Instagram - Compartido por Marisol - Hace 25d",
+          "tags": "Instagram - Compartido por Marisol - Hace 27d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/soffiiiiaa_/"
@@ -285,7 +375,7 @@
           "state": "rising",
           "title": "FiamaNicol's Creator Profile",
           "desc": "Pili Gomez compartio: yo estoy obse con ella dale muñeca bati cantina",
-          "tags": "TikTok - Compartido por Pili Gomez - Hace 25d",
+          "tags": "TikTok - Compartido por Pili Gomez - Hace 27d",
           "source": {
             "label": "TikTok (via Slack)",
             "url": "https://www.tiktok.com/@fiamanicol?lang=es-419"
@@ -295,7 +385,7 @@
           "state": "rising",
           "title": "Banco de Referencias &amp; Trends — Social Media Ideas 2026",
           "desc": "Joli compartio: Holiiii, cómo andan? Miren - totalmente tomada por Claude- hice un link donde se unificaron absolutamente TODOS los links que pasamos por acá hasta hoy. Sería como nuestro propio banco de refes. Entran y tienen todo separado por influencers",
-          "tags": "Web - Compartido por Joli - Hace 25d",
+          "tags": "Web - Compartido por Joli - Hace 27d",
           "source": {
             "label": "Web (via Slack)",
             "url": "https://claude.ai/public/artifacts/cbba02fe-7fe4-46d4-94ae-8ce29b6fccd3"
@@ -305,7 +395,7 @@
           "state": "rising",
           "title": "para alguna historia cute",
           "desc": "Melina compartio: para alguna historia cute",
-          "tags": "Instagram - Compartido por Melina - Hace 26d",
+          "tags": "Instagram - Compartido por Melina - Hace 28d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DXPWVqIjb7I/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
@@ -315,7 +405,7 @@
           "state": "rising",
           "title": "con palito a mostaza",
           "desc": "Vani compartio: con palito a mostaza",
-          "tags": "Instagram - Compartido por Vani - Hace 26d",
+          "tags": "Instagram - Compartido por Vani - Hace 28d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DXPEHssiGAK/"
@@ -325,7 +415,7 @@
           "state": "rising",
           "title": "casi 4 años después, necesito revivir este hito en mi carrera. un contenido planificado pero no tanto que solo hizo sentido por el",
           "desc": "Compartido por Guada sin comentario adicional.",
-          "tags": "TikTok - Compartido por Guada - Hace 26d",
+          "tags": "TikTok - Compartido por Guada - Hace 28d",
           "source": {
             "label": "TikTok (via Slack)",
             "url": "https://vt.tiktok.com/ZSH7n2M4y/"
@@ -335,7 +425,7 @@
           "state": "rising",
           "title": "Una de esas ideas que los creativos proponemos y siempre nos bochan 😉   #VichyWellnessON @Vichy Laboratoires  #estrategiasdemarket",
           "desc": "Compartido por Melina sin comentario adicional.",
-          "tags": "TikTok - Compartido por Melina - Hace 27d",
+          "tags": "TikTok - Compartido por Melina - Hace 29d",
           "source": {
             "label": "TikTok (via Slack)",
             "url": "https://vt.tiktok.com/ZSH7kRjX4/"
@@ -345,7 +435,7 @@
           "state": "rising",
           "title": "Link compartido por Melina",
           "desc": "Compartido por Melina sin comentario adicional.",
-          "tags": "Instagram - Compartido por Melina - Hace 27d",
+          "tags": "Instagram - Compartido por Melina - Hace 29d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DWl9xl5jUlr/?igsh=eHA4bmNycHpyamNq"
@@ -355,40 +445,10 @@
           "state": "rising",
           "title": "esto lo veo mucho últimanente",
           "desc": "Joli compartio: esto lo veo mucho últimanente",
-          "tags": "Instagram - Compartido por Joli - Hace 27d",
+          "tags": "Instagram - Compartido por Joli - Hace 29d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/reel/DXEyVNtCGez/?igsh=MjM3eXlkdGw2bzZu"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "otra más de justin",
-          "desc": "Melina compartio: otra más de justin",
-          "tags": "Instagram - Compartido por Melina - Hace 28d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/DXKBgwHDiSG/?igsh=MWlpemJhcThlYzl3NA=="
-          }
-        },
-        {
-          "state": "rising",
-          "title": "perdon, nikiiii! yo estoy subida a este romanssss JAJAJJ",
-          "desc": "Pili Gomez compartio: perdon, nikiiii! yo estoy subida a este romanssss JAJAJJ",
-          "tags": "X - Compartido por Pili Gomez - Hace 28d",
-          "source": {
-            "label": "X (via Slack)",
-            "url": "https://x.com/paseclave__/status/2044206436951986177"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "Link compartido por Melina",
-          "desc": "Compartido por Melina sin comentario adicional.",
-          "tags": "Instagram - Compartido por Melina - Hace 28d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/DXHuCCwlG4N/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
           }
         }
       ]
@@ -465,7 +525,7 @@
           "platform": "Instagram",
           "title": "** *El panorama:* • TikTok se saturó: +72% contenido de video, pero todas las métricas cayeron • Más",
           "desc": "** *El panorama:* • TikTok se saturó: +72% contenido de video, pero todas las métricas cayeron • Más contenido = menos alcance por publicación • Cada pieza tiene que justificar su existencia *Para B2C (Nutentar, GP, CM, Equipo Pampa):* • Las emociones ganan, lo informativo aburre",
-          "when": "Hace 1d",
+          "when": "Hace 3d",
           "source": {
             "label": "Nicole · Slack",
             "url": "https://metricool.com/wp-content/uploads/tiktok-study-2026-ES.pdf?ct=YTo1OntzOjY6InNvdXJjZSI7YToyOntpOjA7czo1OiJlbWFpbCI7aToxO2k6NDk0ODt9czo1OiJlbWFpbCI7aTo0OTQ4O3M6NDoic3RhdCI7czoyMjoiNmEwMzJhNzNkNDM2ODM2ODExMzE4MSI7czo0OiJsZWFkIjtzOjc6IjI1NTcxNjQiO3M6NzoiY2hhbm5lbCI7YToxOntzOjU6ImVtYWlsIjtpOjQ5NDg7fX0%3D"
@@ -473,62 +533,62 @@
         },
         {
           "platform": "Social",
-          "title": "Ahead of Paramount Mega-Merger, WBD Bets on Agentic Ads",
-          "desc": "At its upfront presentation to advertisers, the entertainment behemoth showcased plans to enhance targeting and interactivity across media environments with AI",
+          "title": "Week of May 4 Cable News Ratings: CNN Only Network With Growth",
+          "desc": "Fox News finished ahead of ESPN in total viewers during primetime for the third straight week.",
           "when": "Hoy",
           "source": {
             "label": "Adweek Social",
-            "url": "https://www.adweek.com/convergent-tv/ahead-of-paramount-mega-merger-warner-bros-bets-on-agentic-ads-upfront/"
+            "url": "https://www.adweek.com/tvnewser/week-of-may-4-2026-cable-news-ratings/"
           }
         },
         {
           "platform": "Social",
-          "title": "Jeep Wrangler Marks 85 Years With Muscle From Captain America",
-          "desc": "The campaign coincides with both brands' 85th anniversaries and America's 250th birthday",
+          "title": "Ticker: CBS News&#8217; Charles Forelle Asserts Network&#8217;s Editorial Independence",
+          "desc": "And CNN reveals its 2026-27 CNN Originals programming slate.",
           "when": "Hoy",
           "source": {
             "label": "Adweek Social",
-            "url": "https://www.adweek.com/brand-marketing/jeep-wrangler-marks-85-years-with-muscle-from-captain-america/"
-          }
-        },
-        {
-          "platform": "TikTok",
-          "title": "TikTok Builds for the AI Future, Welcoming Third-Party Agents for Ads",
-          "desc": "TikTok is investing more aggressively in AI ads infrastructure—while entrenching its walled garden effect.",
-          "when": "Hoy",
-          "source": {
-            "label": "Adweek Social",
-            "url": "https://www.adweek.com/media/tiktok-builds-for-the-ai-future-welcoming-third-party-agents-for-ads/"
+            "url": "https://www.adweek.com/tvnewser/ticker-cbs-news-charles-forelle-asserts-networks-editorial-independence/"
           }
         },
         {
           "platform": "Social",
-          "title": "With Breeze Airlines Partnership, Archer Roose Turns to Travel to Build Its Brand",
-          "desc": "Distribution deal with Breeze Airways marks a push into travel as a key marketing channel for the Elizabeth Banks-owned canned wine brand",
+          "title": "One Quarter of North American Agencies Have Shifted to Fixed-Fee Pricing",
+          "desc": "A study from Forrester and Dentsu tracks how marketers and agencies are evolving their commercial models in the age of AI",
           "when": "Hoy",
           "source": {
             "label": "Adweek Social",
-            "url": "https://www.adweek.com/brand-marketing/with-breeze-airlines-partnership-archer-roose-turns-to-travel-to-build-its-brand/"
+            "url": "https://www.adweek.com/agencies/one-quarter-of-north-american-agencies-have-shifted-to-fixed-free-pricing/"
           }
         },
         {
           "platform": "Social",
-          "title": "Disney Makes Super Bowl and Live Events the MVP of Its Upfront Pitch",
-          "desc": "Disney had more than 100 celebrities, but live events and the Big Game were the true stars of its upfront.",
-          "when": "Hace 1d",
+          "title": "Week of May 4 Morning News Ratings: Today Extends Lead",
+          "desc": "CBS Mornings finished the week with gains in both categories.",
+          "when": "Hoy",
           "source": {
             "label": "Adweek Social",
-            "url": "https://www.adweek.com/convergent-tv/disney-makes-super-bowl-and-live-events-the-mvp-of-its-upfront-pitch/"
+            "url": "https://www.adweek.com/tvnewser/week-of-may-4-2026-morning-news-ratings/"
           }
         },
         {
-          "platform": "YouTube",
-          "title": "YouTube’s Brandcast Puts Creator Partnerships Front and Center",
-          "desc": "Google's ad sales chief Sean Downey talks direct-to-creator deals, channel slates, and why 'the future of brand is trust, not social.'",
-          "when": "Hace 1d",
+          "platform": "Social",
+          "title": "Marketers on the Move: Hires at Gap, Saucony, Fanatics, and More",
+          "desc": "A weekly roundup of the biggest U.S. and global brand leadership appointments.",
+          "when": "Hoy",
           "source": {
             "label": "Adweek Social",
-            "url": "https://www.adweek.com/convergent-tv/youtube-google-creators-upfront-2026-sean-downey/"
+            "url": "https://www.adweek.com/brand-marketing/marketers-on-the-move-hires-at-gap-saucony-fanatics-and-more/"
+          }
+        },
+        {
+          "platform": "Social",
+          "title": "Ads of the Week: 10 Campaigns That Caught Our Eye, From Dove to Hinge",
+          "desc": "Dove, Apple Mac, TJ Maxx, CeraVe, and more are among the week's standout ads",
+          "when": "Hoy",
+          "source": {
+            "label": "Adweek Social",
+            "url": "https://www.adweek.com/creativity/ads-of-the-week-10-campaigns-that-caught-our-eye-from-dove-to-hinge/"
           }
         }
       ]
