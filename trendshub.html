@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TRENDSHUB · 20 Dedos</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',system-ui,sans-serif;background:#0A0A0F;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:16px;}
+#app{font-family:'DM Sans',system-ui,sans-serif;background:#0A0A0F;color:#F0F0F5;width:100%;max-width:1400px;height:90vh;display:flex;flex-direction:column;border-radius:12px;overflow:hidden;}
+.hdr{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:rgba(10,10,15,.95);border-bottom:1px solid rgba(255,255,255,.07);flex-shrink:0;}
+.logo{font-weight:800;font-size:14px;letter-spacing:-.5px;}
+.logo em{color:#C8FF00;font-style:normal;}
+.hdr-r{display:flex;align-items:center;gap:8px;}
+.sbadge{display:flex;align-items:center;gap:5px;font-size:10px;color:#6B6B80;background:#18181F;border:1px solid rgba(255,255,255,.07);padding:3px 9px;border-radius:5px;}
+.sdot{width:5px;height:5px;border-radius:50%;background:#2ECC71;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.add-b{background:#C8FF00;color:#000;border:none;padding:5px 12px;border-radius:5px;font-size:11px;font-weight:700;cursor:pointer;}
+.shell{display:grid;grid-template-columns:175px 1fr 305px;flex:1;overflow:hidden;}
+.aside{border-right:1px solid rgba(255,255,255,.07);overflow-y:auto;padding:12px 8px;display:flex;flex-direction:column;gap:2px;}
+.sl{font-size:9px;color:#6B6B80;text-transform:uppercase;letter-spacing:.1em;font-weight:500;padding:0 7px;margin:10px 0 3px;}
+.sl:first-child{margin-top:0;}
+.fb{display:flex;align-items:center;gap:6px;padding:6px 8px;border-radius:5px;border:none;background:transparent;color:#6B6B80;font-size:11px;cursor:pointer;transition:all .15s;text-align:left;width:100%;}
+.fb:hover,.fb.on{background:#18181F;color:#F0F0F5;}
+.dot{width:5px;height:5px;border-radius:50%;flex-shrink:0;}
+.fc{margin-left:auto;font-size:9px;background:#111118;padding:1px 4px;border-radius:10px;color:#6B6B80;}
+.fb.on .fc{background:rgba(200,255,0,.12);color:#C8FF00;}
+.bc{display:flex;align-items:center;gap:5px;padding:4px 8px;border-radius:5px;border:none;background:transparent;color:#6B6B80;font-size:10.5px;cursor:pointer;transition:all .15s;text-align:left;width:100%;}
+.bc:hover,.bc.on{background:#18181F;color:#F0F0F5;}
+.bav{width:17px;height:17px;border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700;flex-shrink:0;}
+.sk{font-size:7px;background:rgba(200,255,0,.15);color:#C8FF00;padding:1px 3px;border-radius:2px;margin-left:2px;font-weight:700;}
+.main{overflow-y:auto;padding:13px;}
+.sbar{display:flex;align-items:center;gap:7px;background:#111118;border:1px solid rgba(255,255,255,.07);border-radius:7px;padding:6px 11px;margin-bottom:10px;}
+.sbar input{background:none;border:none;outline:none;color:#F0F0F5;font-size:12px;flex:1;}
+.sbar input::placeholder{color:#6B6B80;}
+.syn{background:linear-gradient(135deg,rgba(200,255,0,.05),rgba(123,97,255,.05));border:1px solid rgba(200,255,0,.12);border-radius:8px;padding:9px 12px;margin-bottom:10px;}
+.syn h4{font-size:10.5px;font-weight:700;margin-bottom:3px;color:#C8FF00;}
+.syn p{font-size:10px;color:#6B6B80;line-height:1.5;}
+.sh{display:flex;align-items:center;gap:7px;margin-bottom:8px;}
+.stt{font-weight:700;font-size:12px;}
+.sct{font-size:10px;color:#6B6B80;background:#18181F;padding:2px 6px;border-radius:10px;}
+.tg{display:flex;flex-direction:column;gap:7px;}
+.tc{background:#111118;border:1px solid rgba(255,255,255,.07);border-radius:9px;padding:11px 13px;cursor:pointer;transition:all .15s;position:relative;overflow:hidden;}
+.tc:hover{border-color:rgba(255,255,255,.12);}
+.tc.sel{border-color:#C8FF00;background:rgba(200,255,0,.03);}
+.str{position:absolute;left:0;top:0;bottom:0;width:3px;}
+.ct{display:flex;align-items:flex-start;gap:8px;margin-bottom:5px;}
+.ce{font-size:17px;flex-shrink:0;}
+.cn{font-weight:700;font-size:12px;margin-bottom:2px;line-height:1.3;}
+.cm{display:flex;gap:4px;flex-wrap:wrap;}
+.tag{font-size:9px;padding:2px 6px;border-radius:10px;font-weight:500;}
+.tp{background:rgba(255,255,255,.07);color:#6B6B80;}
+.cd{font-size:11px;color:#6B6B80;line-height:1.45;margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.cbs{display:flex;gap:3px;flex-wrap:wrap;margin-bottom:5px;}
+.btag{font-size:9px;padding:2px 6px;border-radius:3px;font-weight:600;}
+.refs{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:2px;}
+.rl{font-size:9px;color:#6B6B80;background:#18181F;border:1px solid rgba(255,255,255,.07);padding:2px 7px;border-radius:3px;text-decoration:none;}
+.rl:hover{color:#C8FF00;}
+.cf{display:flex;align-items:center;justify-content:space-between;margin-top:7px;padding-top:7px;border-top:1px solid rgba(255,255,255,.07);}
+.lr{display:flex;align-items:center;gap:4px;font-size:10px;color:#6B6B80;}
+.ld{width:5px;height:5px;border-radius:50%;}
+.src{font-size:9px;color:#6B6B80;}
+.ab{font-size:10px;color:#C8FF00;background:rgba(200,255,0,.08);border:none;padding:3px 9px;border-radius:4px;cursor:pointer;font-weight:500;}
+.ab:hover{background:rgba(200,255,0,.16);}
+.nr{padding:30px 0;text-align:center;color:#6B6B80;font-size:12px;}
+.cp{border-left:1px solid rgba(255,255,255,.07);display:flex;flex-direction:column;background:#111118;}
+.ch{padding:11px 13px;border-bottom:1px solid rgba(255,255,255,.07);display:flex;align-items:center;gap:8px;flex-shrink:0;}
+.chi{width:26px;height:26px;background:rgba(200,255,0,.1);border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:13px;}
+.cms{flex:1;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:9px;}
+.msg{max-width:92%;padding:8px 11px;border-radius:9px;font-size:11.5px;line-height:1.5;}
+.mai{background:#18181F;border:1px solid rgba(255,255,255,.07);align-self:flex-start;border-radius:3px 9px 9px 9px;}
+.mu{background:rgba(200,255,0,.1);border:1px solid rgba(200,255,0,.15);align-self:flex-end;color:#C8FF00;border-radius:9px 3px 9px 9px;}
+.qq{padding:0 10px 8px;display:flex;flex-direction:column;gap:3px;flex-shrink:0;}
+.q{background:#18181F;border:1px solid rgba(255,255,255,.07);border-radius:5px;padding:6px 9px;font-size:10.5px;color:#6B6B80;cursor:pointer;transition:all .15s;text-align:left;}
+.q:hover{border-color:rgba(200,255,0,.3);color:#F0F0F5;}
+.bsa{padding:7px 10px;border-top:1px solid rgba(255,255,255,.07);flex-shrink:0;}
+.bsl{font-size:9px;color:#6B6B80;text-transform:uppercase;letter-spacing:.05em;margin-bottom:5px;}
+.bss{display:flex;gap:3px;flex-wrap:wrap;}
+.bsb{font-size:10px;padding:3px 7px;border-radius:3px;border:1px solid rgba(255,255,255,.07);background:transparent;color:#6B6B80;cursor:pointer;transition:all .15s;}
+.bsb.on{color:#000;}
+.cia{padding:9px 10px;border-top:1px solid rgba(255,255,255,.07);display:flex;gap:6px;align-items:flex-end;flex-shrink:0;}
+.ci{flex:1;background:#18181F;border:1px solid rgba(255,255,255,.07);border-radius:7px;padding:7px 9px;color:#F0F0F5;font-size:12px;resize:none;outline:none;min-height:32px;max-height:80px;line-height:1.4;}
+.ci:focus{border-color:rgba(200,255,0,.3);}
+.ci::placeholder{color:#6B6B80;}
+.sb{background:#C8FF00;border:none;border-radius:5px;width:32px;height:32px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.sb:disabled{opacity:.35;cursor:default;}
+.ec{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;text-align:center;gap:6px;}
+.ti{display:flex;gap:3px;padding:8px 11px;background:#18181F;border:1px solid rgba(255,255,255,.07);border-radius:3px 9px 9px 9px;align-self:flex-start;}
+.td{width:4px;height:4px;border-radius:50%;background:#6B6B80;animation:b 1.2s infinite;}
+.td:nth-child(2){animation-delay:.2s}.td:nth-child(3){animation-delay:.4s}
+@keyframes b{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-4px)}}
+.mover{position:absolute;inset:0;background:rgba(0,0,0,.8);z-index:50;display:none;align-items:center;justify-content:center;}
+.mover.on{display:flex;}
+.modal{background:#111118;border:1px solid rgba(255,255,255,.07);border-radius:12px;width:440px;max-height:500px;overflow-y:auto;padding:18px;}
+.modal h2{font-weight:800;font-size:14px;margin-bottom:12px;}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.fg{display:flex;flex-direction:column;gap:4px;margin-bottom:9px;}
+.fg label{font-size:10px;color:#6B6B80;text-transform:uppercase;letter-spacing:.04em;}
+.fg input,.fg textarea,.fg select{background:#18181F;border:1px solid rgba(255,255,255,.07);border-radius:5px;padding:7px 9px;color:#F0F0F5;font-size:12px;outline:none;width:100%;}
+.fg textarea{resize:vertical;min-height:50px;}
+.bcc{display:flex;gap:4px;flex-wrap:wrap;}
+.bcci{padding:2px 7px;border-radius:3px;border:1px solid rgba(255,255,255,.07);cursor:pointer;font-size:10px;color:#6B6B80;user-select:none;}
+.bcci.on{color:#000;}
+.ma{display:flex;gap:6px;margin-top:12px;}
+.btnc{padding:7px 14px;border-radius:5px;border:1px solid rgba(255,255,255,.07);background:transparent;color:#6B6B80;font-size:11px;cursor:pointer;}
+.btns{padding:7px 16px;border-radius:5px;border:none;background:#C8FF00;color:#000;font-weight:700;font-size:11px;cursor:pointer;}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-thumb{background:rgba(255,255,255,.07);border-radius:3px}
+</style>
+</head>
+<body>
+<div id="app" style="position:relative;">
+<div class="hdr">
+  <div class="logo">TRENDS<em>HUB</em> <span style="font-size:10px;font-weight:400;color:#6B6B80;margin-left:3px">20 Dedos</span></div>
+  <div class="hdr-r">
+    <div class="sbadge"><div class="sdot"></div>#ideas-trends</div>
+    <button class="add-b" onclick="openM()">+ Agregar</button>
+  </div>
+</div>
+<div class="shell">
+  <div class="aside">
+    <div class="sl">Tipo</div>
+    <button class="fb on" onclick="sf('t','all',this)"><span class="dot" style="background:#F0F0F5"></span>Todos<span class="fc" id="fa">0</span></button>
+    <button class="fb" onclick="sf('t','cultural',this)"><span class="dot" style="background:#C8FF00"></span>Cultural<span class="fc" id="fc">0</span></button>
+    <button class="fb" onclick="sf('t','momento',this)"><span class="dot" style="background:#FF6BCA"></span>Momento<span class="fc" id="fm">0</span></button>
+    <button class="fb" onclick="sf('t','plataforma',this)"><span class="dot" style="background:#7B61FF"></span>Plataforma<span class="fc" id="fp">0</span></button>
+    <button class="fb" onclick="sf('t','competencia',this)"><span class="dot" style="background:#FF4757"></span>Competencia<span class="fc" id="fco">0</span></button>
+    <div class="sl">Plataforma</div>
+    <button class="fb" onclick="sf('p','TikTok',this)"><span class="dot" style="background:#69C9D0"></span>TikTok<span class="fc" id="ftt">0</span></button>
+    <button class="fb" onclick="sf('p','Instagram',this)"><span class="dot" style="background:#E1306C"></span>Instagram<span class="fc" id="fig">0</span></button>
+    <button class="fb" onclick="sf('p','X',this)"><span class="dot" style="background:#eee"></span>X<span class="fc" id="fx">0</span></button>
+    <div class="sl">Ciclo</div>
+    <button class="fb" onclick="sf('l','emergente',this)"><span class="dot" style="background:#C8FF00"></span>Emergente</button>
+    <button class="fb" onclick="sf('l','pico',this)"><span class="dot" style="background:#FF6B35"></span>En pico</button>
+    <button class="fb" onclick="sf('l','maduro',this)"><span class="dot" style="background:#888"></span>Maduro</button>
+    <div class="sl">Marca</div>
+    <div id="bflt"></div>
+  </div>
+  <div class="main">
+    <div class="sbar"><span style="color:#6B6B80;font-size:13px">🔍</span><input id="si" placeholder="Buscar trends, marcas..." oninput="rt()"></div>
+    <div class="syn">
+      <h4>📥 Sync 13 mayo 2026 — 12 referencias</h4>
+      <p>Nuevos: <strong style="color:#F0F0F5">Diccionario Gen Z</strong> +2 refs (Martu), <strong style="color:#F0F0F5">Reel Meli</strong> pendiente. Mayor oportunidad: <strong style="color:#F0F0F5">Café Martínez ✦, Intgo ✦, Datawise ✦</strong></p>
+    </div>
+    <div class="sh"><span class="stt" id="stt">Todos los trends</span><span class="sct" id="sct">0</span></div>
+    <div class="tg" id="tg"></div>
+    <div id="nr" class="nr" style="display:none">Sin resultados 🌵</div>
+  </div>
+  <div class="cp">
+    <div class="ch">
+      <div class="chi">✦</div>
+      <div style="min-width:0">
+        <div style="font-weight:700;font-size:12px;">Trend Analyst</div>
+        <div style="font-size:10px;color:#6B6B80;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:190px" id="clbl">Seleccioná un trend</div>
+      </div>
+    </div>
+    <div id="ces" class="ec">
+      <div style="font-size:26px;margin-bottom:4px;">💬</div>
+      <div style="font-weight:700;font-size:12px;">Preguntale a la IA</div>
+      <div style="font-size:11px;color:#6B6B80;line-height:1.5;max-width:200px;">Seleccioná un trend y consultá cómo activarlo. Marcas <span style="color:#C8FF00">✦</span> tienen skill completa.</div>
+    </div>
+    <div id="cms" class="cms" style="display:none;"></div>
+    <div id="bsa" class="bsa" style="display:none;">
+      <div class="bsl">Analizando para:</div>
+      <div class="bss" id="bsb"></div>
+    </div>
+    <div id="qq" class="qq" style="display:none;">
+      <button class="q" onclick="sq('¿De qué trata esta tendencia? Explicá el formato, audio, copy y emoción que transmite. ¿Dónde empezó?')">¿De qué trata?</button>
+      <button class="q" onclick="sq('¿Cómo la usa la gente y qué comunican?')">¿Cómo la usa la gente?</button>
+      <button class="q" onclick="sq('¿Las marcas ya la están usando? Dame ejemplos concretos.')">¿Cómo la usan las marcas?</button>
+      <button class="q" id="bqb" onclick="sendBQ()">¿Por qué tiene sentido para [marca]?</button>
+      <button class="q" onclick="sq('Dame 3 a 5 ideas concretas de cómo sumarnos con contenido de la marca.')">¿Cómo nos sumamos?</button>
+    </div>
+    <div id="cia" class="cia" style="display:none;">
+      <textarea class="ci" id="ci" placeholder="Preguntá sobre este trend..." rows="1" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sm()}"></textarea>
+      <button class="sb" id="snd" onclick="sm()">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="mover" id="mov">
+  <div class="modal">
+    <h2>+ Nuevo Trend</h2>
+    <div class="fr">
+      <div class="fg"><label>Nombre *</label><input id="fn" placeholder="Nombre del trend"></div>
+      <div class="fg"><label>Emoji</label><input id="fe" placeholder="🔥" maxlength="2"></div>
+    </div>
+    <div class="fr">
+      <div class="fg"><label>Tipo</label><select id="ft"><option value="cultural">Cultural</option><option value="momento">Momento</option><option value="plataforma">Plataforma</option><option value="competencia">Competencia</option></select></div>
+      <div class="fg"><label>Ciclo</label><select id="fl"><option value="emergente">Emergente</option><option value="pico">En pico</option><option value="maduro">Maduro</option></select></div>
+    </div>
+    <div class="fg"><label>Plataformas (coma)</label><input id="fpl" placeholder="TikTok, Instagram"></div>
+    <div class="fg"><label>Descripción *</label><textarea id="fd"></textarea></div>
+    <div class="fg"><label>Links (coma)</label><input id="flk"></div>
+    <div class="fg"><label>Marcas</label><div class="bcc" id="mc"></div></div>
+    <div class="ma"><button class="btnc" onclick="closeM()">Cancelar</button><button class="btns" onclick="saveT()">Guardar</button></div>
+  </div>
+</div>
+</div>
+<script>
+const WORKER_URL = 'https://trendshub-chat.jorgelina.workers.dev';
+
+const B=[
+  {id:'intgo',n:'Intgo',c:'#00D4FF',bg:'rgba(0,212,255,.15)',sk:true},
+  {id:'alyser',n:'Alyser',c:'#FF6BCA',bg:'rgba(255,107,202,.15)',sk:true},
+  {id:'posadas',n:'Grupo Posadas',c:'#FFD700',bg:'rgba(255,215,0,.15)',sk:true},
+  {id:'mita',n:'Mita',c:'#C8FF00',bg:'rgba(200,255,0,.15)',sk:true},
+  {id:'dufi',n:'Dufi',c:'#FF6B35',bg:'rgba(255,107,53,.15)',sk:true},
+  {id:'datawise',n:'Datawise',c:'#7B61FF',bg:'rgba(123,97,255,.15)',sk:true},
+  {id:'prome',n:'Prome',c:'#2ECC71',bg:'rgba(46,204,113,.15)',sk:true},
+  {id:'cafemtz',n:'Café Martínez',c:'#C0946F',bg:'rgba(192,148,111,.15)',sk:true},
+  {id:'serma',n:'Serma & Oil',c:'#E74C3C',bg:'rgba(231,76,60,.15)',sk:false},
+  {id:'tarallo',n:'Tarallo',c:'#F39C12',bg:'rgba(243,156,18,.15)',sk:true},
+  {id:'epampa',n:'Equipo Pampa',c:'#1ABC9C',bg:'rgba(26,188,156,.15)',sk:false},
+  {id:'bolsapel',n:'Bolsa Pel',c:'#9B59B6',bg:'rgba(155,89,182,.15)',sk:true},
+  {id:'bingo',n:'Bingo Oasis',c:'#E91E63',bg:'rgba(233,30,99,.15)',sk:true},
+  {id:'nutentar',n:'Nutentar',c:'#8BC34A',bg:'rgba(139,195,74,.15)',sk:true},
+  {id:'suka',n:'Suka',c:'#FF4081',bg:'rgba(255,64,129,.15)',sk:true},
+];
+const SK={
+  intgo:`INT.GO — startup de tecnología para modernización de gestión pública y privada. Posicionamiento: El aliado de la modernización. Ecosistema integral: COBRAS, ADMINISTRAS, CONECTAS, ESCALAS. Públicos: LinkedIn (decisores políticos, CFOs), Instagram (ciudadanos). Módulos: Comercio y Cobranza Digital, Gestión Administrativa, Conectividad, Escalabilidad. Clientes: municipios, organismos públicos, empresas de servicios públicos. Tono: técnico pero accesible, orientado a impacto institucional. NO: lenguaje solo de pagos.`,
+  alyser:`UNIVERSO ALYSER — mayorista B2B/B2C de insumos para gastronomía profesional. 3 cuentas: @alyser_sa (institucional, NO vende, testimonios como formato rey), @espacio_alyser (escuela/cursos de pastelería), @alyser_market (tienda online, SÍ vende). Marcas clave: Callebaut, Carma, República del Cacao. Productos propios: dulce de leche, miel, cups de chocolate. NO: recetas para el hogar en @alyser_sa.`,
+  posadas:`GRUPO POSADAS MIDSCALE — 4 marcas hoteleras. Fiesta Inn: viajero de negocios, tono directo y motivacional. Gamma: viajero cultural, tono poético y auténtico. Curamoria: viajero sensorial, tono contemplativo y sofisticado. One Hoteles: viajero joven, tono humor, pop, anti-corporativo. Plataformas: Instagram, Facebook, TikTok. Herramientas: Asana + Sprout Social.`,
+  mita:`MITA San Ángel — hospital veterinario de alta complejidad (México). Servicios: consulta, hospitalización, UCI, cirugías, especialidades (dermatología, nefrología, medicina felina, neurología), laboratorio in-house, ultrasonido, rayos X. Director: Dr. Jorge Alberto Alanís Quezada. Equipamiento completo: IDEXX, Mindray, BeneFusion, 2 quirófanos, UCI con oxigenoterapia. CRITICO: NO tiene tomografía. Nunca mencionar.`,
+  dufi:`DUFI — app mexicana de oficios del hogar (plomería, electricidad, limpieza, carpintería). Mercado: México, foco CDMX. Posicionamiento: conectar con profesionales de confianza. Valores: Confianza, Impacto positivo, Simplicidad, Inclusión, Cercanía. Tono: accesible, real, como recomendación entre conocidos. CEO: Roberta. NO: tono corporativo, promesas vacías.`,
+  datawise:`DATAWISE — empresa IT argentina 15 años. Hardware, software, servicios gestionados. Presencia en Argentina, Chile, Perú, Uruguay, Paraguay. Reposicionamiento: de IT generalista a referente enterprise en LATAM. Verticales: IA aplicada + Ciberseguridad (Sophos). Vocero: Néstor González Rosemberg (1 de 297 certificados Jurepaca Enterprise Architecture en el mundo). Contacto: Nacho Molina (marketing). NO: textos pesados, lenguaje genérico.`,
+  prome:`PROME — Provincia Microcréditos, parte de Banco Provincia. Misión: financiamiento para emprendedores bonaerenses. El emprendedor/a es la protagonista. Valores: Cercanía, Compromiso, Confianza, Inclusión. REGLAS CRITICAS: usar "vos", lenguaje inclusivo, "emprendimientos" (nunca "microempresas"), frases cortas y activas. Contacto: Noelia (Planner). Tono: empático, firme, esperanzador.`,
+  cafemtz:`Café Martínez — cadena argentina fundada 1933. Tono: humanizado, fresco, cercano. Producto siempre visible. Mobile-first. Productos: Línea Proteica (batidos 21g, lattes), Frappé Dubai/Pistacho, Clásicos, Take Home, Edición Mundial. Campaña Mundial: Juega Argentina, Juega Martínez — Siempre de Local. Cupones por gol en Club Martínez. KPIs: ER 1.2-1.6%, alcance +15-20%. Benchmarks: reel orgánico 118K views, ER oct 2025 5.9%, +61.67% interacciones ene/feb 2026. NO: piezas abstractas sin producto, real time sin correlato.`,
+  tarallo:`TARALLO — ALYC con 30+ años en mercado de capitales argentino. Audiencia 1 (Instagram/Meta): inversores particulares 30-55 años, dólares quietos, miedo a invertir. Audiencia 2 (LinkedIn): dueños y CFOs de PyMEs buscando financiamiento. App propia en Play Store + App Store. Cuenta chica: priorizar eficiencia. Tono: accesible, desmitificador, confiable. NO: lenguaje técnico sin traducción.`,
+  bolsapel:`BOLSAPEL — empresa familiar argentina fundada 1944 (80 años). Top 3 mercado nacional de envases flexibles. +350 personas, +1.000 Tn/mes, exporta a México, Colombia, Brasil, Uruguay. Productos: bobinas laminadas, mangas termocontraíbles, doypacks, gofrados, packaging tabaco. Propósito: empresa B, huella de carbono neutra. Tono: industrial pero humano, orgulloso de la manufactura argentina. NO: comunicación genérica de packaging.`,
+  bingo:`BINGO OASIS — salas de entretenimiento en Zárate y Pilar, Buenos Aires. Servicio 20DEDOS: influencers + UGC. KPI único: aumentar el AFORO en salas físicas. Instagram: @bingooasiszarate. Influencers: Ximena, Jan Quispe, Coco Silly. Club Oasis: fidelización. Tono: entretenimiento accesible, diversión real. Audiencia: adultos 35-65 años zona norte y Zárate.`,
+  nutentar:`NUTENTAR — alimentos de nutrición clínica y suplementos (desde 2007). Fundadores: Ariel Ardiles + Mariana Arias (ingenieros en alimentos). 96% facturación institucional: clínicas, hospitales, geriátricos, home cares. Productos: Sustenta Mujer, Sustenta Senior, TMP, Cetogenik (epilepsia refractaria), +30 productos. Compite con Abbott, Nestlé Health Science. Expansión a Chile. Tono: científico-cálido, validado por profesionales de salud. NO: promesas milagrosas.`,
+  suka:`SUKA HOME STYLE — mayorista de artículos para el hogar (bazar, organización, decoración). +80 años en Argentina. Modelo B2B: bulto cerrado a bazares, supermercados, distribuidoras. Clientes: Carrefour, Coto, CENCOSUD, Sodimac. Sin mínimo de monto. Entrega AMBA sin cargo. IMPORTANTE: dueño de origen judío, respetar fechas judías (Rosh Hashaná, Pésaj, Iom Kipur). Tono: práctico, confiable, orientado al revendedor.`,
+};
+let T=[
+  {id:1,e:'😂',n:'Formato Millennial PR vs Gen Z',t:'cultural',l:'pico',p:['Instagram','TikTok'],d:'Split de dos voces: versión corporativa/formal vs directa y coloquial (gen Z). Carrusel o reel con texto superpuesto. Alta identificación y humor de agencia/trabajo.',g:'Validar la dicotomía entre el lenguaje formal y cómo realmente piensan. Viral en agencias y B2B.',mb:'Ideas internas: "El post alcanzó métricas superiores / DEVORAMOS" y "Desarrollamos propuesta activa / Ella inventó el fitness?"',s:{cafemtz:'Línea proteica: "Desarrollamos propuesta para estilo activo / Ella inventó el fitness?"',intgo:'Comunicar features técnicos con humor.',datawise:'Natural para tono tech/startup.'},lk:['https://www.instagram.com/p/DX6aSWCjIdH/'],br:['cafemtz','intgo','datawise'],dt:'2026-05-04',src:'Pili Gomez'},
+  {id:2,e:'🍓',n:'Frutitas bebés bailando — TikTok viral',t:'momento',l:'pico',p:['TikTok'],d:'Frutitas animadas bebés bailando. 8M likes. Guada fanática. Entretenimiento y ternura pura.',g:'Se comparte por el factor adorable y auténtico.',mb:'Marcas de alimentos y bebidas tienen entrada natural.',s:{cafemtz:'Reel texturas frutilla + audio trending. Conexión directa con frappé.',nutentar:'Frutas en contexto saludable.',suka:'Entrada directa si tienen frutas en el catálogo.'},lk:['https://www.tiktok.com/@lulumelontv/video/7614364582382963981'],br:['cafemtz','nutentar','suka'],dt:'2026-04-30',src:'Guada'},
+  {id:3,e:'🎮',n:'Influencer jugando con su personaje',t:'cultural',l:'emergente',p:['Instagram'],d:'Influencer integra producto/marca a su universo sin romper el personaje. Alta autenticidad percibida. Comunidad gamer.',g:'La audiencia valora la integración orgánica — no publicidad directa.',mb:'Estrategia emergente en gaming y tech.',s:{intgo:'Activar con creators gamers.',datawise:'Comunidad tech/gamer natural.'},lk:['https://www.instagram.com/reel/DX245J0tFG1/'],br:['intgo','datawise'],dt:'2026-05-04',src:'Marisol Barraza'},
+  {id:4,e:'🌀',n:'Tendencia TikTok onírica / surreal',t:'momento',l:'pico',p:['TikTok'],d:'Estética onírica, surreal, distorsionada. El equipo: "sueños con fiebre después de tomar refrianex".',g:'Humor absurdo. Caos y confusión cotidiana con humor.',mb:'Marcas que puedan jugar con el absurdo.',s:{bingo:'Caos mental del apostador — humor divertido.',cafemtz:'Estado antes del café vs después con estética surreal.'},lk:['https://www.tiktok.com/@pibblefluencer/video/7618456245791509773'],br:['bingo','cafemtz'],dt:'2026-04-30',src:'Vanina Vázquez'},
+  {id:5,e:'⚽',n:'Benchmark: Turismo Mendoza activa el Mundial',t:'competencia',l:'emergente',p:['Instagram'],d:'Publicidad de Turismo Mendoza activando el Mundial de forma orgánica. Benchmark para marcas de turismo.',g:'N/A — campaña institucional.',mb:'Referencia de tono para marcas que quieran activar el Mundial.',s:{posadas:'Activar el Mundial con hospedaje + experiencia viajera.',cafemtz:'Referencia de tono — campaña Siempre de Local ya en curso.'},lk:['https://www.instagram.com/p/DXpApPJAE8A/'],br:['posadas','cafemtz'],dt:'2026-04-28',src:'Marisol Barraza'},
+  {id:6,e:'🏆',n:'20 Dedos — carrusel de real times',t:'cultural',l:'emergente',p:['Instagram'],d:'Carrusel de real times de Café Martínez. Validado externamente — lo usaron en una materia universitaria.',g:'N/A — portafolio propio de la agencia.',mb:'Expertise en real time de 20 Dedos.',s:{},lk:['https://www.instagram.com/p/DXo96tGjnKg/'],br:[],dt:'2026-04-28',src:'Pili Gomez + Sol'},
+  {id:7,e:'🐶',n:'Perros en Olga — UGC animalero',t:'cultural',l:'emergente',p:['TikTok','Instagram'],d:'TikTok viral de perros que llegaron al restaurante Olga. Sol los quiere para canje. Formato UGC con mascotas en contextos gastronómicos. Alta ternura y compartibilidad.',g:'La gente comparte mascotas en contextos cotidianos. Factor adorable y auténtico.',mb:'Sin activación masiva todavía. Oportunidad temprana. Pili evalúa @patriciocrom para collab.',s:{cafemtz:'Mascota tomando café en sucursal — UGC orgánico con creators animaleros.',suka:'Si el local es pet friendly, activación directa.',posadas:'Experiencia pet friendly en hotel.',nutentar:'Contenido bienestar con mascotas.'},lk:['https://vt.tiktok.com/ZS9tR5mrx/'],br:['cafemtz','suka','posadas','nutentar'],dt:'2026-05-08',src:'Sol'},
+  {id:8,e:'💃',n:'Vuelve Valentina — retorno cultural',t:'momento',l:'emergente',p:['Instagram'],d:'Personaje o figura que vuelve. Formato de retorno nostálgico con alta carga emocional.',g:'Nostalgia y celebración de regresos. Alto engagement en comunidades que comparten la referencia.',mb:'Marcas con historia o productos que volvieron tienen entrada natural.',s:{cafemtz:'Si hay producto de temporada que vuelve: "Vuelve el [producto]".',posadas:'Destinos que volvieron a estar disponibles.'},lk:['https://www.instagram.com/p/DX9ORmeunM0/','https://www.instagram.com/p/DYCrmZxkRG5/'],br:['cafemtz','posadas'],dt:'2026-05-07',src:'Vanina Vázquez'},
+  {id:9,e:'📖',n:'Diccionario Gen Z — palabras de adolescentes',t:'cultural',l:'pico',p:['Instagram'],d:'Carrusel con diccionario de palabras que usan los adolescentes hoy. Formato educativo/entretenido. Martu sumó más referencias — tendencia en crecimiento.',g:'Reconocimiento generacional. Muy compartible entre adultos y jóvenes por igual.',mb:'Marcas con audiencia joven pueden mostrar que hablan el idioma.',s:{cafemtz:'Versión barista: palabras que escuchamos en la barra todos los días.',intgo:'Tech slang + Gen Z muy natural.',datawise:'Diccionario de términos tech en clave Gen Z.'},lk:['https://www.instagram.com/p/DYDGOWGDap-/','https://www.instagram.com/p/DYDKoSZCSuy/'],br:['cafemtz','intgo','datawise'],dt:'2026-05-07',src:'Jessica Martín + Martu'},
+  {id:10,e:'🎬',n:'Reel Meli — pendiente de clasificar',t:'cultural',l:'emergente',p:['Instagram'],d:'Reel compartido por Meli el 12 mayo sin descripción. Pendiente de ver y clasificar. Abrí el link para identificar el formato.',g:'Por definir una vez revisado el contenido.',mb:'Por definir.',s:{},lk:['https://www.instagram.com/reel/DX9xLWhOOdT/'],br:[],dt:'2026-05-12',src:'Meli'},
+];
+const TC={cultural:'#C8FF00',momento:'#FF6BCA',plataforma:'#7B61FF',competencia:'#FF4757'};
+const TL={cultural:'Cultural',momento:'Momento',plataforma:'Plataforma',competencia:'Competencia'};
+const LC={emergente:'#C8FF00',pico:'#FF6B35',maduro:'#888'};
+const LL={emergente:'Emergente',pico:'En pico',maduro:'Maduro'};
+let filt={t:'all',p:null,l:null,b:null},selT=null,selB=null,cH=[],busy=false,cbr=new Set();
+function init(){
+  document.getElementById('bflt').innerHTML=B.map(b=>`<button class="bc" onclick="sf('b','${b.id}',this)"><div class="bav" style="background:${b.bg};color:${b.c}">${b.n[0]}</div>${b.n}${b.sk?'<span class="sk">✦</span>':''}</button>`).join('');
+  document.getElementById('bsb').innerHTML=B.map(b=>`<button class="bsb" id="bs-${b.id}" onclick="sb2('${b.id}',this)">${b.n}${b.sk?'<span class="sk">✦</span>':''}</button>`).join('');
+  document.getElementById('mc').innerHTML=B.map(b=>`<div class="bcci" id="mc-${b.id}" onclick="tcb('${b.id}')" style="border-color:${b.bg}">${b.n}</div>`).join('');
+  uc();rt();
+}
+function uc(){
+  document.getElementById('fa').textContent=T.length;
+  Object.entries({cultural:'fc',momento:'fm',plataforma:'fp',competencia:'fco'}).forEach(([k,id])=>{const el=document.getElementById(id);if(el)el.textContent=T.filter(x=>x.t===k).length;});
+  Object.entries({TikTok:'ftt',Instagram:'fig',X:'fx'}).forEach(([k,id])=>{const el=document.getElementById(id);if(el)el.textContent=T.filter(x=>x.p.includes(k)).length;});
+}
+function sf(type,val,btn){
+  if(filt[type]===val&&val!=='all'){filt[type]=null;btn.classList.remove('on');}
+  else{filt[type]=val==='all'?'all':val;btn.parentElement.querySelectorAll('.fb,.bc').forEach(b=>b.classList.remove('on'));btn.classList.add('on');}
+  rt();
+}
+function gf(){
+  const q=document.getElementById('si').value.toLowerCase();
+  return T.filter(x=>{
+    if(filt.t&&filt.t!=='all'&&x.t!==filt.t)return false;
+    if(filt.p&&!x.p.includes(filt.p))return false;
+    if(filt.l&&x.l!==filt.l)return false;
+    if(filt.b&&!x.br.includes(filt.b))return false;
+    if(q&&!x.n.toLowerCase().includes(q)&&!x.d.toLowerCase().includes(q))return false;
+    return true;
+  });
+}
+function rt(){
+  const f=gf();
+  document.getElementById('sct').textContent=f.length+' resultado'+(f.length!==1?'s':'');
+  const nr=document.getElementById('nr');
+  if(!f.length){document.getElementById('tg').innerHTML='';nr.style.display='block';return;}
+  nr.style.display='none';
+  document.getElementById('tg').innerHTML=f.map(x=>{
+    const col=TC[x.t]||'#888';
+    const bt=x.br.map(b=>{const br=B.find(y=>y.id===b);return br?`<span class="btag" style="background:${br.bg};color:${br.c}">${br.n}${br.sk?' ✦':''}</span>`:''}).join('');
+    const rl=x.lk.map(l=>`<a class="rl" href="${l}" target="_blank">${l.includes('instagram')?'↗ IG':l.includes('tiktok')?'↗ TT':'↗ Link'}</a>`).join('');
+    return`<div class="tc ${selT&&selT.id===x.id?'sel':''}" onclick="st(${x.id})">
+      <div class="str" style="background:${col}"></div>
+      <div class="ct"><div class="ce">${x.e}</div><div style="flex:1;min-width:0">
+        <div class="cn">${x.n}</div>
+        <div class="cm"><span class="tag" style="background:${col}20;color:${col}">${TL[x.t]}</span>${x.p.map(p=>`<span class="tag tp">${p}</span>`).join('')}</div>
+      </div></div>
+      <div class="cd">${x.d}</div>
+      <div class="cbs">${bt}</div>
+      ${rl?`<div class="refs">${rl}</div>`:''}
+      <div class="cf">
+        <div class="lr"><div class="ld" style="background:${LC[x.l]}"></div>${LL[x.l]}</div>
+        <div style="display:flex;align-items:center;gap:6px">${x.src?`<span class="src">📥 ${x.src}</span>`:''}<button class="ab" onclick="event.stopPropagation();st(${x.id})">Analizar →</button></div>
+      </div></div>`;
+  }).join('');
+}
+function st(id){
+  selT=T.find(x=>x.id===id);cH=[];
+  document.getElementById('cms').innerHTML='';rt();
+  document.getElementById('ces').style.display='none';
+  document.getElementById('cms').style.display='flex';
+  document.getElementById('qq').style.display='flex';
+  document.getElementById('cia').style.display='flex';
+  document.getElementById('bsa').style.display='block';
+  document.getElementById('clbl').textContent=selT.e+' '+selT.n;
+  am('ai',`Listo para analizar <strong>${selT.n}</strong>.${selT.src?' Lo trajo <strong>'+selT.src+'</strong> al canal.':''} Seleccioná una marca 👇`);
+}
+function tcb(id){const el=document.getElementById('mc-'+id),b=B.find(x=>x.id===id);if(cbr.has(id)){cbr.delete(id);el.classList.remove('on');el.style.background='';el.style.color='';}else{cbr.add(id);el.classList.add('on');el.style.background=b.c;el.style.color='#000';}}
+function sb2(id,el){document.querySelectorAll('.bsb').forEach(b=>{b.classList.remove('on');b.style.background='';b.style.color='';b.style.borderColor='';});selB=id;const b=B.find(x=>x.id===id);el.classList.add('on');el.style.background=b.c;el.style.color='#000';el.style.borderColor=b.c;document.getElementById('bqb').textContent=`¿Por qué tiene sentido para ${b.n}?`;}
+function am(r,txt){const m=document.getElementById('cms');const d=document.createElement('div');d.className=`msg m${r==='ai'?'ai':'u'}`;d.innerHTML=txt;m.appendChild(d);m.scrollTop=m.scrollHeight;}
+function sty(){const m=document.getElementById('cms');const d=document.createElement('div');d.className='ti';d.innerHTML='<div class="td"></div><div class="td"></div><div class="td"></div>';m.appendChild(d);m.scrollTop=m.scrollHeight;}
+function rty(){const el=document.querySelector('.ti');if(el)el.remove();}
+async function sm(){if(busy||!selT)return;const inp=document.getElementById('ci');const t=inp.value.trim();if(!t)return;inp.value='';sendQ(t);}
+async function sq(q){if(busy||!selT)return;sendQ(q);}
+async function sendBQ(){if(busy||!selT)return;const b=selB?B.find(x=>x.id===selB):null;const bn=b?b.n:'[Marca]';const sg=b&&selT.s[selB]?selT.s[selB]:'';sendQ(`¿Por qué tiene sentido para ${bn}? ¿Cómo conecta con su estrategia y tono? Dame ideas concretas de ejecución.${sg?' Contexto interno: '+sg:''}`);}
+
+async function sendQ(ut){
+  if(!selT) return;
+  busy = true;
+  document.getElementById('snd').disabled = true;
+  am('user', ut);
+  cH.push({ role:'user', content: ut });
+  sty();
+
+  const b = selB ? B.find(x=>x.id===selB) : null;
+  const sys = `Sos Social Media Strategist senior de 20 Dedos, agencia creativa argentina.
+Portfolio: Intgo, Alyser, Grupo Posadas, Mita, Dufi, Datawise, Prome, Café Martínez, Serma & Oil, Tarallo, Equipo Pampa, Bolsa Pel, Bingo Oasis, Nutentar, Suka.
+TREND: ${selT.n} | ${TL[selT.t]} | ${selT.p.join('/')} | ${LL[selT.l]}
+Desc: ${selT.d}
+Gente: ${selT.g}
+Marcas: ${selT.mb}
+Fuente: ${selT.src||'Manual'}
+${b?`MARCA SELECCIONADA: ${b.n}\n${SK[b.id]?'SKILL:\n'+SK[b.id]:'Sin skill cargada aún.'}\nNotas internas: ${selT.s[selB]||'Sin notas.'}`:''}
+Respondé en español argentino. Concreto, creativo, accionable. Bullets cuando ayude. Máx 250 palabras.`;
+
+  try {
+    const res = await fetch(WORKER_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ system: sys, messages: cH })
+    });
+    const data = await res.json();
+    const reply = data.text || ('❌ ' + (data.error || 'No pude generar respuesta.'));
+    rty();
+    am('ai', reply.replace(/\n/g,'<br>').replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>'));
+    cH.push({ role:'assistant', content: reply });
+  } catch(e) {
+    rty();
+    am('ai', '❌ Error de conexión con el Worker. Revisá la consola del navegador (F12) para ver el detalle.');
+  }
+
+  busy = false;
+  document.getElementById('snd').disabled = false;
+}
+
+function openM(){document.getElementById('mov').classList.add('on');}
+function closeM(){document.getElementById('mov').classList.remove('on');cbr.clear();document.getElementById('mc').innerHTML=B.map(b=>`<div class="bcci" id="mc-${b.id}" onclick="tcb('${b.id}')" style="border-color:${b.bg}">${b.n}</div>`).join('');}
+function saveT(){
+  const n=document.getElementById('fn').value.trim(),d=document.getElementById('fd').value.trim();
+  if(!n||!d){alert('Nombre y descripción son obligatorios');return;}
+  T.unshift({id:Date.now(),e:document.getElementById('fe').value||'📌',n,t:document.getElementById('ft').value,l:document.getElementById('fl').value,p:document.getElementById('fpl').value.split(',').map(s=>s.trim()).filter(Boolean),d,g:'',mb:'',s:{},lk:document.getElementById('flk').value.split(',').map(s=>s.trim()).filter(Boolean),br:[...cbr],dt:new Date().toISOString().split('T')[0],src:'Manual'});
+  uc();rt();closeM();['fn','fe','fpl','fd','flk'].forEach(id=>document.getElementById(id).value='');
+}
+document.getElementById('mov').addEventListener('click',e=>{if(e.target===e.currentTarget)closeM();});
+init();
+</script>
+</body>
+</html>
