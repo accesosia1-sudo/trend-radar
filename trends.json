@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T10:23:55.728824+00:00",
+  "updatedAt": "2026-08-17T09:50:22.043644+00:00",
   "panels": {
     "ebullicion": {
       "title": "En ebullicion esta semana",
@@ -7,152 +7,252 @@
       "items": [
         {
           "state": "hot",
-          "title": "Link compartido por Melina",
-          "desc": "Compartido por Melina sin comentario adicional.",
-          "tags": "Instagram - Compartido por Melina - Hace 3d",
+          "title": "para cafe martinez",
+          "desc": "Melina compartio: para cafe martinez",
+          "tags": "Instagram - Compartido por Melina - Hace 2d",
           "source": {
             "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/DbmG-cnkT_O/?igsh=dzNhM2Fyb2NuOXMw"
+            "url": "https://www.instagram.com/p/DbqhKpWl_QJ/"
           }
         },
         {
           "state": "hot",
-          "title": "Disney y TikTok",
-          "desc": "Luu compartio: Disney y TikTok",
-          "tags": "Instagram - Compartido por Luu - Hace 3d",
+          "title": "Instagram quiere competir con Netflix y YouTube",
+          "desc": "Luu compartio: Instagram quiere competir con Netflix y YouTube",
+          "tags": "Instagram - Compartido por Luu - Hace 2d",
           "source": {
             "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/DbrSjpaoEkG/?igsh=OW14NmJsem1ldWNr"
+            "url": "https://www.instagram.com/p/Db6SffgEeti/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
           }
         },
         {
           "state": "hot",
-          "title": "Reels de pruebas pleaseeee",
-          "desc": "Mary compartio: Reels de pruebas pleaseeee",
-          "tags": "Instagram - Compartido por Mary - Hace 4d",
+          "title": "L u c a s (@LucasNicoC) on X",
+          "desc": "Compartido por Pili Gomez sin comentario adicional.",
+          "tags": "X - Compartido por Pili Gomez - Hace 2d",
           "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/reel/Dad3CFRPk_w/?igsh=Yzh4eHd6bWpkZmdk"
+            "label": "X (via Slack)",
+            "url": "https://x.com/LucasNicoC/status/2087891113776443831"
           }
         },
         {
           "state": "hot",
-          "title": "che mi algoritmo se sube en cualquier tema muy rápido. No les pasa?? Y luego solo me salen cosas de ",
-          "desc": "Mary compartio: che mi algoritmo se sube en cualquier tema muy rápido. No les pasa?? Y luego solo me salen cosas de lo que investigué o busque.. pero muy rápido.",
-          "tags": "Instagram - Compartido por Mary - Hace 4d",
+          "title": "Grido Helado (@GridoHelados) on X",
+          "desc": "Mica compartio: esta de moda \"farmear aura\" (soy muy grande para entender lo que significa) y grido se subió",
+          "tags": "X - Compartido por Mica - Hace 2d",
           "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/Dbogv_3j3v9/?igsh=MTdrYWg3eDN2bXpxMQ=="
+            "label": "X (via Slack)",
+            "url": "https://x.com/gridohelados/status/2087672604756722067?s=46&amp;t=SRCliLVWdMWnH6LTwcQHnQ"
           }
         },
         {
           "state": "hot",
-          "title": "dos post",
-          "desc": "Anto compartio: dos post",
-          "tags": "Instagram - Compartido por Anto - Hace 5d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/Da06aDvJRBT/?igsh=cGZyc2xkdm40aGRw"
-          }
-        },
-        {
-          "state": "hot",
-          "title": "calidad de imagen",
-          "desc": "Anto compartio: calidad de imagen",
-          "tags": "Instagram - Compartido por Anto - Hace 5d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/reel/DbUhjQ3ASDp/?igsh=MWNkanAzNGU3dDN5Yg=="
-          }
-        },
-        {
-          "state": "hot",
-          "title": "Link compartido por Mary",
-          "desc": "Compartido por Mary sin comentario adicional.",
-          "tags": "Instagram - Compartido por Mary - Hace 5d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/DbmG-cnkT_O/?igsh=YW80bHExMDBqNA=="
-          }
-        },
-        {
-          "state": "hot",
-          "title": "aniversario 25 de Harry Potter y la piedra filosofal en México",
-          "desc": "Marisol compartio: aniversario 25 de Harry Potter y la piedra filosofal en México",
-          "tags": "Instagram - Compartido por Marisol - Hace 5d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/reel/DbMQr_pv_bJ/"
-          }
-        },
-        {
-          "state": "hot",
-          "title": "apretar el botón",
-          "desc": "Anto compartio: apretar el botón",
-          "tags": "Instagram - Compartido por Anto - Hace 5d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/reel/Dbb1V5ggoS4/?igsh=MWJ3bXdveXNsMXRreA=="
-          }
-        },
-        {
-          "state": "hot",
-          "title": "Buenas!! Un par de trends de spiderman: juego con la telaraña y este con la frase \"un gran poder, me",
-          "desc": "Marisol compartio: Buenas!! Un par de trends de spiderman: juego con la telaraña y este con la frase \"un gran poder, merece un gran...\"",
-          "tags": "Instagram - Compartido por Marisol - Hace 5d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/Dbk36nXDCuK/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
-          }
-        },
-        {
-          "state": "hot",
-          "title": "Buenas!! Un par de trends de spiderman: juego con la telaraña y este con la frase \"un gran poder, me",
-          "desc": "Marisol compartio: Buenas!! Un par de trends de spiderman: juego con la telaraña y este con la frase \"un gran poder, merece un gran...\"",
-          "tags": "Instagram - Compartido por Marisol - Hace 5d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/DbbvcvdidKS/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
-          }
-        },
-        {
-          "state": "hot",
-          "title": "Blueberry, oreo + white choc Cookies 🫐🍪🤍 #recipes #blueberry #oreo #cookie #fy — @bakedstuffies",
-          "desc": "Anto compartio: foto",
-          "tags": "TikTok - Compartido por Anto - Hace 6d",
+          "title": "A little about myself!🙂‍↕️🧚🏻‍♀️ Esta tendencia es bueniiiisima para describir con fotos un poquito de tu personalidad! #byadacasan",
+          "desc": "Cande compartio: tell me more about yourself (video + fotos)",
+          "tags": "TikTok - Compartido por Cande - Hace 2d",
           "source": {
             "label": "TikTok (via Slack)",
-            "url": "https://vt.tiktok.com/ZS4fAkSKu/"
+            "url": "https://www.tiktok.com/@by.adacasanova/video/7673238886759370004"
           }
         },
         {
           "state": "hot",
-          "title": "magia con la comida",
-          "desc": "Anto compartio: magia con la comida",
-          "tags": "Instagram - Compartido por Anto - Hace 6d",
+          "title": "Pintar con crayon:",
+          "desc": "Vani compartio: Pintar con crayon:",
+          "tags": "Instagram - Compartido por Vani - Hace 2d",
           "source": {
             "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/reel/DagQf6bBUWW/?igsh=MWU3azV6cXZtdHdraA=="
+            "url": "https://www.instagram.com/reel/DaveEfuzf4S/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
           }
         },
         {
           "state": "hot",
-          "title": "reporte de juliooooo",
-          "desc": "Pili Gomez compartio: reporte de juliooooo",
-          "tags": "Web - Compartido por Pili Gomez - Hace 6d",
+          "title": "Nose si lo pasaron, trend nueva tipografia de ig:",
+          "desc": "Vani compartio: Nose si lo pasaron, trend nueva tipografia de ig:",
+          "tags": "Instagram - Compartido por Vani - Hace 2d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/DcBeIv5EQFw/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
+          }
+        },
+        {
+          "state": "hot",
+          "title": "inspo q mandó Ale C -",
+          "desc": "Mica compartio: inspo q mandó Ale C -",
+          "tags": "Instagram - Compartido por Mica - Hace 2d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/reel/DcBYTq-xvQ4/?igsh=amI1aWk5aW1xZTYy"
+          }
+        },
+        {
+          "state": "hot",
+          "title": "Pescado raul modo lego",
+          "desc": "Vani compartio: Pescado raul modo lego",
+          "tags": "Instagram - Compartido por Vani - Hace 2d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/reel/DbtbcjCAbpI/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
+          }
+        },
+        {
+          "state": "hot",
+          "title": "firma de doctor",
+          "desc": "Marisol compartio: firma de doctor",
+          "tags": "Instagram - Compartido por Marisol - Hace 3d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/Db_6RLVxNIn/?igsh=MTNpc2xwNWw2cGlnNA=="
+          }
+        },
+        {
+          "state": "hot",
+          "title": "Trend kinda chic",
+          "desc": "Pili Gomez compartio: Trend kinda chic",
+          "tags": "Instagram - Compartido por Pili Gomez - Hace 3d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/DbrRaafj0qE/?igsh=bDVkdjkyazhyMjgz"
+          }
+        },
+        {
+          "state": "hot",
+          "title": "@joshua🧃 🎥♥️😂 #fyp #humor #fy #parati — @braian gomez",
+          "desc": "Cande compartio: hablando de lo del chat, me apareció este jajaja pero vi muchas marcas haciendolo",
+          "tags": "TikTok - Compartido por Cande - Hace 3d",
+          "source": {
+            "label": "TikTok (via Slack)",
+            "url": "https://vt.tiktok.com/ZSV1tXj49/"
+          }
+        },
+        {
+          "state": "hot",
+          "title": "No sé si ya lo mandaron pero: chat describime. Se subieron todos!",
+          "desc": "Joli compartio: No sé si ya lo mandaron pero: chat describime. Se subieron todos!",
+          "tags": "Instagram - Compartido por Joli - Hace 3d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/Db_PrnXFbXq/?igsh=MWFoMGVkMXRnejQ3eg=="
+          }
+        },
+        {
+          "state": "hot",
+          "title": "efecto! My bueno para posadas tal vez?",
+          "desc": "Mary compartio: efecto! My bueno para posadas tal vez?",
+          "tags": "Instagram - Compartido por Mary - Hace 3d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/reel/DauaMV2zM1e/?igsh=ejV4YTB1em5zZWd1"
+          }
+        },
+        {
+          "state": "hot",
+          "title": "Modo lego",
+          "desc": "Vani compartio: Modo lego",
+          "tags": "Instagram - Compartido por Vani - Hace 3d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/Dbkp3aqHxvD/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
+          }
+        },
+        {
+          "state": "hot",
+          "title": "Nacido para, forzado a",
+          "desc": "Vani compartio: Nacido para, forzado a",
+          "tags": "Instagram - Compartido por Vani - Hace 3d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/Dbo6LpWjUSI/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
+          }
+        },
+        {
+          "state": "hot",
+          "title": "Los cálculos dicen...",
+          "desc": "Marisol compartio: Los cálculos dicen...",
+          "tags": "Instagram - Compartido por Marisol - Hace 3d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/Db5u3ZwlqZs/"
+          }
+        },
+        {
+          "state": "hot",
+          "title": ") que sonido hace..",
+          "desc": "Nicole compartio: ) que sonido hace..",
+          "tags": "Instagram - Compartido por Nicole - Hace 4d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/reel/DawMHzJpmvM/?igsh=MXY5bGt6dWx4anRxbw=="
+          }
+        },
+        {
+          "state": "hot",
+          "title": "trend wtf es….",
+          "desc": "Pili Gomez compartio: trend wtf es….",
+          "tags": "Instagram - Compartido por Pili Gomez - Hace 4d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/DbwFnWxlTj2/?igsh=YjZteXJqM3hkcXBu"
+          }
+        },
+        {
+          "state": "hot",
+          "title": "No me acuerdo si lo pasaron pero: \"despertar de una pesadilla\" para cuentas con productos",
+          "desc": "Marisol compartio: No me acuerdo si lo pasaron pero: \"despertar de una pesadilla\" para cuentas con productos",
+          "tags": "Instagram - Compartido por Marisol - Hace 4d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/reel/DbuDDKHRTDL/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
+          }
+        },
+        {
+          "state": "hot",
+          "title": "Encontré este trend en tiktok con dos elecciones y sus consecuencias, mundos puntos posibles",
+          "desc": "Pili Gomez compartio: Encontré este trend en tiktok con dos elecciones y sus consecuencias, mundos puntos posibles",
+          "tags": "TikTok - Compartido por Pili Gomez - Hace 4d",
+          "source": {
+            "label": "TikTok (via Slack)",
+            "url": "https://vt.tiktok.com/ZS9kNGpDND8tK-SJALc/"
+          }
+        },
+        {
+          "state": "hot",
+          "title": "uso de personajes de Disney para tiktok",
+          "desc": "Luu compartio: uso de personajes de Disney para tiktok",
+          "tags": "Web - Compartido por Luu - Hace 4d",
           "source": {
             "label": "Web (via Slack)",
-            "url": "https://claude.ai/artifacts/latest/3a53222b-8988-4421-b8b9-d1316474987c"
+            "url": "https://ar.pinterest.com/pin/821062575860498143/"
           }
         },
         {
           "state": "hot",
-          "title": "spider man",
-          "desc": "Melina compartio: spider man",
-          "tags": "Instagram - Compartido por Melina - Hace 6d",
+          "title": "¡Domingos de McDonald’s! Ahorrá hasta 25% en tu combo pagando sin contacto con tu Visa Galicia 💫🍟🍔 — @GaliciaTeBanca",
+          "desc": "Luu compartio: Galicia + McDonalds pasan desapercibidos para la gen z",
+          "tags": "TikTok - Compartido por Luu - Hace 4d",
+          "source": {
+            "label": "TikTok (via Slack)",
+            "url": "https://vt.tiktok.com/ZS4KA2C9h/"
+          }
+        },
+        {
+          "state": "hot",
+          "title": "palabra borrosa",
+          "desc": "Anto compartio: palabra borrosa",
+          "tags": "Instagram - Compartido por Anto - Hace 5d",
           "source": {
             "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/DbjkSXYEX6k/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
+            "url": "https://www.instagram.com/reel/Db3I3MxN2jN/?igsh=ang0OWxsazhkejdm"
+          }
+        },
+        {
+          "state": "hot",
+          "title": "Se puso de moda hace unos días las nubes con forma",
+          "desc": "Vani compartio: Se puso de moda hace unos días las nubes con forma",
+          "tags": "Instagram - Compartido por Vani - Hace 5d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/DbgmGKKju-9/?igsh=MXBna2ltc2d4bDEwdQ=="
           }
         }
       ]
@@ -163,9 +263,159 @@
       "items": [
         {
           "state": "rising",
+          "title": "Link compartido por Melina",
+          "desc": "Compartido por Melina sin comentario adicional.",
+          "tags": "Instagram - Compartido por Melina - Hace 10d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/DbmG-cnkT_O/?igsh=dzNhM2Fyb2NuOXMw"
+          }
+        },
+        {
+          "state": "rising",
+          "title": "Disney y TikTok",
+          "desc": "Luu compartio: Disney y TikTok",
+          "tags": "Instagram - Compartido por Luu - Hace 10d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/DbrSjpaoEkG/?igsh=OW14NmJsem1ldWNr"
+          }
+        },
+        {
+          "state": "rising",
+          "title": "Reels de pruebas pleaseeee",
+          "desc": "Mary compartio: Reels de pruebas pleaseeee",
+          "tags": "Instagram - Compartido por Mary - Hace 11d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/reel/Dad3CFRPk_w/?igsh=Yzh4eHd6bWpkZmdk"
+          }
+        },
+        {
+          "state": "rising",
+          "title": "che mi algoritmo se sube en cualquier tema muy rápido. No les pasa?? Y luego solo me salen cosas de ",
+          "desc": "Mary compartio: che mi algoritmo se sube en cualquier tema muy rápido. No les pasa?? Y luego solo me salen cosas de lo que investigué o busque.. pero muy rápido.",
+          "tags": "Instagram - Compartido por Mary - Hace 11d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/Dbogv_3j3v9/?igsh=MTdrYWg3eDN2bXpxMQ=="
+          }
+        },
+        {
+          "state": "rising",
+          "title": "dos post",
+          "desc": "Anto compartio: dos post",
+          "tags": "Instagram - Compartido por Anto - Hace 12d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/Da06aDvJRBT/?igsh=cGZyc2xkdm40aGRw"
+          }
+        },
+        {
+          "state": "rising",
+          "title": "calidad de imagen",
+          "desc": "Anto compartio: calidad de imagen",
+          "tags": "Instagram - Compartido por Anto - Hace 12d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/reel/DbUhjQ3ASDp/?igsh=MWNkanAzNGU3dDN5Yg=="
+          }
+        },
+        {
+          "state": "rising",
+          "title": "Link compartido por Mary",
+          "desc": "Compartido por Mary sin comentario adicional.",
+          "tags": "Instagram - Compartido por Mary - Hace 12d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/DbmG-cnkT_O/?igsh=YW80bHExMDBqNA=="
+          }
+        },
+        {
+          "state": "rising",
+          "title": "aniversario 25 de Harry Potter y la piedra filosofal en México",
+          "desc": "Marisol compartio: aniversario 25 de Harry Potter y la piedra filosofal en México",
+          "tags": "Instagram - Compartido por Marisol - Hace 12d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/reel/DbMQr_pv_bJ/"
+          }
+        },
+        {
+          "state": "rising",
+          "title": "apretar el botón",
+          "desc": "Anto compartio: apretar el botón",
+          "tags": "Instagram - Compartido por Anto - Hace 12d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/reel/Dbb1V5ggoS4/?igsh=MWJ3bXdveXNsMXRreA=="
+          }
+        },
+        {
+          "state": "rising",
+          "title": "Buenas!! Un par de trends de spiderman: juego con la telaraña y este con la frase \"un gran poder, me",
+          "desc": "Marisol compartio: Buenas!! Un par de trends de spiderman: juego con la telaraña y este con la frase \"un gran poder, merece un gran...\"",
+          "tags": "Instagram - Compartido por Marisol - Hace 12d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/Dbk36nXDCuK/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
+          }
+        },
+        {
+          "state": "rising",
+          "title": "Buenas!! Un par de trends de spiderman: juego con la telaraña y este con la frase \"un gran poder, me",
+          "desc": "Marisol compartio: Buenas!! Un par de trends de spiderman: juego con la telaraña y este con la frase \"un gran poder, merece un gran...\"",
+          "tags": "Instagram - Compartido por Marisol - Hace 12d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/DbbvcvdidKS/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
+          }
+        },
+        {
+          "state": "rising",
+          "title": "Blueberry, oreo + white choc Cookies 🫐🍪🤍 #recipes #blueberry #oreo #cookie #fy — @bakedstuffies",
+          "desc": "Anto compartio: foto",
+          "tags": "TikTok - Compartido por Anto - Hace 13d",
+          "source": {
+            "label": "TikTok (via Slack)",
+            "url": "https://vt.tiktok.com/ZS4fAkSKu/"
+          }
+        },
+        {
+          "state": "rising",
+          "title": "magia con la comida",
+          "desc": "Anto compartio: magia con la comida",
+          "tags": "Instagram - Compartido por Anto - Hace 13d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/reel/DagQf6bBUWW/?igsh=MWU3azV6cXZtdHdraA=="
+          }
+        },
+        {
+          "state": "rising",
+          "title": "reporte de juliooooo",
+          "desc": "Pili Gomez compartio: reporte de juliooooo",
+          "tags": "Web - Compartido por Pili Gomez - Hace 13d",
+          "source": {
+            "label": "Web (via Slack)",
+            "url": "https://claude.ai/artifacts/latest/3a53222b-8988-4421-b8b9-d1316474987c"
+          }
+        },
+        {
+          "state": "rising",
+          "title": "spider man",
+          "desc": "Melina compartio: spider man",
+          "tags": "Instagram - Compartido por Melina - Hace 13d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/DbjkSXYEX6k/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
+          }
+        },
+        {
+          "state": "rising",
           "title": "emoji que tenemos emoji que queremos/merecemos",
           "desc": "Nicole compartio: emoji que tenemos emoji que queremos/merecemos",
-          "tags": "Instagram - Compartido por Nicole - Hace 9d",
+          "tags": "Instagram - Compartido por Nicole - Hace 16d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DbY95nMGhuV/?igsh=MXV4OGt5MXgxdzlzYQ=="
@@ -175,7 +425,7 @@
           "state": "rising",
           "title": "me dio gracia que todos se quedaron recalculando",
           "desc": "Cande compartio: me dio gracia que todos se quedaron recalculando",
-          "tags": "Instagram - Compartido por Cande - Hace 11d",
+          "tags": "Instagram - Compartido por Cande - Hace 18d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/reel/DbWK6daJoVq/?igsh=MW5xODhyanM0eTFk"
@@ -185,7 +435,7 @@
           "state": "rising",
           "title": "Trends con ganchos del mes: algunos los re veo para FI outfit check de business woman",
           "desc": "Martu compartio: Trends con ganchos del mes: algunos los re veo para FI outfit check de business woman",
-          "tags": "Instagram - Compartido por Martu - Hace 11d",
+          "tags": "Instagram - Compartido por Martu - Hace 18d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DbYJhJ_oINB/?img_index=5&amp;igsh=bWxzdjh1bjIweTY4"
@@ -195,7 +445,7 @@
           "state": "rising",
           "title": "Yapping",
           "desc": "Luu compartio: Yapping",
-          "tags": "Instagram - Compartido por Luu - Hace 13d",
+          "tags": "Instagram - Compartido por Luu - Hace 20d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/reel/DbUALBbxslQ/?igsh=MjJsM2p4MW9sZ2xs"
@@ -205,7 +455,7 @@
           "state": "rising",
           "title": "Cancion y baile q están usando muchos mexicanos",
           "desc": "Pili Gomez compartio: Cancion y baile q están usando muchos mexicanos",
-          "tags": "TikTok - Compartido por Pili Gomez - Hace 13d",
+          "tags": "TikTok - Compartido por Pili Gomez - Hace 20d",
           "source": {
             "label": "TikTok (via Slack)",
             "url": "https://vt.tiktok.com/ZS9rvsmyDapte-iWTRL/"
@@ -215,7 +465,7 @@
           "state": "rising",
           "title": "Para qué nos matamos?",
           "desc": "Mary compartio: Para qué nos matamos?",
-          "tags": "Instagram - Compartido por Mary - Hace 13d",
+          "tags": "Instagram - Compartido por Mary - Hace 20d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/reel/DYDIo3SSZXK/?igsh=MTRoNnlpb2JrMTM3MA=="
@@ -225,7 +475,7 @@
           "state": "rising",
           "title": "Hagamos ...",
           "desc": "Mary compartio: Hagamos ...",
-          "tags": "Instagram - Compartido por Mary - Hace 13d",
+          "tags": "Instagram - Compartido por Mary - Hace 20d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/reel/DZXNmBXO84e/?igsh=MWY1aWN6dHF4NWQwNw=="
@@ -235,7 +485,7 @@
           "state": "rising",
           "title": "Link compartido por Vani",
           "desc": "Compartido por Vani sin comentario adicional.",
-          "tags": "Instagram - Compartido por Vani - Hace 13d",
+          "tags": "Instagram - Compartido por Vani - Hace 20d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DbMBCfsk8fU/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
@@ -245,7 +495,7 @@
           "state": "rising",
           "title": "Corta (@somoscorta) on X",
           "desc": "Pili Gomez compartio: Yo iba a compartir esto: aguante papaaaa",
-          "tags": "X - Compartido por Pili Gomez - Hace 16d",
+          "tags": "X - Compartido por Pili Gomez - Hace 23d",
           "source": {
             "label": "X (via Slack)",
             "url": "https://x.com/somoscorta/status/2080706741369512268"
@@ -255,7 +505,7 @@
           "state": "rising",
           "title": "Kantala fc (@ifOnlyKantala) on X",
           "desc": "Marisol compartio: Me estuvieron apareciendo estas fotos en X que mantenés apretado y se aclara la imagen",
-          "tags": "X - Compartido por Marisol - Hace 16d",
+          "tags": "X - Compartido por Marisol - Hace 23d",
           "source": {
             "label": "X (via Slack)",
             "url": "https://x.com/i/status/2080653881923817576"
@@ -265,7 +515,7 @@
           "state": "rising",
           "title": "trend Nolan imax formato",
           "desc": "Pili Gomez compartio: trend Nolan imax formato",
-          "tags": "Instagram - Compartido por Pili Gomez - Hace 16d",
+          "tags": "Instagram - Compartido por Pili Gomez - Hace 23d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DbJa7chiQ7M/?img_index=1&amp;igsh=d2JxYjBmcHpnYnFz"
@@ -275,7 +525,7 @@
           "state": "rising",
           "title": "Link compartido por Pili Gomez",
           "desc": "Compartido por Pili Gomez sin comentario adicional.",
-          "tags": "TikTok - Compartido por Pili Gomez - Hace 16d",
+          "tags": "TikTok - Compartido por Pili Gomez - Hace 23d",
           "source": {
             "label": "TikTok (via Slack)",
             "url": "https://vt.tiktok.com/ZSX7adErb/"
@@ -285,7 +535,7 @@
           "state": "rising",
           "title": "la odisea",
           "desc": "Melina compartio: la odisea",
-          "tags": "Instagram - Compartido por Melina - Hace 17d",
+          "tags": "Instagram - Compartido por Melina - Hace 24d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DbG7sgSnX8q/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
@@ -295,7 +545,7 @@
           "state": "rising",
           "title": "le llevamos las redes a la Rosi? Obvio necesita CM.... SEGUÍA Ella con el tema",
           "desc": "Mary compartio: le llevamos las redes a la Rosi? Obvio necesita CM.... SEGUÍA Ella con el tema",
-          "tags": "Instagram - Compartido por Mary - Hace 18d",
+          "tags": "Instagram - Compartido por Mary - Hace 25d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/reel/DbGWp5vIWIW/?igsh=MTg4b2JoYWFkd3F6ZQ=="
@@ -305,7 +555,7 @@
           "state": "rising",
           "title": "Magistral (@magistralarg) on X",
           "desc": "Vani compartio: Que rapido se sube a las tendencias",
-          "tags": "X - Compartido por Vani - Hace 19d",
+          "tags": "X - Compartido por Vani - Hace 26d",
           "source": {
             "label": "X (via Slack)",
             "url": "https://x.com/magistralarg/status/2079623453024346386?s=20"
@@ -315,7 +565,7 @@
           "state": "rising",
           "title": "Foto que subió Lautaro, con Licha, los dos de espaldas con sus camisetas \"Martinez\" por si sirve!",
           "desc": "Marisol compartio: Foto que subió Lautaro, con Licha, los dos de espaldas con sus camisetas \"Martinez\" por si sirve!",
-          "tags": "Instagram - Compartido por Marisol - Hace 20d",
+          "tags": "Instagram - Compartido por Marisol - Hace 27d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DbBknVKDlJp/?img_index=1&amp;igsh=ZThyamZhMzB1bDN2"
@@ -325,200 +575,10 @@
           "state": "rising",
           "title": "aparece café martínez",
           "desc": "Melina compartio: aparece café martínez",
-          "tags": "TikTok - Compartido por Melina - Hace 22d",
+          "tags": "TikTok - Compartido por Melina - Hace 29d",
           "source": {
             "label": "TikTok (via Slack)",
             "url": "https://vt.tiktok.com/ZSXuD8C3g/"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "Textos largos segundos cortos (medio viejo este pero siempre que lo veo termino cayendo me da ternur",
-          "desc": "Nicole compartio: Textos largos segundos cortos (medio viejo este pero siempre que lo veo termino cayendo me da ternura)",
-          "tags": "Instagram - Compartido por Nicole - Hace 23d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/reel/DayOApvBZ8e/?igsh=Mzc4ejZ5bHYxNjI1"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "Fastlane (@UseFastlane) on X",
-          "desc": "Melina compartio: ugc claude",
-          "tags": "X - Compartido por Melina - Hace 23d",
-          "source": {
-            "label": "X (via Slack)",
-            "url": "https://x.com/usefastlane/status/2077968600200294801?s=46&amp;t=ddgtaiSDFa9UWLmOU9--Hg"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "Subir la resolución",
-          "desc": "Marisol compartio: Subir la resolución",
-          "tags": "Instagram - Compartido por Marisol - Hace 23d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/reel/DavZoQBuJqo/?igsh=eGtwaGlvaXNudjI1"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "Mostaza cambió su foto de perfil a celeste",
-          "desc": "Guada compartio: Mostaza cambió su foto de perfil a celeste",
-          "tags": "Instagram - Compartido por Guada - Hace 24d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/Da3f595JIiU/?igsh=b3BoZHh5OXVlMWNh"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "capaz medio tarde ya, pero estan con esta x si le sirve a alguien",
-          "desc": "Nicole compartio: capaz medio tarde ya, pero estan con esta x si le sirve a alguien",
-          "tags": "Instagram - Compartido por Nicole - Hace 24d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/Da3fs74CSRm/?utm_source=ig_web_copy_link&amp;igsh=NTc4MTIwNjQ2YQ=="
-          }
-        },
-        {
-          "state": "rising",
-          "title": "Link compartido por Guada",
-          "desc": "Compartido por Guada sin comentario adicional.",
-          "tags": "Instagram - Compartido por Guada - Hace 24d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/reel/Da2nZ1Puwcp/?igsh=MWh3eWRvdzlicng0bw=="
-          }
-        },
-        {
-          "state": "rising",
-          "title": "cafe Martínez",
-          "desc": "Martu compartio: cafe Martínez",
-          "tags": "Instagram - Compartido por Martu - Hace 24d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/reel/Da0nb_yRai2/?igsh=bHZqaHA1NDl3Z29h"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "Link compartido por Melina",
-          "desc": "Compartido por Melina sin comentario adicional.",
-          "tags": "Instagram - Compartido por Melina - Hace 24d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/Da0_Qnwh-Yc/?igsh=bXRwcGc0bGhkYXBl"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "Grido Helado (@GridoHelados) on X",
-          "desc": "Cande compartio: grido capos capos",
-          "tags": "X - Compartido por Cande - Hace 25d",
-          "source": {
-            "label": "X (via Slack)",
-            "url": "https://x.com/gridohelados/status/2077400545921278043?s=46"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "la paz q tienen en otros países que no están obsesionados con la mufa jajsjsjsjaj",
-          "desc": "Pili Gomez compartio: la paz q tienen en otros países que no están obsesionados con la mufa jajsjsjsjaj",
-          "tags": "Instagram - Compartido por Pili Gomez - Hace 26d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/Dax3rqklEAl/?igsh=N2dvYnQzOGxwajIw"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "Link compartido por Pili Gomez",
-          "desc": "Compartido por Pili Gomez sin comentario adicional.",
-          "tags": "Instagram - Compartido por Pili Gomez - Hace 26d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/DaVYrmCCL34/"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "BK tmb hizo lo mismo",
-          "desc": "Pili Gomez compartio: BK tmb hizo lo mismo",
-          "tags": "Instagram - Compartido por Pili Gomez - Hace 26d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/reels/DZ5mSX-nwtH/"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "nicokaino (@marcosnicokaine) on X",
-          "desc": "Toto compartio: Lo hicieron con IA, y un twittero amigo de la agencia lo levantó en TW",
-          "tags": "X - Compartido por Toto - Hace 26d",
-          "source": {
-            "label": "X (via Slack)",
-            "url": "https://x.com/marcosnicokaine/status/2076825758115213708?s=20"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "Comunicado de uber",
-          "desc": "Vani compartio: Comunicado de uber",
-          "tags": "Instagram - Compartido por Vani - Hace 26d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/Davuxz4ptdf/"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "podemos usar la voz de este señor por favor les pido, que alguien le pague para que haga el guión y ",
-          "desc": "Mary compartio: podemos usar la voz de este señor por favor les pido, que alguien le pague para que haga el guión y ponga la voz en algoooo. Fan.",
-          "tags": "Instagram - Compartido por Mary - Hace 27d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/reel/Datd75bt9Qv/?igsh=c29odHZsaGpsbm8w"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "Poner los dedos y darle la mano al vasito (producto)",
-          "desc": "Marisol compartio: Poner los dedos y darle la mano al vasito (producto)",
-          "tags": "Instagram - Compartido por Marisol - Hace 27d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/reel/DU-3WfEiMk2/?igsh=MWZsd2h1a3NrYXB0OQ=="
-          }
-        },
-        {
-          "state": "rising",
-          "title": "Mundial real time",
-          "desc": "Cami compartio: Mundial real time",
-          "tags": "Instagram - Compartido por Cami - Hace 27d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/reel/DavR2zXurUZ/?igsh=NThmM28xM3YwZ2N2"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "Vi bastante estos posteos con ingredientes dejo 2 ejemplos",
-          "desc": "Cami compartio: Vi bastante estos posteos con ingredientes dejo 2 ejemplos",
-          "tags": "Instagram - Compartido por Cami - Hace 27d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/DaBfaK8lB00/?igsh=MTJpeTNmNmFoYnJ6cw=="
-          }
-        },
-        {
-          "state": "rising",
-          "title": "Vi bastante estos posteos con ingredientes dejo 2 ejemplos",
-          "desc": "Cami compartio: Vi bastante estos posteos con ingredientes dejo 2 ejemplos",
-          "tags": "Instagram - Compartido por Cami - Hace 27d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/Dai8BA0kvWw/?img_index=1&amp;igsh=NDN2eGFzZG9tY2du"
           }
         }
       ]
@@ -551,73 +611,63 @@
       "subtitle": "Curados por el equipo en #equiporedes + complemento RSS",
       "items": [
         {
-          "platform": "Instagram",
-          "title": "La MADONNETA -",
-          "desc": "La MADONNETA -",
-          "when": "Hace 23d",
-          "source": {
-            "label": "Mica · Slack",
-            "url": "https://www.instagram.com/stories/madonna/3942570370716723969?utm_source=ig_story_item_share&amp;igsh=MTRiYno1b2g1c3lwNw=="
-          }
-        },
-        {
           "platform": "Social",
-          "title": "Ticker: David Ellison Believes CNN Plays a Role in Paramount-WBD Merger Delay",
-          "desc": "A court date has been set in 2027 for the cases seeking to block the Paramount Skydance-Warner Bros. Discovery merger",
+          "title": "New Claims In WPP Whistleblower Suit Allege Sony Probe Found Rebate Fraud",
+          "desc": "The ex-WPP executive suing his former employer for retaliation in a high-profile case alleging he was fired after trying to expose an illegal media rebate scheme now alleges that WPP [&hellip;]",
           "when": "Hace 2d",
           "source": {
             "label": "Adweek Social",
-            "url": "https://www.adweek.com/tvnewser/ticker-david-ellison-believes-cnn-plays-a-role-in-paramount-wbd-merger-delay/"
+            "url": "https://www.adweek.com/agencies/exclusive-new-claims-in-wpp-whistleblower-suit-allege-sony-probe-found-rebate-fraud/"
           }
         },
         {
           "platform": "Social",
-          "title": "What the Nielsen and DoubleVerify Merger Means for the Ad Industry, According to Experts",
-          "desc": "As Nielsen prepares to acquire DoubleVerify, ad industry experts weigh in on everything from cost to transparency.",
+          "title": "Nielsen&#8217;s DoubleVerify Deal Isn&#8217;t About AI Adoption: It&#8217;s About Controlling What the Models Measure",
+          "desc": "The deals shows capital is rotating out of the application layer and into the signal layer.",
           "when": "Hace 2d",
           "source": {
             "label": "Adweek Social",
-            "url": "https://www.adweek.com/convergent-tv/what-the-nielsen-and-doubleverify-merger-means-for-the-ad-industry/"
+            "url": "https://www.adweek.com/dealroom/nielsens-doubleverify-deal-isnt-about-ai-adoption-its-about-controlling-what-the-models-measure/"
           }
         },
         {
           "platform": "Social",
-          "title": "ESPN and Stavvy Want You to Know ‘Football’s On’ in New Campaign",
-          "desc": "ESPN is heading to its first Super Bowl and kicking off the NFL season with a new marketing push.",
+          "title": "13 Marketer Moves to Know About In August: Bobbie, Papa Johns, Twitch, and More",
+          "desc": "CMO hires, promotions, and exits from the first two weeks of the month",
           "when": "Hace 2d",
           "source": {
             "label": "Adweek Social",
-            "url": "https://www.adweek.com/convergent-tv/espn-and-stavvy-want-you-to-know-footballs-on-in-new-campaign/"
+            "url": "https://www.adweek.com/brand-marketing/13-marketer-moves-to-know-about-in-august-bobbie-papa-johns-twitch-and-more/"
           }
         },
         {
           "platform": "Social",
-          "title": "How Tracee Ellis Ross Built a Beauty Brand That Became a Cultural Movement",
-          "desc": "The challenger beauty brand leveraged culture, comedy, and community insight.",
-          "when": "Hace 2d",
-          "source": {
-            "label": "Adweek Social",
-            "url": "https://www.adweek.com/brand-marketing/how-tracee-ellis-ross-built-a-beauty-brand-that-became-a-cultural-movement/"
-          }
-        },
-        {
-          "platform": "Social",
-          "title": "Marketing Vanguard at Cannes: AI Is Becoming the Daily Job ft. Mark Kirkham of PepsiCo",
-          "desc": "Why learning out loud wins when navigating five-month AI cycles.",
-          "when": "Hace 2d",
-          "source": {
-            "label": "Adweek Social",
-            "url": "https://www.adweek.com/brand-marketing/marketing-vanguard-at-cannes-ai-is-becoming-the-daily-job-ft-mark-kirkham-of-pepsico/"
-          }
-        },
-        {
-          "platform": "Social",
-          "title": "Woo, Sue, and ARPU: What Publisher Earnings Reveal About Their AI Strategies",
-          "desc": "The New York Times, News Corp, USA Today Co. and People Inc. reported this week, each of which is grappling with AI-driven pressure on traffic.",
+          "title": "The Journey Is the Destination: Reinventing Travel Marketing",
+          "desc": "Why values-driven travel is reshaping destination marketing.",
           "when": "Hace 3d",
           "source": {
             "label": "Adweek Social",
-            "url": "https://www.adweek.com/media/woo-sue-arpu-publisher-earnings-reveal-ai-strategies/"
+            "url": "https://www.adweek.com/brand-marketing/the-journey-is-the-destination-reinventing-travel-marketing/"
+          }
+        },
+        {
+          "platform": "Social",
+          "title": "This Back-to-School Season, Denim Brands Hedge Their Bets Across Gen Z Subcultures",
+          "desc": "In a busy period for denim retailers, marketers are expanding casts of ambassadors to reach fragmented young consumers.",
+          "when": "Hace 3d",
+          "source": {
+            "label": "Adweek Social",
+            "url": "https://www.adweek.com/creativity/this-back-to-school-season-denim-brands-hedge-their-bets-across-gen-z-subcultures/"
+          }
+        },
+        {
+          "platform": "Social",
+          "title": "Retail Roundup: 9 Commerce Moves From Target, Kroger, Walmart and More",
+          "desc": "Retailers are staffing up in AI and e-commerce.",
+          "when": "Hace 3d",
+          "source": {
+            "label": "Adweek Social",
+            "url": "https://www.adweek.com/commerce/retail-roundup-9-commerce-moves-from-target-kroger-walmart-and-more/"
           }
         }
       ]
