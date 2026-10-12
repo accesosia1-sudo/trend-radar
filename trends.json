@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T18:16:04.069527+00:00",
+  "updatedAt": "2026-10-12T18:52:06.798046+00:00",
   "panels": {
     "ebullicion": {
       "title": "En ebullicion esta semana",
@@ -7,52 +7,102 @@
       "items": [
         {
           "state": "hot",
-          "title": "Link compartido por Vani",
-          "desc": "Compartido por Vani sin comentario adicional.",
-          "tags": "Instagram - Compartido por Vani - Hoy",
+          "title": "Buenas! No sé si lo vieron pero ahora Tiktok tiene la categoría de \"minidramas\" en el celu no me apa",
+          "desc": "Marisol compartio: Buenas! No sé si lo vieron pero ahora Tiktok tiene la categoría de \"minidramas\" en el celu no me aparece pero en el web si",
+          "tags": "TikTok - Compartido por Marisol - Hace 3d",
           "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/DeFqCi6gQWK/?utm_source=ig_web_copy_link&amp;stkn=NTc4MTIwNjQ2YQ=="
+            "label": "TikTok (via Slack)",
+            "url": "https://www.tiktok.com/shortdrama"
           }
         },
         {
           "state": "hot",
-          "title": "Para cafe martinez",
-          "desc": "Vani compartio: Para cafe martinez",
-          "tags": "Instagram - Compartido por Vani - Hoy",
+          "title": "Link compartido por Toto",
+          "desc": "Compartido por Toto sin comentario adicional.",
+          "tags": "Instagram - Compartido por Toto - Hace 3d",
           "source": {
             "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/Dd9wHXlD-fK/?utm_source=ig_web_copy_link&amp;stkn=NTc4MTIwNjQ2YQ=="
+            "url": "https://www.instagram.com/reel/Ddmy3PxRJD4/?vrfl=ZWZha2M3eWJ1bTAx"
           }
         },
         {
           "state": "hot",
-          "title": "dejo el formato porque me parece que está my bueno y aplica a cualquier cuenta! un carrusel con vide",
-          "desc": "Cande compartio: dejo el formato porque me parece que está my bueno y aplica a cualquier cuenta! un carrusel con video",
-          "tags": "Instagram - Compartido por Cande - Hace 4d",
+          "title": "Link compartido por Toto",
+          "desc": "Compartido por Toto sin comentario adicional.",
+          "tags": "Instagram - Compartido por Toto - Hace 3d",
           "source": {
             "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/Dd6t2UpFLsO/?img_index=1"
+            "url": "https://www.instagram.com/reel/DeIXyLuNmcG/?psln=bmN5YTFtaWtpbTY0"
           }
         },
         {
           "state": "hot",
-          "title": "fotos según cada generación",
-          "desc": "Melina compartio: fotos según cada generación",
-          "tags": "Instagram - Compartido por Melina - Hace 6d",
+          "title": "Link compartido por Toto",
+          "desc": "Compartido por Toto sin comentario adicional.",
+          "tags": "Instagram - Compartido por Toto - Hace 3d",
           "source": {
             "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/DdZrZrCFHYS/?stkn=MnBycmZyYWFsbHRz"
+            "url": "https://www.instagram.com/reel/DdmFUtzSLwR/?obrf=MXJtbnplN29jNG9pZA=="
           }
         },
         {
           "state": "hot",
-          "title": "A quien le puedes interesar está hecho con IA",
-          "desc": "Mary compartio: A quien le puedes interesar está hecho con IA",
-          "tags": "Instagram - Compartido por Mary - Hace 6d",
+          "title": "SALIO LINEUP",
+          "desc": "Pili Gomez compartio: SALIO LINEUP",
+          "tags": "Instagram - Compartido por Pili Gomez - Hace 4d",
           "source": {
             "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/reel/Dd2iM0VJxZ3/?stkn=MjVldzQzMXducDZj"
+            "url": "https://www.instagram.com/p/DePMqORRWbt/"
+          }
+        },
+        {
+          "state": "hot",
+          "title": "Plusbelle (@Plusbellear) on X",
+          "desc": "Vani compartio: Siempre tan rapida la de plusbelle",
+          "tags": "X - Compartido por Vani - Hace 5d",
+          "source": {
+            "label": "X (via Slack)",
+            "url": "https://x.com/plusbellear/status/2107655847799136455?s=46"
+          }
+        },
+        {
+          "state": "hot",
+          "title": "jajdjs",
+          "desc": "Marisol compartio: jajdjs",
+          "tags": "Instagram - Compartido por Marisol - Hace 5d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/reel/Dd62N8oM1aP/?stkn=dHNreWh3cGd2dW01"
+          }
+        },
+        {
+          "state": "hot",
+          "title": "Ashuuuudaaaa #fyp — @Florenciantoni",
+          "desc": "Melina compartio: para que CM le comente",
+          "tags": "TikTok - Compartido por Melina - Hace 6d",
+          "source": {
+            "label": "TikTok (via Slack)",
+            "url": "https://vt.tiktok.com/ZSb44AtPM/"
+          }
+        },
+        {
+          "state": "hot",
+          "title": "Hoy es la despedida de messi",
+          "desc": "Vani compartio: Hoy es la despedida de messi",
+          "tags": "Instagram - Compartido por Vani - Hace 6d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/DeJ-ky7EWfD/?stkn=MWM1bmhrcXZ2cm03ZA=="
+          }
+        },
+        {
+          "state": "hot",
+          "title": "mamushka para el dia de la madre",
+          "desc": "Cande compartio: mamushka para el dia de la madre",
+          "tags": "Instagram - Compartido por Cande - Hace 6d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/Dd90zioAVq9/?stkn=MTFxNTBjbmR2ZW9jaQ=="
           }
         }
       ]
@@ -63,9 +113,59 @@
       "items": [
         {
           "state": "rising",
+          "title": "Link compartido por Vani",
+          "desc": "Compartido por Vani sin comentario adicional.",
+          "tags": "Instagram - Compartido por Vani - Hace 7d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/DeFqCi6gQWK/?utm_source=ig_web_copy_link&amp;stkn=NTc4MTIwNjQ2YQ=="
+          }
+        },
+        {
+          "state": "rising",
+          "title": "Para cafe martinez",
+          "desc": "Vani compartio: Para cafe martinez",
+          "tags": "Instagram - Compartido por Vani - Hace 7d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/Dd9wHXlD-fK/?utm_source=ig_web_copy_link&amp;stkn=NTc4MTIwNjQ2YQ=="
+          }
+        },
+        {
+          "state": "rising",
+          "title": "dejo el formato porque me parece que está my bueno y aplica a cualquier cuenta! un carrusel con vide",
+          "desc": "Cande compartio: dejo el formato porque me parece que está my bueno y aplica a cualquier cuenta! un carrusel con video",
+          "tags": "Instagram - Compartido por Cande - Hace 12d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/Dd6t2UpFLsO/?img_index=1"
+          }
+        },
+        {
+          "state": "rising",
+          "title": "fotos según cada generación",
+          "desc": "Melina compartio: fotos según cada generación",
+          "tags": "Instagram - Compartido por Melina - Hace 13d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/p/DdZrZrCFHYS/?stkn=MnBycmZyYWFsbHRz"
+          }
+        },
+        {
+          "state": "rising",
+          "title": "A quien le puedes interesar está hecho con IA",
+          "desc": "Mary compartio: A quien le puedes interesar está hecho con IA",
+          "tags": "Instagram - Compartido por Mary - Hace 13d",
+          "source": {
+            "label": "Instagram (via Slack)",
+            "url": "https://www.instagram.com/reel/Dd2iM0VJxZ3/?stkn=MjVldzQzMXducDZj"
+          }
+        },
+        {
+          "state": "rising",
           "title": "No para de aparecerme este de “abrí la foto”",
           "desc": "Guada compartio: No para de aparecerme este de “abrí la foto”",
-          "tags": "Instagram - Compartido por Guada - Hace 7d",
+          "tags": "Instagram - Compartido por Guada - Hace 14d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/Ddoaxd6loz3/?img_index=1&amp;stkn=MXkxeDNoeW81MHRhOQ=="
@@ -75,7 +175,7 @@
           "state": "rising",
           "title": "Me parecio copada la idea del recursito del zoom al comienzo",
           "desc": "Ger compartio: Me parecio copada la idea del recursito del zoom al comienzo",
-          "tags": "Instagram - Compartido por Ger - Hace 7d",
+          "tags": "Instagram - Compartido por Ger - Hace 14d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DdzhvT5lGtC/"
@@ -85,7 +185,7 @@
           "state": "rising",
           "title": "Idea de recurso de story:",
           "desc": "Martu compartio: Idea de recurso de story:",
-          "tags": "Instagram - Compartido por Martu - Hace 10d",
+          "tags": "Instagram - Compartido por Martu - Hace 17d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/reel/DdsVnvjDJYy/?stkn=d2tua2Jrc2d3emR6"
@@ -95,7 +195,7 @@
           "state": "rising",
           "title": "Taylor swift cambio las o por 0",
           "desc": "Vani compartio: Taylor swift cambio las o por 0",
-          "tags": "Instagram - Compartido por Vani - Hace 10d",
+          "tags": "Instagram - Compartido por Vani - Hace 17d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/Ddl6JJxFkBR/?utm_source=ig_web_copy_link&amp;stkn=NTc4MTIwNjQ2YQ%3D%3D"
@@ -105,7 +205,7 @@
           "state": "rising",
           "title": "Link compartido por Cande",
           "desc": "Compartido por Cande sin comentario adicional.",
-          "tags": "Instagram - Compartido por Cande - Hace 11d",
+          "tags": "Instagram - Compartido por Cande - Hace 18d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/reel/Ddjntk-De5N/?stkn=MTI5bGl0bTc1enlsaQ=="
@@ -115,7 +215,7 @@
           "state": "rising",
           "title": "En TT volvieron las frutinovelas. Con Cocardo y sus helados",
           "desc": "Guada compartio: En TT volvieron las frutinovelas. Con Cocardo y sus helados",
-          "tags": "TikTok - Compartido por Guada - Hace 11d",
+          "tags": "TikTok - Compartido por Guada - Hace 18d",
           "source": {
             "label": "TikTok (via Slack)",
             "url": "https://www.tiktok.com/@koolvids2000/video/7688775500289936671"
@@ -125,7 +225,7 @@
           "state": "rising",
           "title": "trend reacción cuando me dicen",
           "desc": "Pili Gomez compartio: trend reacción cuando me dicen",
-          "tags": "Instagram - Compartido por Pili Gomez - Hace 11d",
+          "tags": "Instagram - Compartido por Pili Gomez - Hace 18d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/reel/DdmB6QhM0Gw/?stkn=MThpMzcyYmM4ZHVq"
@@ -135,7 +235,7 @@
           "state": "rising",
           "title": "muy cool para mostrar productos",
           "desc": "Melina compartio: muy cool para mostrar productos",
-          "tags": "Instagram - Compartido por Melina - Hace 12d",
+          "tags": "Instagram - Compartido por Melina - Hace 19d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DdiS7LDINvU/?stkn=aWtodzR4b3RraWQ5"
@@ -145,7 +245,7 @@
           "state": "rising",
           "title": "El viernes sale musica de taylor swift -",
           "desc": "Vani compartio: El viernes sale musica de taylor swift -",
-          "tags": "Instagram - Compartido por Vani - Hace 12d",
+          "tags": "Instagram - Compartido por Vani - Hace 19d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DdoYv7eRF8E/"
@@ -155,7 +255,7 @@
           "state": "rising",
           "title": "nuevo pan dulce de joaquin levington",
           "desc": "Pili Gomez compartio: nuevo pan dulce de joaquin levington",
-          "tags": "Instagram - Compartido por Pili Gomez - Hace 12d",
+          "tags": "Instagram - Compartido por Pili Gomez - Hace 19d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/reel/DcYfLLSgSV9/?utm_source=ig_web_copy_link&amp;stkn=NTc4MTIwNjQ2YQ=="
@@ -165,7 +265,7 @@
           "state": "rising",
           "title": "Juego visual con las historias de IG",
           "desc": "Marisol compartio: Juego visual con las historias de IG",
-          "tags": "Instagram - Compartido por Marisol - Hace 13d",
+          "tags": "Instagram - Compartido por Marisol - Hace 20d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DdiS7LDINvU/?stkn=MXRwMWxjOTU4c3V5Zw=="
@@ -175,7 +275,7 @@
           "state": "rising",
           "title": "Trend infografías animadas:",
           "desc": "Jessi compartio: Trend infografías animadas:",
-          "tags": "Instagram - Compartido por Jessi - Hace 18d",
+          "tags": "Instagram - Compartido por Jessi - Hace 25d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/Dc0-hROEQdI?img_index=3"
@@ -185,7 +285,7 @@
           "state": "rising",
           "title": "trend ciudadano promedio",
           "desc": "Toto compartio: trend ciudadano promedio",
-          "tags": "Instagram - Compartido por Toto - Hace 18d",
+          "tags": "Instagram - Compartido por Toto - Hace 25d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DdXbE1MHNjI/?stkn=dGdtYW83cXN0eWdu"
@@ -195,7 +295,7 @@
           "state": "rising",
           "title": "el acting jajsja nosotras en prome:",
           "desc": "Pili Gomez compartio: el acting jajsja nosotras en prome:",
-          "tags": "Instagram - Compartido por Pili Gomez - Hace 19d",
+          "tags": "Instagram - Compartido por Pili Gomez - Hace 26d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/reel/DdUqgy6JLUB/?utm_source=ig_web_copy_link&amp;stkn=NTc4MTIwNjQ2YQ=="
@@ -205,60 +305,10 @@
           "state": "rising",
           "title": "Buenas! refe para Café Martinez",
           "desc": "Marisol compartio: Buenas! refe para Café Martinez",
-          "tags": "Instagram - Compartido por Marisol - Hace 21d",
+          "tags": "Instagram - Compartido por Marisol - Hace 28d",
           "source": {
             "label": "Instagram (via Slack)",
             "url": "https://www.instagram.com/p/DdO-n4lDSjZ/?utm_source=ig_web_copy_link&amp;stkn=NTc4MTIwNjQ2YQ=="
-          }
-        },
-        {
-          "state": "rising",
-          "title": "efecto de reversa, no sé si va para las marcas pero me hizo reír últimamente me salen muchos videos ",
-          "desc": "Marisol compartio: efecto de reversa, no sé si va para las marcas pero me hizo reír últimamente me salen muchos videos con \"humor literal\"",
-          "tags": "Instagram - Compartido por Marisol - Hace 26d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/reel/DYAjmyOxfRR/?stkn=d2Y5MXQ1MWNud3Bw"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "Efectos de sonidos graciosos",
-          "desc": "Marisol compartio: Efectos de sonidos graciosos",
-          "tags": "Instagram - Compartido por Marisol - Hace 26d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/reel/Dcg4sRWBDFy/?stkn=bHh1cTU2a3d3MmR0"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "en la ciudad de la furia :P | retiropilarr #825 | Cacholog",
-          "desc": "Pili Gomez compartio: comenten!!! los effeo x reverse",
-          "tags": "Web - Compartido por Pili Gomez - Hace 27d",
-          "source": {
-            "label": "Web (via Slack)",
-            "url": "https://cacholog.com/retiropilarr"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "yo me hice un flog que volvió",
-          "desc": "Pili Gomez compartio: yo me hice un flog que volvió",
-          "tags": "Web - Compartido por Pili Gomez - Hace 27d",
-          "source": {
-            "label": "Web (via Slack)",
-            "url": "https://cacholog.com/"
-          }
-        },
-        {
-          "state": "rising",
-          "title": "idea para cafe martinez",
-          "desc": "Cande compartio: idea para cafe martinez",
-          "tags": "Instagram - Compartido por Cande - Hace 27d",
-          "source": {
-            "label": "Instagram (via Slack)",
-            "url": "https://www.instagram.com/p/Dc9kEL8jwa_/?img_index=3"
           }
         }
       ]
@@ -283,62 +333,62 @@
       "items": [
         {
           "platform": "Social",
-          "title": "Albertsons&#8217; Retail Media Head Leaves Grocery Giant",
-          "desc": "Brian Monahan most recently spearheaded a branded content offering.",
+          "title": "Editor’s Note Now Attached to ABC News Story Involving Trump&#8217;s Sons",
+          "desc": "ABC News reportedly pulled a story about an investment firm tied to President Trump’s sons before issuing a correction.",
           "when": "Hoy",
           "source": {
             "label": "Adweek Social",
-            "url": "https://www.adweek.com/commerce/albertsons-retail-media-head-leaves-grocery-giant/"
+            "url": "https://www.adweek.com/tvnewser/editors-note-now-attached-to-abc-news-story-involving-trumps-sons/"
           }
         },
         {
           "platform": "Social",
-          "title": "OpenAI Is Piloting Brand Suitability Controls With DoubleVerify and IAS",
-          "desc": "The company is also testing a larger, image-led ad format and expanding its measurement partners.",
+          "title": "How to Resonate With Consumers in the Age of Attention",
+          "desc": "This post was created in partnership with Zappi The consumer attention economy continues to fragment, and marketers must adapt to not just grab it, but hold it.&nbsp; During an ADWEEK [&hellip;]",
           "when": "Hoy",
           "source": {
             "label": "Adweek Social",
-            "url": "https://www.adweek.com/media/openai-is-piloting-brand-suitability-controls-with-doubleverify-and-ias/"
-          }
-        },
-        {
-          "platform": "TikTok",
-          "title": "TikTok Expands Its Off-Platform Ad Network to US Advertisers",
-          "desc": "The rebranded Pangle spans nearly 400,000 apps and is heavy on gaming. TikTok is also allowing advertisers to run campaigns from AI tools like Claude and Perplexity.",
-          "when": "Hoy",
-          "source": {
-            "label": "Adweek Social",
-            "url": "https://www.adweek.com/media/tiktok-expands-its-off-platform-ad-network-to-us-advertisers/"
-          }
-        },
-        {
-          "platform": "TikTok",
-          "title": "TikTok Adds an AI Shopping Assistant and Lets Users Buy Direct From Brands",
-          "desc": "TikTok is adding a new checkout feature where shoppers can buy directly from brands in its app—separately from TikTok Shop—as well as an AI shopping assistant that can move people [&hellip;]",
-          "when": "Hoy",
-          "source": {
-            "label": "Adweek Social",
-            "url": "https://www.adweek.com/commerce/tiktok-adds-an-ai-shopping-assistant-and-lets-users-buy-direct-from-brands/"
+            "url": "https://www.adweek.com/creativity/how-to-resonate-with-consumers-in-the-age-of-attention/"
           }
         },
         {
           "platform": "Social",
-          "title": "Join Gronk, Coach, The Home Depot, and More at ADWEEK House",
-          "desc": "ADWEEK is opening the doors to ADWEEK House: Advertising HQ in New York this week, Oct. 5-8, and you're invited.",
+          "title": "AI Is Changing How Marketing and Technology Teams Work Together",
+          "desc": "This post was created in partnership with Monks Key takeaways Keeping pace with consumers has become a demanding assignment for marketing teams. New tools give marketers more ways to create [&hellip;]",
           "when": "Hoy",
           "source": {
             "label": "Adweek Social",
-            "url": "https://www.adweek.com/brand-marketing/join-gronk-coach-the-home-depot-and-more-at-adweek-house/"
+            "url": "https://www.adweek.com/brand-marketing/ai-is-changing-how-marketing-and-technology-teams-work-together/"
           }
         },
         {
-          "platform": "YouTube",
-          "title": "Piers Morgan&#8217;s Uncensored Launches Paid Tier to Own Its Audience Beyond YouTube",
-          "desc": "The company is hoping 2% to 4% of its 4.6 million YouTube subscribers will pay $4.99 a month for early, ad-free, exclusive content.",
+          "platform": "Social",
+          "title": "Entering the New World of Marketing With LLMs",
+          "desc": "This post was created in partnership with Integral Ad Science  Conversational AI is quickly opening up a new world for marketers, with opportunities in audience reach and targeting. But the [&hellip;]",
           "when": "Hoy",
           "source": {
             "label": "Adweek Social",
-            "url": "https://www.adweek.com/media/piers-morgans-uncensored-paid-subscriptions/"
+            "url": "https://www.adweek.com/programmatic/entering-the-new-world-of-marketing-with-llms/"
+          }
+        },
+        {
+          "platform": "Social",
+          "title": "Healthcare Marketers Rethink Infrastructure in Search of Real-Time Results",
+          "desc": "This post was created in partnership with Doceree Key takeaways Today’s healthcare marketers are embracing AI’s analytical capabilities in an effort to move toward new models that build stronger links [&hellip;]",
+          "when": "Hoy",
+          "source": {
+            "label": "Adweek Social",
+            "url": "https://www.adweek.com/performance-marketing/healthcare-marketers-rethink-infrastructure-in-search-of-real-time-results/"
+          }
+        },
+        {
+          "platform": "Social",
+          "title": "Trust and Incrementality Help Brands Scale Bigger Ideas",
+          "desc": "This post was created in partnership with PebblePost For marketers, testing new channels has become easier than proving which investments actually drive growth. That gap is pushing brands to look [&hellip;]",
+          "when": "Hoy",
+          "source": {
+            "label": "Adweek Social",
+            "url": "https://www.adweek.com/performance-marketing/trust-and-incrementality-help-brands-scale-bigger-ideas/"
           }
         }
       ]
